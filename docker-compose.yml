@@ -46,6 +46,7 @@ services:
     environment:
       PMA_HOST: naron-wordpress-mysql
       MYSQL_ROOT_PASSWORD: 7&Qh#8Ao01m!
+      UPLOAD_LIMIT: 64M
     depends_on:
       - mysql
     networks:

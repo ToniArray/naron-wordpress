@@ -1,0 +1,150 @@
+/*
+Theme Name: Turismo
+Theme URI: 
+Author: Excelia
+Author URI: 
+Description: Plantilla para el Ayuntamiento de Turismo
+Requires at least: 6.0
+Tested up to: 6.2.2
+Requires PHP: 5.7
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: turismo
+Tags: 
+*/
+
+$colorDos: red;
+
+.menu-item-object-language_switcher .trp-flag-image {
+  margin: 0;
+}
+.trp-language-switcher {
+  height: auto;
+  width: auto;
+}
+.trp-language-switcher > div {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  width: auto !important;
+}
+.trp-language-switcher > div > a {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding: 0 5px;
+}
+.trp-language-switcher > div > a:hover {
+  cursor: pointer;
+}
+.trp-language-switcher > div > a > img {
+  margin: 0 0 0 8px;
+}
+.trp-language-switcher .trp-ls-shortcode-language {
+  background-color: white;
+  border-radius: 1px;
+}
+.trp-language-switcher .trp-ls-shortcode-language > a {
+  color: #1e1e1e;
+  padding: 5px;
+}
+.trp-language-switcher:focus .trp-ls-shortcode-language,
+.trp-language-switcher:hover .trp-ls-shortcode-language {
+  padding: 0;
+}
+
+.wp-site-blocks > * + * {
+  margin-block-start: 0;
+}
+
+@mixin currentMenuColor($color) {
+  .wp-block-navigation {
+    .wp-block-navigation-item {
+      color: #1e1e1e;
+      &.current-menu-item {
+        color: $color;
+      }
+    }
+  }
+}
+
+// %current-menu-color {
+//   .wp-block-navigation {
+//     .wp-block-navigation-item {
+//       color: #1e1e1e;
+//       &.current-menu-item {
+//         color: #fcb900;
+//       }
+//     }
+//   }
+// }
+
+.header-menu {
+  border-top: 1px solid #ccc;
+  &.ayuntamiento {
+    .wp-block-navigation-item.current-menu-item::before,
+    .wp-block-navigation-item.current-menu-item::after {
+      background-color: #02019a;
+    }
+    @include currentMenuColor(#02019a);
+  }
+
+  &.uno {
+    .wp-block-navigation-item.current-menu-item::before,
+    .wp-block-navigation-item.current-menu-item::after {
+      background-color: #345c00;
+    }
+    @include currentMenuColor(#345c00);
+  }
+  &.dos {
+    .wp-block-navigation-item.current-menu-item::before,
+    .wp-block-navigation-item.current-menu-item::after {
+      background-color: #fcb900;
+    }
+    // @extend %current-menu-color;
+    @include currentMenuColor(#fcb900);
+  }
+}
+.wp-block-navigation-item {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.wp-block-navigation {
+  .wp-block-navigation-item {
+    color: #1e1e1e;
+    &.current-menu-item {
+      color: #02019a;
+    }
+  }
+}
+.wp-block-navigation
+  .wp-block-navigation-item__content.wp-block-navigation-item__content {
+  padding: 15px;
+}
+.wp-block-navigation .wp-block-navigation-item.current-menu-item::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: -1px;
+}
+.wp-block-navigation .wp-block-navigation-item.current-menu-item::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+}
+.header-link a {
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+}

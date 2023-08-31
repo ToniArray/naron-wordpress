@@ -75,14 +75,14 @@ define( 'DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', '') );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         '02906156f48f6b6d796ddba62ad5f07b47096ea2') );
-define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  'f8390413bcf051e4896583e423da33c7402713c4') );
-define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    '35332bcfbbf3ccf211e0f01c56ca5b4c631fec44') );
-define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        '921d8e9d1da3fe8a110d7af45fec24d83617230f') );
-define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        '6aeb3bc534289acd2f221c25c35276423815ee75') );
-define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', '80f6227418615fe3bd496d13447ca03adaf427a9') );
-define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   '4c6e9d644191c2824c66c38daf13bdd31a546a29') );
-define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       'ea091f0b46bd0b47abab503df208ffecf902cff2') );
+define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         '4440ce930a68aefa566202e6c99bcefee290149a') );
+define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  'c3cc8dfc5992f4686adb064a7a6ee3c60d076b60') );
+define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    'a23552e3f75c9e93b66f3a36d0f8591eb430de4b') );
+define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        '2f5714264e3a78c8b38067036452d5fa7c4bf915') );
+define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        'f98655f319a0a4dd47200e3b33ee6ac19c94f28d') );
+define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', '0be12d3391140b64ac9bdffdc8732d3df19c037f') );
+define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   '35c87df1d8fcddc9af49a6fb1959263600ec744c') );
+define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       'ba9a8f7d4abdbe920db4988af3ac64e2789ceb65') );
 // (See also https://wordpress.stackexchange.com/a/152905/199287)
 
 /**#@-*/
@@ -110,6 +110,14 @@ $table_prefix = getenv_docker('WORDPRESS_TABLE_PREFIX', 'wp_');
 define( 'WP_DEBUG', !!getenv_docker('WORDPRESS_DEBUG', '') );
 
 /* Add any custom values between this line and the "stop editing" line. */
+
+define( 'WP_ALLOW_MULTISITE', true );
+define( 'MULTISITE', true );
+define( 'SUBDOMAIN_INSTALL', true );
+define( 'DOMAIN_CURRENT_SITE', 'naron.local' );
+define( 'PATH_CURRENT_SITE', '/' );
+define( 'SITE_ID_CURRENT_SITE', 1 );
+define( 'BLOG_ID_CURRENT_SITE', 1 );
 
 // If we're behind a proxy server and using HTTPS, we need to alert WordPress of that fact
 // see also https://wordpress.org/support/article/administration-over-ssl/#using-a-reverse-proxy
