@@ -1,0 +1,52 @@
+version: "3"
+networks:
+  naron-wordpress:
+    driver: bridge
+
+services:
+  mysql:
+    platform: linux/x86_64
+    image: mysql:5.7
+    container_name: naron-wordpress-mysql
+    tty: true
+    ports:
+      - "4208:3306"
+    volumes:
+      - "./var/libclea/mysql/:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: 7&Qh#8Ao01m!
+      MYSQL_DATABASE: naron
+      MYSQL_USER: naronDB
+      MYSQL_PASSWORD: 7&Qh#8Ao01m!
+    networks:
+      - naron-wordpress
+
+  server:
+    image: wordpress:latest
+    container_name: naron-wordpress
+    ports:
+      - "80:80"
+    volumes:
+      - "./var/www/html/:/var/www/html"
+    environment:
+      WORDPRESS_DB_USER: naronDB
+      WORDPRESS_DB_PASSWORD: 7&Qh#8Ao01m!
+      WORDPRESS_DB_NAME: naron
+      WORDPRESS_DB_HOST: naron-wordpress-mysql
+    depends_on:
+      - mysql
+    networks:
+      - naron-wordpress
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: naron-phpmyadmin
+    ports:
+      - "4283:80"
+    environment:
+      PMA_HOST: naron-wordpress-mysql
+      MYSQL_ROOT_PASSWORD: 7&Qh#8Ao01m!
+    depends_on:
+      - mysql
+    networks:
+      - naron-wordpress
