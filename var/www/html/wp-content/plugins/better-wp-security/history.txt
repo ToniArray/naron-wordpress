@@ -1012,3 +1012,5 @@
 	Important: Enforce encryption for Two-Factor secrets.
 	Tweak: Add Stellar and Solid banners.
 	Bug Fix: Don't require "Write to Files" to be enabled to use the "Rotate Encryption Key" tool.
+8.1.8 - 2023-08-31 - Timothy Jacobs, Lisa Canini, Jared Hill
+	News: iThemes Security is becoming Solid Security soon. Learn More: https://go.solidwp.com/security-free-notice-ithemes-becoming-solidwp

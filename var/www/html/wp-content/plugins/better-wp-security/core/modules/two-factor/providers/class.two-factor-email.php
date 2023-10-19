@@ -156,7 +156,7 @@ class Two_Factor_Email extends Two_Factor_Provider implements ITSEC_Two_Factor_P
 		$mail = $nc->mail();
 		$mail->set_recipients( array( $user->user_email ) );
 		$mail->set_subject( $subject, false );
-		$mail->add_header(
+		$mail->add_user_header(
 			$is_signup ? esc_html__( 'Finish Setting Up Two-Factor', 'better-wp-security' ) : esc_html__( 'Continue Logging On', 'better-wp-security' ),
 			'',
 			true

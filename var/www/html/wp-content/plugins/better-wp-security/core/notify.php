@@ -124,8 +124,12 @@ class ITSEC_Notify {
 
 		$data_proxy = new ITSEC_Notify_Data_Proxy( $data );
 
+		$tracking_link = ITSEC_Core::is_pro()
+			? 'https://go.solidwp.com/security-digest-email-ithemes-becoming-solidwp'
+			: 'https://go.solidwp.com/security-free-digest-email-ithemes-becoming-solidwp';
+
 		$mail = $nc->mail( 'digest' );
-		$mail->add_header( $title, $banner_title );
+		$mail->add_header( $title, $banner_title, false, $tracking_link );
 		$mail->start_group( 'intro' );
 		$mail->add_info_box( sprintf( esc_html__( 'The following is a summary of security related activity on your site: %s', 'better-wp-security' ), '<b>' . $mail->get_display_url() . '</b>' ) );
 		$mail->end_group();

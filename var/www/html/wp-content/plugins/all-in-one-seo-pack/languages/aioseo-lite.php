@@ -17,8 +17,7 @@ $generated_i18n_strings = [
 	// Translators: 1 - The number of H1 tags found.
 	__( '%1$d H1 tags were found.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:62
-	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:81
+	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:53
 	// Translators: 1 - Expand to the number of text sections not separated by subheadings, 2 - expands to the recommended number of words following a subheading.
 	_n( '%1$d section of your text is longer than %2$d words and is not separated by any subheadings. Add subheadings to improve readability.', '%1$d sections of your text are longer than %2$d words and are not separated by any subheadings. Add subheadings to improve readability.', 0, 'all-in-one-seo-pack' ),
 
@@ -202,11 +201,11 @@ $generated_i18n_strings = [
 	// Translators: 1 - Focus Keyphrase or Keyphrase.
 	__( '%1$s not found in meta description.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/sentenceLength.js:62
+	// Reference: /src/app/tru-seo/analyzer/analysis/sentenceLength.js:58
 	// Translators: 1 - Number of the sentences, 2 - Number of words, 3 - Recommended maximum of words.
 	__( '%1$s of the sentences contain more than %2$s words, which is more than the recommended maximum of %3$s. Try to shorten the sentences.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/passiveVoice.js:46
+	// Reference: /src/app/tru-seo/analyzer/analysis/passiveVoice.js:50
 	// Translators: 1 - Percentage of the sentences, 2 - Expected maximum percentage of sentences.
 	__( '%1$s of the sentences contain passive voice, which is more than the recommended maximum of %2$s. Try to use their active counterparts.', 'all-in-one-seo-pack' ),
 
@@ -253,7 +252,7 @@ $generated_i18n_strings = [
 
 	// Reference: /src/vue/pages/search-appearance/views/partials/Advanced.vue:80
 	// Reference: /src/vue/pages/search-appearance/views/partials/TitleDescription.vue:85
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:126
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:140
 	// Translators: 1 - The type of page (Post, Page, Category, Tag, etc.).
 	__( '%1$s Title', 'all-in-one-seo-pack' ),
 
@@ -549,7 +548,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/settings/views/WebmasterTools.vue:304
 	__( 'Additional Domains', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:99
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:101
 	// Reference: /src/vue/standalone/post-settings/views/partials/general/AdditionalKeyphrases.vue:30
 	__( 'Additional Keyphrases', 'all-in-one-seo-pack' ),
 
@@ -560,7 +559,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/sitemaps/views/AdditionalPages.vue:53
 	__( 'Additional Pages', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:88
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:90
 	__( 'Additional Profiles', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/partials/lite/Schema.vue:48
@@ -568,7 +567,7 @@ $generated_i18n_strings = [
 	__( 'Additional Schema Types', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/standalone/setup-wizard/router/paths.js:46
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:49
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:50
 	__( 'Additional Site Information', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/standalone/blocks/business-info/BusinessInfoSidebar.vue:32
@@ -826,7 +825,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/components/common/core/site-score/Index.vue:23
 	__( 'Analyzing...', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:159
+	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:167
 	__( 'Anchor values are not sent to the server and cannot be redirected.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/feature-manager/views/FeatureManager.vue:71
@@ -918,7 +917,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/sitemaps/views/AdditionalPages.vue:55
 	__( 'Are you sure you want to delete this page?', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/stores/index.js:170
+	// Reference: /src/vue/stores/index.js:171
 	__( 'Are you sure you want to leave? you have unsaved changes!', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/common/core/ResetSettings.vue:46
@@ -966,7 +965,7 @@ $generated_i18n_strings = [
 	// Reference: /src/react/headline-analyzer/components/HeadlinePanelWordBalance.jsx:60
 	__( 'At least one', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/paragraphLength.js:21
+	// Reference: /src/app/tru-seo/analyzer/analysis/paragraphLength.js:24
 	__( 'At least one paragraph is long. Consider using short paragraphs.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/react/headline-analyzer/components/HeadlinePanelCharacterCount.jsx:55
@@ -1086,7 +1085,7 @@ $generated_i18n_strings = [
 	__( 'Basic Guide to Google Search Console', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/common/core/SeoSiteAnalysisResults.vue:28
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:101
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:103
 	// Reference: /src/vue/standalone/post-settings/views/partials/general/PageAnalysis.vue:29
 	// Reference: /src/vue/standalone/seo-preview/views/SeoInspector.vue:67
 	__( 'Basic SEO', 'all-in-one-seo-pack' ),
@@ -1328,7 +1327,7 @@ $generated_i18n_strings = [
 	__( 'Childrens Event', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:65
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:58
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:59
 	__( 'Choose a Contact Type', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/sitemaps/views/partials/AddAdditionalPage.vue:88
@@ -1336,7 +1335,7 @@ $generated_i18n_strings = [
 	__( 'Choose a File', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:61
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:51
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:52
 	__( 'Choose a Person', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/tools/views/partials/ImportOthers.vue:43
@@ -1361,7 +1360,7 @@ $generated_i18n_strings = [
 	__( 'Choose whether %1$s should output the required schema markup that Google needs to generate a sitelinks search box.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:60
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:54
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:55
 	__( 'Choose whether the site represents a person or an organization.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/social-networks/views/Twitter.vue:47
@@ -1431,7 +1430,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:54
 	// Reference: /src/vue/pages/search-appearance/views/partials/TitleDescription.vue:51
 	// Reference: /src/vue/standalone/post-settings/views/Facebook.vue:67
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:95
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:97
 	// Reference: /src/vue/standalone/setup-wizard/views/SearchAppearance.vue:59
 	__( 'Click on the tags below to insert variables into your meta description.', 'all-in-one-seo-pack' ),
 
@@ -1444,7 +1443,7 @@ $generated_i18n_strings = [
 	__( 'Click on the tags below to insert variables into your site title.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/partials/TitleDescription.vue:49
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:93
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:95
 	__( 'Click on the tags below to insert variables into your title.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/common/core/CopyBlock.vue:24
@@ -1570,8 +1569,8 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/standalone/connect/views/Main.vue:16
 	__( 'Connecting...', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/consecutiveSentences.js:30
-	// Reference: /src/app/tru-seo/analyzer/analysis/consecutiveSentences.js:43
+	// Reference: /src/app/tru-seo/analyzer/analysis/consecutiveSentences.js:32
+	// Reference: /src/app/tru-seo/analyzer/analysis/consecutiveSentences.js:46
 	__( 'Consecutive sentences', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/standalone/local-business-seo/views/BusinessInfo.vue:39
@@ -1588,7 +1587,7 @@ $generated_i18n_strings = [
 	__( 'Contact Page URL:', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:66
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:59
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:60
 	__( 'Contact Type', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-statistics/views/lite/seo-statistics/Blur.vue:33
@@ -1641,7 +1640,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/tools/views/SystemStatus.vue:42
 	__( 'Copy to Clipboard', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:97
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:99
 	__( 'Cornerstone content should be the most important and extensive articles on your site.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/standalone/setup-wizard/views/Category.vue:76
@@ -1864,7 +1863,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/settings/views/lite/AccessControl.vue:33
 	__( 'Default settings that just work', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:62
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:63
 	__( 'Default Social Share Image', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/social-networks/views/Facebook.vue:90
@@ -1900,7 +1899,6 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/tools/views/partials/BackupSettings.vue:58
 	// Reference: /src/vue/plugins/constants.js:31
 	// Reference: /src/vue/standalone/post-settings/views/partials/general/FocusKeyphrase.vue:87
-	// Reference: /src/vue/standalone/post-settings/views/partials/general/MetaboxAnalysisDetail.vue:19
 	__( 'Delete', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/common/link-assistant/InboundInternal.vue:49
@@ -1935,13 +1933,13 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/standalone/blocks/html-sitemap/HtmlSitemapSidebar.vue:13
 	__( 'Descending', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:99
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:100
 	__( 'description', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/Media.vue:102
 	// Reference: /src/vue/pages/social-networks/views/Facebook.vue:75
 	// Reference: /src/vue/pages/social-networks/views/Twitter.vue:66
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:67
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:68
 	// Reference: /src/vue/standalone/seo-preview/views/MetaTags.vue:14
 	__( 'Description', 'all-in-one-seo-pack' ),
 
@@ -1952,7 +1950,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/standalone/posts-table/TermApp.vue:42
 	__( 'Description:', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:82
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:83
 	__( 'Descriptions', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/local-seo/views/lite/locations/Locations.vue:21
@@ -2154,7 +2152,7 @@ $generated_i18n_strings = [
 	__( 'Edit HTML Anchor:', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/tools/views/WpCode.vue:33
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:92
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:94
 	// Reference: /src/vue/standalone/seo-preview/App.vue:121
 	__( 'Edit Snippet', 'all-in-one-seo-pack' ),
 
@@ -2538,7 +2536,7 @@ $generated_i18n_strings = [
 	// Reference: /src/app/tru-seo/analyzer/researches/helpers/getKeyphraseType.js:6
 	__( 'Focus keyphrase', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:98
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:100
 	// Reference: /src/vue/standalone/post-settings/views/partials/general/FocusKeyphrase.vue:86
 	// Reference: /src/vue/standalone/publish-panel/PrePublish.vue:67
 	// Reference: /src/vue/standalone/seo-preview/views/SeoInspector.vue:65
@@ -2678,7 +2676,7 @@ $generated_i18n_strings = [
 	__( 'Game', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/plugins/constants.js:1428
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:90
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:92
 	__( 'General', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/social-networks/views/Facebook.vue:50
@@ -2695,16 +2693,16 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/plugins/constants.js:1126
 	__( 'Generate an XML Sitemap specifically for video content on your site.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:59
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:66
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:60
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:67
 	// Translators: 1 - "Title" or "Description".
 	__( 'Generate New SEO Post %1$s', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/standalone/post-settings/views/lite/Schema.vue:38
 	__( 'Generate Schema', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:74
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:81
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:75
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:82
 	// Translators: 1 - "Titles" or "Descriptions".
 	__( 'Generating SEO Post %1$s is a Pro Feature', 'all-in-one-seo-pack' ),
 
@@ -2849,7 +2847,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/standalone/post-settings/views/Twitter.vue:64
 	__( 'Go to Social Networks', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:105
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:107
 	__( 'Go to the Advanced tab to add/edit meta keywords', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/react/headline-analyzer/components/HeadlineWordsBlock.jsx:5
@@ -2959,8 +2957,8 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/settings/views/partials/WebmasterTools/MicrosoftClaritySettings.vue:44
 	__( 'Great choice! Get started with MonsterInsights today to see how people find and use your website.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:108
-	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:50
+	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:41
+	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:82
 	__( 'Great job!', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/common/core/NotificationCards.vue:30
@@ -3068,6 +3066,13 @@ $generated_i18n_strings = [
 
 	// Reference: /src/vue/plugins/constants.js:1555
 	__( 'High School', 'all-in-one-seo-pack' ),
+
+	// Reference: /src/vue/mixins/TruSeoHighlighter.js:59
+	// Reference: /src/vue/standalone/post-settings/views/partials/general/tru-seo/ToggleHighlighter.vue:27
+	__( 'Highlight sections in the Editor', 'all-in-one-seo-pack' ),
+
+	// Reference: /src/vue/standalone/post-settings/views/partials/general/tru-seo/ToggleHighlighter.vue:28
+	__( 'Highlighting is disabled for current view', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/common/seo-revisions/Upsell.vue:27
 	__( 'Historical record of optimization efforts', 'all-in-one-seo-pack' ),
@@ -3614,7 +3619,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/components/common/cta/Index.vue:89
 	__( 'Learn more about all features', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:48
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:49
 	__( 'Learn more about all the features', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/common/base/Editor.vue:77
@@ -3771,7 +3776,7 @@ $generated_i18n_strings = [
 	__( 'Login Status', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:68
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:61
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:62
 	__( 'Logo', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/redirects/router/paths.js:47
@@ -3779,7 +3784,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/tools/views/partials/DatabaseTools.vue:41
 	__( 'Logs', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:104
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:106
 	__( 'Looking for meta keywords?', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/react/headline-analyzer/components/HeadlinePanelNewScore.jsx:35
@@ -3835,7 +3840,7 @@ $generated_i18n_strings = [
 	__( 'Manual Redirects', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:98
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:78
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:80
 	__( 'Manually Enter Person', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/plugins/constants.js:1055
@@ -3875,7 +3880,7 @@ $generated_i18n_strings = [
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:53
 	// Reference: /src/vue/pages/search-appearance/views/partials/TitleDescription.vue:50
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:94
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:96
 	// Reference: /src/vue/standalone/setup-wizard/views/SearchAppearance.vue:61
 	__( 'Meta Description', 'all-in-one-seo-pack' ),
 
@@ -3887,7 +3892,7 @@ $generated_i18n_strings = [
 	// Reference: /src/app/tru-seo/analyzer/analysis/metadescriptionLength.js:53
 	__( 'Meta description Length', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:98
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:99
 	__( 'meta descriptions', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/standalone/seo-preview/views/SeoInspector.vue:70
@@ -4012,7 +4017,7 @@ $generated_i18n_strings = [
 
 	// Reference: /src/vue/standalone/blocks/business-info/BusinessInfoSidebar.vue:31
 	// Reference: /src/vue/standalone/local-business-seo/views/BusinessInfo.vue:31
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:55
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:56
 	__( 'Name', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/mixins/HeadlineResult.js:64
@@ -4299,7 +4304,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/components/common/notifications/Review2.vue:31
 	__( 'Not Really...', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:108
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:119
 	// Translators: 1 - "Learn more link".
 	__( 'Not sure what keyphrases are used for? Check out our documentation for more information. %1$s', 'all-in-one-seo-pack' ),
 
@@ -4350,12 +4355,16 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/standalone/setup-wizard/views/Category.vue:74
 	__( 'Online Store', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/transitionWords.js:57
+	// Reference: /src/app/tru-seo/analyzer/analysis/transitionWords.js:61
 	// Translators: 1 - Percentage of the sentences.
 	__( 'Only %1$s of the sentences contain transition words, which is not enough. Use more of them.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/classes/SiteAnalysis.js:293
 	__( 'Only ever use noindex meta tag or header on pages you want to keep out of the reach of search engines!', 'all-in-one-seo-pack' ),
+
+	// Reference: /src/vue/components/common/core/main/Index.vue:122
+	// Translators: 1 - Opening link tag, 2 - Closing link tag.
+	__( 'Oops! It looks like an error occurred while saving the changes. Please try again or %1$scontact our support team%2$s.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/local-seo/views/lite/opening-hours/Blur.vue:19
 	// Reference: /src/vue/standalone/local-business-seo/views/OpeningHours.vue:38
@@ -4394,7 +4403,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/sitemaps/views/RssSitemap.vue:43
 	__( 'Open RSS Sitemap', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/SeoRevisions.vue:22
+	// Reference: /src/vue/standalone/post-settings/views/lite/SeoRevisions.vue:30
 	__( 'Open SEO Revisions', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/sitemaps/views/GeneralSitemap.vue:59
@@ -4445,11 +4454,11 @@ $generated_i18n_strings = [
 	__( 'Or', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:59
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:53
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:54
 	__( 'Organization', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:62
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:56
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:57
 	__( 'Organization Name', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/plugins/constants.js:1210
@@ -4527,7 +4536,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/link-assistant/router/paths.js:24
 	__( 'Overview', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:100
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:102
 	__( 'Page Analysis', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/sitemaps/views/AdditionalPages.vue:90
@@ -4540,15 +4549,15 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/search-appearance/views/Advanced.vue:134
 	__( 'Paginated RSS Feeds', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/paragraphLength.js:20
-	// Reference: /src/app/tru-seo/analyzer/analysis/paragraphLength.js:28
+	// Reference: /src/app/tru-seo/analyzer/analysis/paragraphLength.js:23
+	// Reference: /src/app/tru-seo/analyzer/analysis/paragraphLength.js:33
 	__( 'Paragraphs length', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/plugins/constants.js:1544
 	__( 'Part Time', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/passiveVoice.js:35
-	// Reference: /src/app/tru-seo/analyzer/analysis/passiveVoice.js:43
+	// Reference: /src/app/tru-seo/analyzer/analysis/passiveVoice.js:37
+	// Reference: /src/app/tru-seo/analyzer/analysis/passiveVoice.js:47
 	__( 'Passive voice', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/tools/views/RobotsEditor.vue:115
@@ -4594,14 +4603,14 @@ $generated_i18n_strings = [
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:58
 	// Reference: /src/vue/standalone/post-settings/views/mixins/Graphs.js:157
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:52
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:53
 	__( 'Person', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:63
 	__( 'Person Name', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:57
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:50
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:51
 	__( 'Person or Organization', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/standalone/user-profile-tab/App.vue:78
@@ -4616,7 +4625,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/components/lite/local-business/business/Contact.vue:11
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:64
 	// Reference: /src/vue/standalone/blocks/business-info/BusinessInfoSidebar.vue:33
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:57
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:58
 	__( 'Phone Number', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/standalone/blocks/business-info/index.js:72
@@ -4631,7 +4640,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/components/common/link-assistant/InboundInternal.vue:67
 	__( 'Phrase', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:96
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:98
 	__( 'Pillar Content', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/social-networks/router/paths.js:46
@@ -4823,7 +4832,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/standalone/post-settings/views/SocialSideBar.vue:25
 	__( 'Preview & Edit', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/Main.vue:79
+	// Reference: /src/vue/standalone/post-settings/views/Main.vue:81
 	__( 'Preview Snippet Editor', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/seo-revisions/views/lite/partials/Controls.vue:13
@@ -4931,7 +4940,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/components/common/core/site-score/Analyze.vue:54
 	__( 'Read the Ultimate WordPress SEO Guide', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:103
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:105
 	// Reference: /src/vue/standalone/post-settings/views/partials/general/PageAnalysis.vue:37
 	// Reference: /src/vue/standalone/publish-panel/PrePublish.vue:62
 	// Reference: /src/vue/standalone/seo-preview/views/SeoInspector.vue:68
@@ -5018,7 +5027,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/settings/views/GeneralSettings.vue:62
 	__( 'Relaunch Setup Wizard', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:165
+	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:173
 	// Translators: 1 - Adds a html tag with an option like: <code>Regex</code>
 	__( 'Remember to enable the %1$s option if this is a regular expression.', 'all-in-one-seo-pack' ),
 
@@ -5140,7 +5149,7 @@ $generated_i18n_strings = [
 	__( 'Save and Continue', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/common/core/add-redirection/Index.vue:77
-	// Reference: /src/vue/components/common/core/main/Index.vue:69
+	// Reference: /src/vue/components/common/core/main/Index.vue:73
 	// Reference: /src/vue/components/common/core/main/Tabs.vue:65
 	__( 'Save Changes', 'all-in-one-seo-pack' ),
 
@@ -5195,6 +5204,9 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/standalone/setup-wizard/router/paths.js:64
 	// Reference: /src/vue/standalone/setup-wizard/views/SearchAppearance.vue:54
 	__( 'Search Appearance', 'all-in-one-seo-pack' ),
+
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:113
+	__( 'Search Appearance > Advanced', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-statistics/views/lite/seo-statistics/Blur.vue:61
 	__( 'Search Clicks', 'all-in-one-seo-pack' ),
@@ -5365,7 +5377,7 @@ $generated_i18n_strings = [
 	__( 'Select which Taxonomies you want to use the %1$s columns with.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/GlobalSettings.vue:67
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:60
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:61
 	__( 'Select which team or department the phone number belongs to.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/standalone/local-business-seo/views/OpeningHours.vue:23
@@ -5380,11 +5392,11 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/search-appearance/views/lite/image-seo/Blur.vue:97
 	__( 'Sentence Case', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/sentenceLength.js:51
+	// Reference: /src/app/tru-seo/analyzer/analysis/sentenceLength.js:46
 	__( 'Sentence length is looking great!', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/sentenceLength.js:50
-	// Reference: /src/app/tru-seo/analyzer/analysis/sentenceLength.js:59
+	// Reference: /src/app/tru-seo/analyzer/analysis/sentenceLength.js:45
+	// Reference: /src/app/tru-seo/analyzer/analysis/sentenceLength.js:55
 	__( 'Sentences length', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/react/headline-analyzer/components/HeadlinePanelSentiment.jsx:33
@@ -5432,7 +5444,7 @@ $generated_i18n_strings = [
 	__( 'SEO Preview', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/about/views/lite/LiteVsPro.vue:201
-	// Reference: /src/vue/standalone/post-settings/views/lite/SeoRevisions.vue:24
+	// Reference: /src/vue/standalone/post-settings/views/lite/SeoRevisions.vue:32
 	__( 'SEO Revisions', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/seo-revisions/router/paths.js:19
@@ -5570,6 +5582,9 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/components/common/core/SettingsSeparator.vue:35
 	__( 'Show Less', 'all-in-one-seo-pack' ),
 
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:65
+	__( 'Show more', 'all-in-one-seo-pack' ),
+
 	// Reference: /src/vue/components/common/core/SettingsSeparator.vue:34
 	__( 'Show More', 'all-in-one-seo-pack' ),
 
@@ -5645,7 +5660,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/plugins/constants.js:1481
 	__( 'Smart Schema', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:91
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:93
 	// Reference: /src/vue/standalone/publish-panel/PrePublish.vue:43
 	__( 'Snippet Preview', 'all-in-one-seo-pack' ),
 
@@ -5695,7 +5710,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/classes/SiteAnalysis.js:368
 	__( 'Some Open Graph meta tags are missing.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:208
+	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:216
 	__( 'Some servers may be configured to serve file resources directly, preventing a redirect occurring.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/classes/SiteAnalysis.js:526
@@ -5780,12 +5795,11 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/settings/views/Breadcrumbs.vue:106
 	__( 'Subcategory', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:107
-	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:116
-	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:49
-	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:59
-	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:78
-	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:97
+	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:40
+	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:50
+	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:70
+	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:81
+	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:91
 	__( 'Subheading distribution', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/tools/views/SystemStatus.vue:44
@@ -5951,7 +5965,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/about/views/AboutUs.vue:343
 	__( 'The best WordPress eCommerce plugin for selling digital downloads. Start selling eBooks, software, music, digital art, and more within minutes. Accept payments, manage subscriptions, advanced access control, and more.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:182
+	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:190
 	// Translators: 1 - Adds a html tag with an option like: <code>^</code>, 2 - Adds a html tag with an option like: <code>^</code>.
 	__( 'The caret %1$s should be at the start. For example: %2$s', 'all-in-one-seo-pack' ),
 
@@ -5984,7 +5998,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/classes/SiteAnalysis.js:136
 	__( 'The description should stimulate reader interest and get them to click on the article. Think of it as a mini-advertisement for your content.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:199
+	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:207
 	// Translators: 1 - Adds a html tag with an option like: <code>^/</code>
 	__( 'The dollar symbol %1$s should be at the end. For example: %2$s', 'all-in-one-seo-pack' ),
 
@@ -6200,8 +6214,8 @@ $generated_i18n_strings = [
 	// Translators: 1 - HTML code opening tag, 2 - HTML code closing tag.
 	__( 'The sort order. The supported values are %1$s, %2$s, %3$s and %4$s.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:153
-	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:191
+	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:161
+	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:199
 	// Translators: 1 - Adds a html tag with an option like: <code>^/</code>
 	__( 'The source URL should probably start with a %1$s', 'all-in-one-seo-pack' ),
 
@@ -6211,9 +6225,9 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/components/common/html-sitemap/DisplayInfo.vue:83
 	__( 'The taxonomies (by slug, comma-separated) that are included in the sitemap.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/consecutiveSentences.js:33
+	// Reference: /src/app/tru-seo/analyzer/analysis/consecutiveSentences.js:35
 	// Translators: 1 - Number of sentences.
-	__( 'The text contains %1$d consecutive sentences starting with the same word. Try to mix things up!', 'all-in-one-seo-pack' ),
+	__( 'The text contains at least %1$d consecutive sentences starting with the same word. Try to mix things up!', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/classes/SiteAnalysis.js:598
 	__( 'The theme is not visible.', 'all-in-one-seo-pack' ),
@@ -6260,7 +6274,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/classes/SiteAnalysis.js:456
 	__( 'There are server-side tools (including WordPress plugins) to automatically minify JavaScript files.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/consecutiveSentences.js:44
+	// Reference: /src/app/tru-seo/analyzer/analysis/consecutiveSentences.js:47
 	__( 'There is enough variety in your sentences. That\'s great!', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/standalone/setup-wizard/views/LicenseKey.vue:155
@@ -6306,7 +6320,7 @@ $generated_i18n_strings = [
 	__( 'This allows you to edit the .htaccess file for your site. All WordPress sites on an Apache server have a .htaccess file and we have provided you with a convenient way of editing it. Care should always be taken when editing important files from within WordPress as an incorrect change could cause WordPress to become inaccessible. %1$sBe sure to make a backup before making changes and ensure that you have FTP access to your web server and know how to access and edit files via FTP.%2$s', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/settings/views/Advanced.vue:74
-	__( 'This allows you to hide plugin announcements and update details.', 'all-in-one-seo-pack' ),
+	__( 'This allows you to hide plugin announcements and update details in the Notification Center.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/settings/views/WebmasterTools.vue:266
 	// Translators: 1 - HTML line break tag, 2 - A link to our documentation.
@@ -6525,7 +6539,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/standalone/local-business-seo/views/OpeningHours.vue:41
 	__( 'Timezone', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:91
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:92
 	__( 'title', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/search-appearance/views/Media.vue:52
@@ -6536,8 +6550,8 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/search-statistics/views/partials/KeywordInner.vue:45
 	// Reference: /src/vue/pages/search-statistics/views/partials/PostsTable.vue:127
 	// Reference: /src/vue/pages/social-networks/views/Facebook.vue:71
-	// Reference: /src/vue/standalone/post-settings/views/General.vue:102
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:60
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:104
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:61
 	// Reference: /src/vue/standalone/post-settings/views/partials/general/PageAnalysis.vue:33
 	// Reference: /src/vue/standalone/seo-preview/views/MetaTags.vue:10
 	// Reference: /src/vue/standalone/seo-preview/views/SeoInspector.vue:69
@@ -6568,10 +6582,10 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/standalone/posts-table/TermApp.vue:41
 	__( 'Title:', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:90
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:91
 	__( 'titles', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:75
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:76
 	__( 'Titles', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/settings/views/Breadcrumbs.vue:49
@@ -6595,7 +6609,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/standalone/user-profile-tab/App.vue:28
 	__( 'To let search engines know which profiles are associated with this user, enter them below:', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:174
+	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:182
 	// Translators: 1 - Adds a html tag with an option like: <code>^</code>, 2 - Adds a html tag with an option like: <code>^</code>.
 	__( 'To prevent a greedy regular expression you can use %1$s to anchor it to the start of the URL. For example: %2$s', 'all-in-one-seo-pack' ),
 
@@ -6751,8 +6765,8 @@ $generated_i18n_strings = [
 	__( 'Tracking Domain', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/app/tru-seo/analyzer/analysis/transitionWords.js:44
-	// Reference: /src/app/tru-seo/analyzer/analysis/transitionWords.js:54
-	// Reference: /src/app/tru-seo/analyzer/analysis/transitionWords.js:67
+	// Reference: /src/app/tru-seo/analyzer/analysis/transitionWords.js:58
+	// Reference: /src/app/tru-seo/analyzer/analysis/transitionWords.js:72
 	__( 'Transition words', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/plugins/constants.js:1353
@@ -6970,7 +6984,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/standalone/setup-wizard/views/Success.vue:78
 	__( 'Upgrade to Pro to Unlock Powerful SEO Features', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:43
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:44
 	__( 'Upgrade to Pro Today', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/common/core/Overview.vue:47
@@ -7090,7 +7104,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/about/views/lite/LiteVsPro.vue:93
 	__( 'Use the power of ChatGPT to generate engaging SEO titles and meta descriptions for your posts.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:86
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:88
 	__( 'Use the same username for multiple social networks', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/settings/views/WebmasterTools.vue:296
@@ -7214,6 +7228,10 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/settings/views/partials/WebmasterTools/MicrosoftClaritySettings.vue:45
 	__( 'Want to get the most out of Clarity? Integrate Clarity with Google Analytics using MonsterInsights today!', 'all-in-one-seo-pack' ),
 
+	// Reference: /src/vue/standalone/post-settings/views/General.vue:110
+	// Translators: 1 - The plugin short name ("AIOSEO"), 2 - A link to "Search Appearance > Advanced".
+	__( 'Warning: You have disabled Autogenerate Descriptions and are using the default description format. %1$s will not output a description unless you enter a custom one. You can enable Autogenerate Descriptions under %2$s.', 'all-in-one-seo-pack' ),
+
 	// Reference: /src/vue/components/common/core/site-score/Analyze.vue:50
 	// Reference: /src/vue/components/common/core/site-score/Competitor.vue:45
 	// Reference: /src/vue/components/common/core/site-score/Dashboard.vue:42
@@ -7258,7 +7276,7 @@ $generated_i18n_strings = [
 	// Translators: 1 - Plugin short name ("AIOSEO").
 	__( 'We have detected other SEO plugins installed on your website. Select which plugins you would like to import data to %1$s.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/partials/general/PageAnalysis.vue:52
+	// Reference: /src/vue/standalone/post-settings/views/partials/general/PageAnalysis.vue:59
 	// Translators: 1 - The Page Builder name, 2 - HTML code opening tag, 3 - HTML code closing tag.
 	__( 'We have detected that you are currently using the %1$s Page Builder. Please click %2$shere%3$s to use the %1$s editor for a most accurate result.', 'all-in-one-seo-pack' ),
 
@@ -7353,7 +7371,7 @@ $generated_i18n_strings = [
 
 	// Reference: /src/app/tru-seo/analyzer/analysis/metadescriptionLength.js:54
 	// Reference: /src/app/tru-seo/analyzer/analysis/titleLength.js:59
-	// Reference: /src/app/tru-seo/analyzer/analysis/transitionWords.js:68
+	// Reference: /src/app/tru-seo/analyzer/analysis/transitionWords.js:73
 	__( 'Well done!', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/common/core/add-redirection/Index.vue:73
@@ -7400,11 +7418,11 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/pages/search-statistics/views/lite/dashboard/Blur.vue:53
 	__( 'Winning / Losing', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/SeoRevisions.vue:23
+	// Reference: /src/vue/standalone/post-settings/views/lite/SeoRevisions.vue:31
 	__( 'With our powerful revisions feature for all your SEO data, never lose the exact SEO title or description (and more!) that helped you rank higher in search results and restore it back in a single click.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:89
-	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:97
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:90
+	// Reference: /src/vue/standalone/post-settings/views/lite/partials-ai/Modal.vue:98
 	// Translators: 1 - "titles" or "meta descriptions", 2 - "title" or "meta description".
 	__( 'With our Pro version, you now have access to the powerful feature that generates SEO optimized %1$s with just a click of a button. Say goodbye to manual %2$s creation and hello to increased online visibility.', 'all-in-one-seo-pack' ),
 
@@ -7527,10 +7545,10 @@ $generated_i18n_strings = [
 	// Reference: /src/app/tru-seo/analyzer/analysis/isInternalLink.js:20
 	__( 'You are linking to other resources on your website which is great.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:98
+	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:71
 	__( 'You are not using any subheadings, although your text is rather long. Try and add some subheadings.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:117
+	// Reference: /src/app/tru-seo/analyzer/analysis/subheadingsDistribution.js:92
 	__( 'You are not using any subheadings, but your text is short enough and probably doesn\'t need them.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/app/tru-seo/analyzer/analysis/contentHasAssets.js:57
@@ -7545,10 +7563,10 @@ $generated_i18n_strings = [
 	// Translators: 1 - Opening HTML link tag, 2 - Closing HTML link tag.
 	__( 'You are using a static home page which is found under Pages. You can %1$sedit your home page settings%2$s directly to change the title, meta description and image.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/paragraphLength.js:29
+	// Reference: /src/app/tru-seo/analyzer/analysis/paragraphLength.js:34
 	__( 'You are using short paragraphs.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:89
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:91
 	__( 'You can add additional social profile URLs here, separated by a new line.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/standalone/blocks/faq/lite/sidebar.js:70
@@ -7622,7 +7640,7 @@ $generated_i18n_strings = [
 	__( 'You have not added any schema yet. You can add any schema graphs you like via the Schema Generator below.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/mixins/License.js:9
-	__( 'You have not yet added a license key.', 'all-in-one-seo-pack' ),
+	__( 'You have not yet added a valid license key.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/react/headline-analyzer/components/HeadlinePanelCharacterCount.jsx:43
 	// Reference: /src/vue/mixins/HeadlineResult.js:95
@@ -7655,7 +7673,7 @@ $generated_i18n_strings = [
 	// Translators: 1 - The plugin name ("All in One SEO"), 2 - "upgrading to Pro".
 	__( 'You\'re using %1$s. To unlock more features, consider %2$s', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/app/tru-seo/analyzer/analysis/passiveVoice.js:36
+	// Reference: /src/app/tru-seo/analyzer/analysis/passiveVoice.js:38
 	__( 'You\'re using enough active voice. That\'s great!', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/app/tru-seo/analyzer/analysis/keyphraseInIntroduction.js:45
@@ -7682,7 +7700,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/standalone/setup-wizard/views/SmartRecommendations.vue:63
 	__( 'Your email is needed so you can receive SEO recommendations. This email will also be used to connect your site with our SEO API.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:107
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:109
 	__( 'Your Facebook URL is invalid. Please check the format and try again.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/app/tru-seo/analyzer/analysis/keyphraseInSubHeadings.js:111
@@ -7722,7 +7740,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/mixins/HeadlineResult.js:34
 	__( 'Your headline would be more likely to get clicks if it had more uncommon words.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:127
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:129
 	__( 'Your Instagram URL is invalid. Please check the format and try again.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/mixins/License.js:16
@@ -7737,7 +7755,7 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/components/lite/settings/LicenseKey.vue:44
 	__( 'Your license key provides access to updates and addons.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:157
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:169
 	__( 'Your LinkedIn URL is invalid. Please check the format and try again.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/classes/SiteAnalysis.js:109
@@ -7752,7 +7770,7 @@ $generated_i18n_strings = [
 	// Translators: 1 - The length of the meta description as a number.
 	__( 'Your meta description is set and is %1$d characters long.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:207
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:219
 	__( 'Your MySpace URL is invalid. Please check the format and try again.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/lite/local-business/Name.vue:7
@@ -7778,7 +7796,7 @@ $generated_i18n_strings = [
 	// Translators: 1 - The total number of page requests.
 	__( 'Your page makes %1$d requests.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:137
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:149
 	__( 'Your Pinterest URL is invalid. Please check the format and try again.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/standalone/publish-panel/PrePublish.vue:235
@@ -7833,11 +7851,14 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/classes/SiteAnalysis.js:657
 	__( 'Your site is using a secure transfer protocol (https).', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:63
+	// Reference: /src/vue/standalone/setup-wizard/views/AdditionalInformation.vue:64
 	__( 'Your Social Profiles', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:187
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:199
 	__( 'Your SoundCloud URL is invalid. Please check the format and try again.', 'all-in-one-seo-pack' ),
+
+	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:146
+	__( 'Your source is a protected path and cannot be redirected.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/common/core/add-redirection/Url.vue:138
 	__( 'Your source is the same as a target and this will create a loop.', 'all-in-one-seo-pack' ),
@@ -7862,10 +7883,13 @@ $generated_i18n_strings = [
 	// Reference: /src/vue/classes/SiteAnalysis.js:597
 	__( 'Your theme is not visible!', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:167
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:139
+	__( 'Your TikTok URL is invalid. Please check the format and try again.', 'all-in-one-seo-pack' ),
+
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:179
 	__( 'Your Tumblr URL is invalid. Please check the format and try again.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:117
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:119
 	__( 'Your Twitter URL is invalid. Please check the format and try again.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/components/common/core/add-redirection/Index.vue:165
@@ -7884,16 +7908,16 @@ $generated_i18n_strings = [
 	// Translators: 1 - Learn more link.
 	__( 'Your user account role does not have access to edit this field. %1$s', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:87
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:89
 	__( 'Your Username:', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:197
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:209
 	__( 'Your Wikipedia URL is invalid. Please check the format and try again.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:177
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:189
 	__( 'Your Yelp URL is invalid. Please check the format and try again.', 'all-in-one-seo-pack' ),
 
-	// Reference: /src/vue/components/common/core/SocialProfiles.vue:147
+	// Reference: /src/vue/components/common/core/SocialProfiles.vue:159
 	__( 'Your YouTube URL is invalid. Please check the format and try again.', 'all-in-one-seo-pack' ),
 
 	// Reference: /src/vue/pages/about/views/AboutUs.vue:68

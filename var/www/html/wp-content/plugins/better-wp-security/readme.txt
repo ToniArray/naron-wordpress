@@ -3,7 +3,7 @@ Contributors: ithemes, timothyblynjacobs, layotte, jthillithemes, lisacee.
 Tags: security plugin, malware scanner, security, malware prevention, two-factor authentication, brute force protection, scanner, password protection, ban, bad bots, audit log
 Requires at least: 5.9
 Tested up to: 6.3
-Stable tag: 8.1.7
+Stable tag: 8.1.8
 Requires PHP: 7.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -150,6 +150,9 @@ Manage more than one WordPress site? Release lockouts and keep your themes, plug
 7. Advanced Security Tools
 
 == Changelog ==
+
+= 8.1.8 =
+* News: iThemes Security is becoming Solid Security soon. Learn More: https://go.solidwp.com/security-free-notice-ithemes-becoming-solidwp
 
 = 8.1.7 =
 * Important: Enforce encryption for Two-Factor secrets.
@@ -692,8 +695,3 @@ Manage more than one WordPress site? Release lockouts and keep your themes, plug
  * New Feature: Added a new Security Check section on the settings page. This new feature adds a tool to quickly ensure that the recommended features are enabled and the recommended settings are used.
  * Bug Fix: Fixed the ability to remove the itsec_away.confg file in order to disable Away Mode.
  * Enhancement: The "Ban Lists" setting of Banned Users is now enabled by default.
-
-== Upgrade Notice ==
-
-= 8.1.6 =
-Version 8.1.6 includes important bug fixes and is recommended for all users.

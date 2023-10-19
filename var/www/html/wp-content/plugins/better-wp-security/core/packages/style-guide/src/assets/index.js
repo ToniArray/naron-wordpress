@@ -20,3 +20,6 @@ export { default as YellowBar } from './yellow_bar.svg';
 export { default as LightGreenBar } from './light_green_bar.svg';
 export { default as GreenBar } from './green_bar.svg';
 export { default as CheckMark } from './check.svg';
+export { default as RebrandingLogos } from './rebranding_logos.svg';
+export { default as SolidLogo } from './solid-security-logo.svg';
+export { default as SecurityFreeLogo } from './ithemes-security-logo.svg';

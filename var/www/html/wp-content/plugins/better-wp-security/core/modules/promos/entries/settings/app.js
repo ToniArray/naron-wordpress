@@ -30,7 +30,13 @@ export default function App() {
 	const { installType } = useConfigContext();
 
 	if ( installType === 'pro' ) {
-		return null;
+		return (
+			<>
+				<BeforeSettingsFill>
+					<BecomingSolid />
+				</BeforeSettingsFill>
+			</>
+		);
 	}
 
 	return (

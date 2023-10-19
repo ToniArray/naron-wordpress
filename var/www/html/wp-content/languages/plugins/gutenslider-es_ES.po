@@ -1,0 +1,75 @@
+# Translation of Plugins - WordPress Slider Block Gutenslider - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - WordPress Slider Block Gutenslider - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-07-06 17:16:08+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - WordPress Slider Block Gutenslider - Stable (latest release)\n"
+
+#: src/init.php:90
+msgid "Review Gutenslider on WordPress.org"
+msgstr "Valora a Gutenslider en WordPress.org"
+
+#: src/blocks/gutenslider/attributes.php:491
+msgid "No Divider"
+msgstr "Sin divisor"
+
+#: src/init.php:127
+msgctxt "Block pattern description"
+msgid "Slider block that can be used for user reviews that rated your service or product or company."
+msgstr "Bloque de carrusel que puede usarse para reseñas de usuarios que califican tu servicio o producto o empresa."
+
+#: src/init.php:119
+msgid "Testimonial Slider"
+msgstr "Carrusel de recomendaciones"
+
+#: eedee-gutenslider.php:77
+msgid "You did it"
+msgstr "Listo"
+
+#: src/init.php:90
+msgid "Rate Gutenslider&nbsp;★★★★★"
+msgstr "Valora Gutenslider&nbsp;★★★★★"
+
+#. Description of the plugin
+msgid "WordPress slider plugin for Gutenberg. Create an image slider, video slider, fullscreen slider with this powerful slider block and add any block on top. Slide anything!"
+msgstr "Plugin de carrusel de WordPress para Gutenberg. Crea un carrusel de imágenes, un carrusel de vídeo o un carrusel a pantalla completa con este potente bloque de carrusel y añade cualquier bloque en la parte superior. ¡Carrusel para cualquier cosa!"
+
+#: includes/admin/class-gutenslider-admin-start-page.php:161
+msgid "Get started with Gutenslider here:"
+msgstr "Comienza con Gutenslider aquí:"
+
+#: eedee-gutenslider.php:137 eedee-gutenslider.php:150
+msgid "Cheating huh?"
+msgstr "Haciendo trampas, ¿eh?"
+
+#. Plugin Name of the plugin
+msgid "Gutenslider — The last WordPress slider you will ever need."
+msgstr "Gutenslider — The last WordPress slider you will ever need."
+
+#. Author URI of the plugin
+msgid "https://eedee.net"
+msgstr "https://eedee.net"
+
+#. Author of the plugin
+msgid "eedee"
+msgstr "eedee"
+
+#. Plugin URI of the plugin
+msgid "https://gutenslider.org"
+msgstr "https://gutenslider.org"
+
+#. translators: example text for slide 1.
+#: includes/admin/class-gutenslider-admin-start-page.php:65
+#: includes/admin/class-gutenslider-admin-start-page.php:66 src/init.php:109
+#: build/gutenslider.js:1 src/blocks/example.js:34
+#: build/gutenslider-pro.js:1572 build/gutenslider-pro.js:3088
+#: build/gutenslider-pro.js:4073 build/gutenslider.js:1572
+#: build/gutenslider.js:2661 build/gutenslider.js:3568
+msgid "Gutenslider"
+msgstr "Gutenslider"

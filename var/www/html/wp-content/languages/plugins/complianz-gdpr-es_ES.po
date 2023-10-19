@@ -2,14 +2,18 @@
 # This file is distributed under the same license as the Plugins - Complianz &#8211; GDPR/CCPA Cookie Consent - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-08-09 09:21:32+0000\n"
+"PO-Revision-Date: 2023-09-20 20:37:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.7\n"
+"X-Generator: GlotPress/4.0.0-alpha.8\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - Complianz &#8211; GDPR/CCPA Cookie Consent - Stable (latest release)\n"
+
+#: config/questions-wizard.php:813
+msgid "Enable TCF and Google CMP"
+msgstr "Activar TCF y Google CMP"
 
 #: integrations/plugins/wp-google-map-plugin.php:65
 msgid "The WP Maps Pro integration has changed with the help of the authors of WP Maps, please check your implementation."
@@ -51,7 +55,7 @@ msgstr "¿Te diriges a visitantes de Jersey o Guernsey?"
 msgid "The integration for Ultimate Add ons for Elementor has been deprecated due to incompatibility issues with other Google Maps implementations. If you need this add-on for Google Maps, you can implement an mu-plugin."
 msgstr "La integración con Ultimate Addons for Elementor se ha abandonado debido a problemas de incompatibilidad con otras implementaciones de Google Maps. Si necesitas esta extensión para Google Maps puedes implementar un mu-plugin."
 
-#: cookiebanner/class-cookiebanner.php:1323
+#: cookiebanner/class-cookiebanner.php:1322
 msgid "Click button to enable {service}"
 msgstr "Haz clic en el botón para activar {service}"
 
@@ -79,31 +83,31 @@ msgstr "Tienes %s instalados. Recomendamos decir «Sí» al autoalojamiento de G
 msgid "We have enabled integrations for plugins and services, please double-check your configuration."
 msgstr "Hemos activado integraciones para plugins y servicios, por favor, comprueba tus ajustes."
 
-#: config/questions-wizard.php:985
+#: config/questions-wizard.php:984
 msgid "If the Cookie Blocker causes an issue, you can enable Safe Mode under settings. Disabling Safe Mode will activate the Cookie Blocker."
 msgstr "Si el bloqueador de cookies causa un problema, puedes activar el modo seguro en los ajustes. Al desactivar el modo seguro se activará el bloqueador de cookies."
 
-#: config/questions-wizard.php:984
+#: config/questions-wizard.php:983
 msgid "The Cookie Blocker will, among others, block any tracking and third-party scripts configured by the wizard, automatic configuration or our script center."
 msgstr "El bloqueador de cookies bloqueará, entre otros, los scripts de seguimiento y de terceros configurados por el asistente, la configuración automática o nuestro centro de scripts."
 
-#: config/questions-wizard.php:983
+#: config/questions-wizard.php:982
 msgid "Enable Cookie Blocker"
 msgstr "Activar el bloqueador de cookies"
 
-#: config/questions-wizard.php:970
+#: config/questions-wizard.php:969
 msgid "You can always enable and disable the Cookie Banner when styling the Cookie Banner, under Cookie Banner settings."
 msgstr "Siempre puedes activar y desactivar el banner de cookies al dar estilos al banner de cookies, en los ajustes del banner de cookies."
 
-#: config/questions-wizard.php:969
+#: config/questions-wizard.php:968
 msgid "If you enable this setting, a cookie banner will be enabled, if needed."
 msgstr "Si activas este ajustes, se activará un banner de cookies, si fuese necesario."
 
-#: config/questions-wizard.php:968
+#: config/questions-wizard.php:967
 msgid "Enable Cookie Banner"
 msgstr "Activar el banner de cookies"
 
-#: config/questions-wizard.php:954
+#: config/questions-wizard.php:953
 msgid "If you encounter any issues after enabling the cookie blocker, please read %sthese instructions%s to debug any issues while in safe mode."
 msgstr "Si encuentras algún problema después de activar el bloqueador de cookies, por favor, lee %sestas instrucciones%s para depurar cualquier problema mientras estás en modo seguro."
 
@@ -448,12 +452,12 @@ msgstr "Generar un %s completo y legalmente validado"
 msgid "Copied!"
 msgstr "¡Copiado!"
 
-#: cookiebanner/class-cookiebanner.php:1320
+#: cookiebanner/class-cookiebanner.php:1319
 msgctxt "as in: click to accept marketing cookies"
 msgid "marketing"
 msgstr "márketing"
 
-#: cookiebanner/class-cookiebanner.php:1320
+#: cookiebanner/class-cookiebanner.php:1319
 msgctxt "as in: click to accept statistics cookies"
 msgid "statistics"
 msgstr "estadísticas"
@@ -550,7 +554,7 @@ msgstr "Esto desactivará un javascript de la administración / escritorio para 
 msgid "Disable width auto correction"
 msgstr "Desactivar la corrección automática de la anchura"
 
-#: cookiebanner/cookiebanner.php:504
+#: cookiebanner/cookiebanner.php:505
 msgid "On a cookie policy, the banner will be minimized by default"
 msgstr "En una política de cookies, el banner se minimizará por defecto"
 
@@ -1036,7 +1040,7 @@ msgstr "ID del botón"
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-view-save-preferences-button-widget.php:205
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-view-save-preferences-button-widget.php:347
 #: templates/dashboard/tools-conditional.php:42 templates/dashboard/tools.php:9
-#: gutenberg/build/index.js:1 gutenberg/src/index.js:460
+#: gutenberg/build/index.js:1 gutenberg/src/index.js:373
 msgid "View"
 msgstr "Ver"
 
@@ -1141,8 +1145,8 @@ msgid "Read more about these purposes"
 msgstr "Leer más sobre estos propósitos"
 
 #: cookiebanner/templates/cookiebanner.php:122
-msgid "Manage vendors"
-msgstr "Gestionar proveedores"
+msgid "Manage %s vendors"
+msgstr "Gestionar %s proveedores"
 
 #: cookiebanner/templates/cookiebanner.php:120
 msgid "Manage options"
@@ -1312,7 +1316,7 @@ msgstr "Hemos activado las integraciones y los posibles marcadores de posición.
 msgid "We have detected the below plugins."
 msgstr "Hemos detectado los siguientes plugins."
 
-#: config/questions-wizard.php:864
+#: config/questions-wizard.php:863
 msgid "Enabled integrations"
 msgstr "Integraciones activadas"
 
@@ -1421,7 +1425,7 @@ msgid "Enable placeholder"
 msgstr "Activar el marcador de posición"
 
 #: class-field.php:2487 class-field.php:2836 gutenberg/build/index.js:1
-#: gutenberg/src/index.js:439
+#: gutenberg/src/index.js:352
 msgid "Category"
 msgstr "Categoría"
 
@@ -1469,19 +1473,19 @@ msgstr "No se ha encontrado"
 msgid "It's possible to use region redirect when GEO IP is enabled, and you have multiple policies and statements."
 msgstr "Es posible utilizar la redirección de región cuando GEO IP está activado, y tienes múltiples políticas y declaraciones."
 
-#: config/questions-wizard.php:924
+#: config/questions-wizard.php:923
 msgid "Do you want to use region redirect on the relevant documents?"
 msgstr "¿Deseas utilizar la redirección de región en los documentos relevantes?"
 
-#: config/questions-wizard.php:922
+#: config/questions-wizard.php:921
 msgid "GEO IP based redirect is available in %sPremium%s"
 msgstr "La redirección basada en GEO IP está disponible en %sPremium%s"
 
-#: config/questions-wizard.php:916
+#: config/questions-wizard.php:915
 msgid "No, choose a menu per document"
 msgstr "No, selecciona un menú por documento"
 
-#: config/questions-wizard.php:915
+#: config/questions-wizard.php:914
 msgid "Yes, redirect based on GEO IP"
 msgstr "Sí, redireccionamiento basado en GEO IP"
 
@@ -1702,7 +1706,7 @@ msgstr "Todavía no tienes SSL en tu sitio. Instala SSL gratis con %sReally Simp
 msgid "If you have selected non privacy friendly options in the previous step, configuration by Complianz is required."
 msgstr "Si has seleccionado opciones que no respetan la privacidad en el paso anterior, se requiere la configuración por parte de Complianz."
 
-#: cookiebanner/cookiebanner.php:499
+#: cookiebanner/cookiebanner.php:500
 msgid "Disable Complianz on this page"
 msgstr "Desactivar Complianz en esta página"
 
@@ -2102,7 +2106,7 @@ msgid "Text on the manage consent tab"
 msgstr "Texto en la pestaña de gestionar el consentimiento"
 
 #: class-field.php:2514 class-field.php:2863 integrations/integrations.php:826
-#: gutenberg/build/index.js:1 gutenberg/src/index.js:463
+#: gutenberg/build/index.js:1 gutenberg/src/index.js:376
 msgid "Placeholder"
 msgstr "Marcador de posición"
 
@@ -2481,14 +2485,6 @@ msgstr "Último error en la consola:"
 msgid "Javascript errors are detected on the front-end of your site. This may break the cookie banner functionality."
 msgstr "Se han detectado errores JavaScript en la página principal de tu sitio. Esto puede romper la funcionalidad del banner de cookies."
 
-#: config/questions-wizard.php:817
-msgid "Google recommends an integration with TCF V2.0 to avoid loss of revenue."
-msgstr "Google recomienda una integración con TCF V2.0 para evitar la pérdida de ingresos."
-
-#: config/questions-wizard.php:813
-msgid "Enable TCF"
-msgstr "Activar TCF"
-
 #: config/documents/cookie-policy-br.php:148
 #: config/documents/cookie-policy-ca.php:147
 #: config/documents/cookie-policy-eu.php:150
@@ -2560,7 +2556,7 @@ msgctxt "intro company info"
 msgid "Here you can select which legal documents you want to generate with Complianz. You can also use existing legal documents."
 msgstr "Aquí puedes seleccionar qué documentos legales deseas generar con Complianz. También puedes usar documentos legales existentes."
 
-#: config/questions-wizard.php:852
+#: config/questions-wizard.php:851
 msgid "Do you want to disable the storage of personal data by the WP comments function and the checkbox?"
 msgstr "¿Deseas desactivar el almacenamiento de datos personales mediante la función de comentarios de WP y la casilla de verificación?"
 
@@ -2581,7 +2577,7 @@ msgid "If so, the scan will be extended to the wp-admin part of your site. "
 msgstr "Si así fuera, la exploración se ampliará a la parte de wp-admin de tu sitio. "
 
 #: config/documents/documents.php:22 config/questions-wizard.php:169
-#: gutenberg/build/index.js:1 gutenberg/src/index.js:312
+#: gutenberg/build/index.js:1 gutenberg/src/index.js:225
 msgid "Disclaimer"
 msgstr "Descargo de responsabilidad"
 
@@ -2650,7 +2646,7 @@ msgstr "El análisis de cookies detectó cookies de servicios que comparten dato
 msgid "Services in %s"
 msgstr "Sevicios en %s"
 
-#: config/questions-wizard.php:878
+#: config/questions-wizard.php:877
 msgid "Connect with Cookiedatabase.org"
 msgstr "Conectar con Cookiedatabase.org"
 
@@ -2837,7 +2833,7 @@ msgstr "Activo"
 
 #: cookiebanner/class-cookiebanner.php:839 cookiebanner/settings.php:731
 #: cookiebanner/settings.php:732 cookiebanner/settings.php:733
-#: gutenberg/build/index.js:1 gutenberg/src/index.js:442
+#: gutenberg/build/index.js:1 gutenberg/src/index.js:355
 msgid "Preferences"
 msgstr "Preferencias"
 
@@ -3057,7 +3053,7 @@ msgstr "Activa la API cookiedatabase.org para las descripciones automáticas, o 
 msgid "You have cookies with incomplete descriptions."
 msgstr "Tienes cookies con descripciones incompletas."
 
-#: config/questions-wizard.php:899
+#: config/questions-wizard.php:898
 msgid "Add the services to which your cookies belong here"
 msgstr "Añadir los servicios a los que pertenecen tus cookies aquí"
 
@@ -3263,7 +3259,7 @@ msgid "Cookie function"
 msgstr "Función de las cookies"
 
 #: templates/cookie_settings.php:11 gutenberg/build/index.js:1
-#: gutenberg/src/index.js:452
+#: gutenberg/src/index.js:365
 msgid "Service"
 msgstr "Servicio"
 
@@ -3318,12 +3314,12 @@ msgid "Add new service"
 msgstr "Añadir nuevo servicio"
 
 #: class-document.php:1288 gutenberg/build/index.js:1
-#: gutenberg/src/index.js:199
+#: gutenberg/src/index.js:109
 msgid "Edit document and stop synchronization"
 msgstr "Editar documento y parar sincronización"
 
 #: class-document.php:1284 gutenberg/build/index.js:1
-#: gutenberg/src/index.js:198
+#: gutenberg/src/index.js:108
 msgid "Synchronize document with Complianz"
 msgstr "Sincronizar documento con Complianz"
 
@@ -3527,7 +3523,7 @@ msgstr "Puedes utilizar tu navegador de Internet para eliminar las cookies de fo
 msgid "The email address will be obfuscated on the front-end to prevent spidering."
 msgstr "La dirección de correo electrónico será ofuscada en la portada / vista pública para evitar ser indexado por buscadores (spidering)."
 
-#: config/questions-wizard.php:853
+#: config/questions-wizard.php:852
 msgid "If you enable this, WordPress will not store personal data with comments and you won't need a consent checkbox for the comment form. The consent box will not be displayed."
 msgstr "Si activas esto, WordPress no guardará datos personales con comentarios y no necesitarás una casilla de verificación de consentimiento en el comentario del formulario. La casilla de consentimiento no será mostrada."
 
@@ -3599,7 +3595,7 @@ msgstr "Título descriptivo del banner de cookies"
 msgid "Cookie banner title"
 msgstr "Título del banner de cookies"
 
-#: config/questions-wizard.php:818
+#: config/questions-wizard.php:817
 msgid "If you only use Google for advertising, and have activated the option to use only non personalized ads, you can select no here."
 msgstr "Si solo usas Google para anuncios y tienes activada la opción de solo usar anuncios no personalizados puedes seleccionar no aquí."
 
@@ -3607,7 +3603,7 @@ msgstr "Si solo usas Google para anuncios y tienes activada la opción de solo u
 msgid "Are any of your advertising cookies used to show personalized ads?"
 msgstr "¿Alguna de tus cookies publicitarias pone anuncios personalizados?"
 
-#: config/questions-wizard.php:836
+#: config/questions-wizard.php:835
 msgid "Does your website use WordPress comments?"
 msgstr "¿Tu web utiliza los comentarios de wordpress?"
 
@@ -3619,12 +3615,12 @@ msgstr "Dirección, ciudad y código postal"
 msgid "New cookie banner"
 msgstr "Nuevo banner de cookies"
 
-#: cookiebanner/cookiebanner.php:383
+#: cookiebanner/cookiebanner.php:384
 #: proof-of-consent/class-proof-of-consent.php:267
 msgid "Filter"
 msgstr "Filtrar"
 
-#: cookiebanner/cookiebanner.php:367
+#: cookiebanner/cookiebanner.php:368
 msgid "Cookie banner settings"
 msgstr "Ajustes del banner de cookies"
 
@@ -3674,7 +3670,7 @@ msgid "Cookiebanners"
 msgstr "Avisos de cookies"
 
 #: cookiebanner/class-cookiebanner-table.php:73
-#: cookiebanner/cookiebanner.php:480
+#: cookiebanner/cookiebanner.php:481
 #: proof-of-consent/class-cookiestatement-snapshot-table.php:67
 msgid "Cookiebanner"
 msgstr "Aviso de cookies"
@@ -4198,7 +4194,7 @@ msgstr "EE.UU."
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-link-widget.php:549
 #: integrations/plugins/gravity-forms.php:148
 #: integrations/plugins/gravity-forms.php:188 gutenberg/build/index.js:1
-#: gutenberg/src/index.js:310
+#: gutenberg/src/index.js:223
 msgid "Privacy Statement"
 msgstr "Declaración de privacidad"
 
@@ -4455,7 +4451,7 @@ msgstr "Cuando visites nuestra web por primera vez, te mostraremos una ventana e
 
 #: cookiebanner/settings.php:269 cookiebanner/settings.php:280
 #: cookiebanner/settings.php:291 gutenberg/build/index.js:1
-#: gutenberg/src/index.js:488
+#: gutenberg/src/index.js:401
 msgid "Preview"
 msgstr "Vista previa"
 
@@ -4487,14 +4483,14 @@ msgstr "Con las categorías, puedes dejar que los usuarios elijan qué categorí
 #: class-field.php:2490 class-field.php:2839 config/steps.php:60
 #: cookiebanner/class-cookiebanner.php:843 cookiebanner/settings.php:754
 #: cookiebanner/settings.php:755 cookiebanner/settings.php:756
-#: gutenberg/build/index.js:1 gutenberg/src/index.js:443
+#: gutenberg/build/index.js:1 gutenberg/src/index.js:356
 msgid "Statistics"
 msgstr "Estadísticas"
 
 #: class-field.php:2501 class-field.php:2850
 #: cookiebanner/class-cookiebanner.php:847 cookiebanner/settings.php:791
 #: cookiebanner/settings.php:792 cookiebanner/settings.php:793
-#: gutenberg/build/index.js:1 gutenberg/src/index.js:444
+#: gutenberg/build/index.js:1 gutenberg/src/index.js:357
 msgid "Marketing"
 msgstr "Marketing"
 
@@ -4656,7 +4652,7 @@ msgstr "Herramientas"
 msgid "Please review step %s of the wizard for changes in cookies."
 msgstr "Por favor revisa el paso %s del asistente para ver los cambios en las cookies."
 
-#: cookiebanner/cookiebanner.php:372
+#: cookiebanner/cookiebanner.php:373
 msgid "Please complete the wizard to check if you need a cookie banner."
 msgstr "Por favor, completa el asistente para comprobar si necesitas un banner de cookies."
 
@@ -4678,7 +4674,7 @@ msgstr "Necesitamos algo de información para ser capaces de generar tus documen
 msgid "General"
 msgstr "General"
 
-#: config/questions-wizard.php:889
+#: config/questions-wizard.php:888
 msgid "Add the used cookies here"
 msgstr "Añade las cookies usadas aquí"
 
@@ -4731,7 +4727,7 @@ msgstr "¿Cuál es tu dirección?"
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-link-widget.php:481
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-link-widget.php:546
 #: templates/dashboard/documents-conditional.php:10 gutenberg/build/index.js:1
-#: gutenberg/src/index.js:311
+#: gutenberg/src/index.js:224
 msgid "Cookie Policy"
 msgstr "Política de cookies"
 
@@ -5821,7 +5817,7 @@ msgstr "Afganistán"
 
 #: config/class-config.php:298 config/general-settings.php:241
 #: cookiebanner/class-cookiebanner-table.php:246 gutenberg/build/index.js:1
-#: gutenberg/src/index.js:464
+#: gutenberg/src/index.js:377
 msgid "Default"
 msgstr "Por defecto"
 
@@ -6047,7 +6043,7 @@ msgstr "%s a las %s"
 msgid "The cookie scan detected %s on your site, which means the answer to this question should be %s."
 msgstr "El análisis de cookies detectó %s en tu sitio, lo que significa que la respuesta a esta pregunta debería ser %s."
 
-#: cookiebanner/cookiebanner.php:375
+#: cookiebanner/cookiebanner.php:376
 msgid "Your website does not require a cookie banner, so these settings do not apply."
 msgstr "Tu web no requiere un banner de cookies, por lo que estos ajustes no se aplican."
 

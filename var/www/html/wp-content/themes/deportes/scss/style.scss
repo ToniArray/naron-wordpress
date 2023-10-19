@@ -1,0 +1,319 @@
+/*
+Theme Name: Deportes
+Theme URI: http://excelia.com
+Author: Excelia
+Author URI:
+Description: Plantilla para el Ayuntamiento de Deportes
+Requires at least: 6.0
+Tested up to: 6.2.2
+Requires PHP: 5.7
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: deportes
+Tags: 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800&display=swap");
+@import "../css/megamenu";
+
+$colorDos: red;
+
+body {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+}
+
+.menu-item-object-language_switcher .trp-flag-image {
+  margin: 0;
+}
+.trp-language-switcher {
+  height: auto;
+  width: auto;
+}
+.trp-language-switcher > div {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  width: auto !important;
+}
+.trp-language-switcher > div > a {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding: 0 5px;
+}
+.trp-language-switcher > div > a:hover {
+  cursor: pointer;
+}
+.trp-language-switcher > div > a > img {
+  margin: 0 0 0 8px;
+}
+.trp-language-switcher .trp-ls-shortcode-language {
+  background-color: white;
+  border-radius: 1px;
+  z-index: 99999;
+}
+.trp-language-switcher .trp-ls-shortcode-language > a {
+  color: #1e1e1e;
+  padding: 5px;
+}
+.trp-language-switcher:focus .trp-ls-shortcode-language,
+.trp-language-switcher:hover .trp-ls-shortcode-language {
+  padding: 0;
+}
+
+.wp-site-blocks > * + * {
+  margin-block-start: 0;
+}
+
+@mixin currentMenuColor($color) {
+  .wp-block-navigation {
+    .wp-block-navigation-item {
+      color: #1e1e1e;
+      &.current-menu-item {
+        color: $color;
+      }
+    }
+  }
+}
+
+// %current-menu-color {
+//   .wp-block-navigation {
+//     .wp-block-navigation-item {
+//       color: #1e1e1e;
+//       &.current-menu-item {
+//         color: #fcb900;
+//       }
+//     }
+//   }
+// }
+
+.header {
+  &-link {
+    a {
+      border-radius: 0;
+      background-color: transparent;
+      padding: 0;
+      font-family: "Montserrat", Sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  &-middle {
+    &-home {
+      position: absolute;
+      z-index: 999;
+      width: 100%;
+      -webkit-transition: background-color 500ms ease-in;
+      -ms-transition: background-color 500ms ease-in;
+      transition: background-color 500ms ease-in;
+      &.sticky {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999999;
+        a.mega-menu-link {
+          color: #333 !important;
+        }
+      }
+      &:hover {
+        background-color: white;
+        a.mega-menu-link {
+          color: #333 !important;
+        }
+      }
+    }
+    a.mega-menu-link {
+      color: #333 !important;
+    }
+  }
+}
+
+.section {
+  &-title {
+    font-family: "Montserrat", Sans-serif;
+    &-top {
+      font-size: 31px;
+      font-weight: 400;
+    }
+    &-bottom {
+      font-size: 75px;
+      font-weight: 800;
+      margin-block-start: 10px !important;
+    }
+  }
+  &-external {
+    &-web {
+      margin-top: -95px !important;
+      &-header {
+        background-color: #00009e;
+        background-image: url("./images/deportes-vista-dia-excelia.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        &::before {
+          content: "";
+          background-color: #00009e;
+          opacity: 0.92;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+        }
+        & > div {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+.social-buttons {
+  .wp-social-link {
+    a {
+      padding: 0.1rem;
+    }
+  }
+  .wp-social-link-facebook {
+    background-color: white !important;
+    color: #1778f2 !important;
+    border-radius: 5px;
+  }
+}
+
+.header-menu {
+  border-top: 1px solid #ccc;
+  &.ayuntamiento {
+    .wp-block-navigation-item.current-menu-item::before,
+    .wp-block-navigation-item.current-menu-item::after {
+      background-color: #02019a;
+    }
+    @include currentMenuColor(#02019a);
+  }
+
+  &.uno {
+    .wp-block-navigation-item.current-menu-item::before,
+    .wp-block-navigation-item.current-menu-item::after {
+      background-color: #345c00;
+    }
+    @include currentMenuColor(#345c00);
+  }
+  &.dos {
+    .wp-block-navigation-item.current-menu-item::before,
+    .wp-block-navigation-item.current-menu-item::after {
+      background-color: #fcb900;
+    }
+    // @extend %current-menu-color;
+    @include currentMenuColor(#fcb900);
+  }
+}
+.wp-block-navigation-item {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.wp-block-navigation {
+  .wp-block-navigation-item {
+    color: #1e1e1e;
+    &.current-menu-item {
+      color: #02019a;
+    }
+  }
+}
+.wp-block-navigation
+  .wp-block-navigation-item__content.wp-block-navigation-item__content {
+  padding: 15px;
+}
+.wp-block-navigation .wp-block-navigation-item.current-menu-item::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: -1px;
+}
+.wp-block-navigation .wp-block-navigation-item.current-menu-item::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+}
+.uagb-post-grid.is-grid {
+  &.uagb-post__equal-height {
+    .uagb-post__inner-wrap {
+      height: 230px;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}
+
+.icon {
+  &-external {
+    &-web {
+      img {
+        background-color: #02019a;
+        border: 7px solid white;
+      }
+    }
+  }
+}
+
+.footer {
+  &-menu {
+    ul {
+      gap: 0 !important;
+      li {
+        border-right: 1px solid white;
+        &:first-child {
+          a {
+            padding-left: 0 !important;
+          }
+        }
+        &:last-child {
+          border-right: none;
+        }
+        a {
+          color: white !important;
+          padding: 5px 15px !important;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+#external-icons {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  -webkit-transition: max-height 500ms ease-in;
+  -ms-transition: max-height 500ms ease-in;
+  transition: max-height 500ms ease-in;
+  &.open {
+    height: auto;
+    max-height: 200px;
+    -webkit-transition: max-height 500ms ease-in;
+    -ms-transition: max-height 500ms ease-in;
+    transition: max-height 500ms ease-in;
+  }
+}
+
+.logo-difference {
+  mix-blend-mode: difference;
+}

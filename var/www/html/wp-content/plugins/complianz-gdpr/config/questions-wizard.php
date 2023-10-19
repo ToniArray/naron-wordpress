@@ -810,11 +810,10 @@ $this->fields += array(
 			'options'                 => array(
 				'yes' => __("Yes", "complianz-gdpr"),
 				'no' => __("No", "complianz-gdpr"),
-				'tcf' => __("Enable TCF", "complianz-gdpr").cmplz_upgrade_to_premium('https://complianz.io/pricing/'),
+				'tcf' => __("Enable TCF and Google CMP", "complianz-gdpr").cmplz_upgrade_to_premium('https://complianz.io/pricing/'),
 			),
 			'default'                 => 'no',
 			'label'                   => __( "Are any of your advertising cookies used to show personalized ads?", 'complianz-gdpr' ),
-			'comment'                 => __( "Google recommends an integration with TCF V2.0 to avoid loss of revenue.", 'complianz-gdpr' ).cmplz_read_more("https://complianz.io/tcf-for-wordpress"),
 			'help'                    => __( "If you only use Google for advertising, and have activated the option to use only non personalized ads, you can select no here.", 'complianz-gdpr' ),
 			'condition'               => array(
 				'uses_ad_cookies' => 'yes'

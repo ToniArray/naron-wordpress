@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - UpdraftPlus WordPress Backup &amp; Migration Plugin - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-08-19 21:43:44+0000\n"
+"PO-Revision-Date: 2023-09-06 13:08:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,22 @@ msgstr ""
 "X-Generator: GlotPress/4.0.0-alpha.7\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - UpdraftPlus WordPress Backup &amp; Migration Plugin - Stable (latest release)\n"
+
+#: methods/s3generic.php:209
+msgid "SigV2"
+msgstr "SigV2"
+
+#: methods/s3generic.php:208
+msgid "SigV4"
+msgstr "SigV4"
+
+#: methods/s3generic.php:206
+msgid "Read more about signature version"
+msgstr "Más información sobre la versión de la firma"
+
+#: methods/s3generic.php:205
+msgid "Signature version"
+msgstr "Versión de la firma"
 
 #: updraftplus.php:227
 msgid "Most likely, WordPress malfunctioned when copying the plugin files."
@@ -157,6 +173,10 @@ msgstr "Tu instalación de WordPress tiene un problema con la salida de espacios
 msgid "You are recommended to turn safe_mode off, or to restore only one entity at a time"
 msgstr "Se recomienda desactivar safe_mode, o restaurar sólo una entidad cada vez"
 
+#: templates/wp-admin/settings/delete-and-restore-modals.php:60
+msgid "This makes time-outs much more likely."
+msgstr "Esto hace que la superación de tiempo máximo sea mucho más probable."
+
 #: templates/wp-admin/notices/thanks-for-using-main-dash.php:26
 msgid "You can de-subscribe at any time."
 msgstr "Puedes darte de baja en cualquier momento."
@@ -220,6 +240,10 @@ msgstr "Tu usuario de la base de datos no tiene permiso para crear tablas."
 #: restorer.php:2763
 msgid "If these happen, then you will need to manually restore the file via phpMyAdmin or another method."
 msgstr "Si esto ocurre, tendrás que restaurar manualmente el archivo mediante phpMyAdmin u otro método."
+
+#: restorer.php:2763
+msgid "Timeouts are much more likely."
+msgstr "Las superaciones de tiempo máximo son más probables."
 
 #: restorer.php:2763
 msgid "Warning: PHP safe_mode is active on your server."
@@ -309,11 +333,11 @@ msgstr "Vuelve a intentarlo en unos minutos."
 msgid "An error occurred while fetching your Vault credentials."
 msgstr "Se ha producido un error al obtener tus credenciales de Vault."
 
-#: methods/s3.php:1438
+#: methods/s3.php:1435
 msgid "Please check your access credentials, and if those are correct then try another bucket name (as another %s user may already have taken your name)."
 msgstr "Por favor, comprueba tus credenciales de acceso y, si son correctas, prueba con otro nombre de cubo (ya que es posible que otro usuario %s ya haya tomado tu nombre)."
 
-#: methods/s3.php:1438
+#: methods/s3.php:1435
 msgid "Failure: We could not successfully access or create such a bucket."
 msgstr "Fallo: No hemos podido acceder o crear con éxito dicho cubo."
 
@@ -355,6 +379,10 @@ msgid "Re-check it, then follow the link to authenticate again."
 msgstr "Vuelve a comprobarlo y, a continuación, sigue el enlace para identificarte de nuevo."
 
 #: methods/googledrive.php:532
+msgid "This often means that you entered your client secret wrongly, or that you have not yet re-authenticated (below) since correcting it."
+msgstr "Esto suele significar que has introducido mal tu secreto de cliente, o que todavía no te has vuelto a identificar (más abajo) desde que lo corregiste."
+
+#: methods/googledrive.php:532
 msgid "No refresh token was received from Google."
 msgstr "No se ha recibido ningún token de actualización de Google."
 
@@ -379,18 +407,149 @@ msgid "This backup archive is %s MB in size - the attempt to send this via email
 msgstr "Este archivo de copia de seguridad tiene un tamaño de %s MB - es probable que falle el intento de enviarlo por correo electrónico (pocos servidores de correo electrónico permiten archivos adjuntos de este tamaño)."
 
 #: methods/dreamobjects.php:192 methods/s3.php:1049 methods/s3.php:1089
-#: methods/s3generic.php:176
+#: methods/s3generic.php:197
 msgid "Examples: mybucket, mybucket/mypath"
 msgstr "Ejemplos: mybucket, mybucket/mypath"
 
 #: methods/dreamobjects.php:192 methods/s3.php:1049 methods/s3.php:1089
-#: methods/s3generic.php:176
+#: methods/s3generic.php:197
 msgid "Enter only a bucket name or a bucket and path."
 msgstr "Introduce sólo un nombre de cubo o un cubo y una ruta."
 
 #: methods/dreamobjects.php:183 methods/s3.php:936 methods/s3.php:1079
 msgid "This bucket will be created for you if it does not already exist."
 msgstr "Este cubo se creará para ti si aún no existe."
+
+#: methods/dreamobjects.php:183 methods/s3.php:936 methods/s3.php:1079
+msgid "Get your access key and secret key from your <a href=\"%s\">%s console</a>, then pick a (globally unique - all %s users) bucket name (letters and numbers) (and optionally a path) to use for storage."
+msgstr "Obtén tu clave de acceso y tu clave secreta de tu <a href=\"%s\">consola %s</a>, luego elige un nombre de cubo (globalmente único - todos los usuarios de %s) (letras y números) (y opcionalmente una ruta) para utilizarlo como almacenamiento."
+
+#: methods/cloudfiles.php:455 methods/dreamobjects.php:181
+#: methods/dreamobjects.php:182 methods/openstack-base.php:577
+#: methods/s3.php:926 methods/s3.php:930
+msgid "Your web server's PHP installation does not included a required module (%s)."
+msgstr "La instalación PHP de tu servidor web no incluye un módulo necesario (%s)."
+
+#: methods/cloudfiles-new.php:284 methods/cloudfiles.php:461
+#: methods/openstack2.php:244
+msgid "This container will be created for you if it does not already exist."
+msgstr "Este contenedor se creará para ti si aún no existe."
+
+#: methods/cloudfiles-new.php:284
+msgid "Get your API key <a href=\"%s\" target=\"_blank\">from your Rackspace Cloud console</a> (<a href=\"%s\" target=\"_blank\">read instructions here</a>), then pick a container name to use for storage."
+msgstr "Obtén tu clave de API <a href=\"%s\" target=\"_blank\">desde tu consola de Rackspace Cloud</a> (<a href=\"%s\" target=\"_blank\">lee las instrucciones aquí</a>), y luego elige un nombre de contenedor para utilizarlo como almacenamiento."
+
+#: methods/cloudfiles-new.php:281 methods/cloudfiles-new.php:282
+#: methods/cloudfiles.php:455 methods/dreamobjects.php:181
+#: methods/openstack-base.php:577 methods/openstack2.php:242 methods/s3.php:930
+#: methods/s3.php:1081 methods/s3generic.php:190
+msgid "UpdraftPlus's %s module <strong>requires</strong> %s."
+msgstr "El módulo %s de UpdraftPlus <strong>requiere</strong> %s."
+
+#: methods/cloudfiles-new.php:281 methods/cloudfiles-new.php:282
+#: methods/openstack2.php:242 methods/s3.php:1080 methods/s3.php:1081
+#: methods/s3generic.php:189 methods/s3generic.php:190
+msgid "Your web server's PHP installation does not include a required module (%s)."
+msgstr "La instalación PHP de tu servidor web no incluye un módulo necesario (%s)."
+
+#: includes/updraftplus-tour.php:196
+msgid "You are now all set to use UpdraftPlus!"
+msgstr "¡Ya estás preparado para utilizar UpdraftPlus!"
+
+#: includes/updraftplus-tour.php:130 includes/updraftplus-tour.php:182
+msgid "If not, your backups remain on the same server as your site."
+msgstr "Si no, tus copias de seguridad permanecen en el mismo servidor que tu sitio."
+
+#: includes/updraftplus-tour.php:130 includes/updraftplus-tour.php:182
+msgid "Now select a remote storage destination to protect against server-wide threats."
+msgstr "Ahora selecciona un destino de almacenamiento remoto para protegerte de las amenazas a nivel de servidor."
+
+#: includes/updraftplus-notices.php:274
+msgid "Be quick, offer ends %s."
+msgstr "Date prisa, la oferta termina el %s."
+
+#: includes/updraftplus-notices.php:274
+msgid "Visit any of our websites and <b>use code %s</b> at checkout to get <b>20%% off all our plugins</b>."
+msgstr "Visita cualquiera de nuestras webs y <b>utiliza el código %s</b> en la caja para obtener un <b>20%% de descuento en todos nuestros plugins</b>."
+
+#: includes/updraftplus-notices.php:222 includes/updraftplus-notices.php:235
+#: includes/updraftplus-notices.php:248 includes/updraftplus-notices.php:261
+msgid "Offer ends %s"
+msgstr "La oferta termina el %s"
+
+#: includes/updraftplus-notices.php:222 includes/updraftplus-notices.php:235
+#: includes/updraftplus-notices.php:248 includes/updraftplus-notices.php:261
+msgid "Use code %s at %s."
+msgstr "Utiliza el código %s en %s."
+
+#: includes/updraftplus-notices.php:222 includes/updraftplus-notices.php:235
+#: includes/updraftplus-notices.php:248 includes/updraftplus-notices.php:261
+msgid "Get 20% off for a limited time."
+msgstr "Consigue un 20% de descuento por tiempo limitado."
+
+#: includes/updraftplus-notices.php:121
+msgid "Or if you have any issues or questions please leave us a support message"
+msgstr "O si tienes algún problema o pregunta, déjanos un mensaje de asistencia"
+
+#: includes/updraftplus-notices.php:121
+msgid "If you like us, please consider leaving a positive review to spread the word."
+msgstr "Si te gustamos, considera la posibilidad de dejar una reseña positiva para que corra la voz."
+
+#: includes/updraftplus-notices.php:121
+msgid "Hey - We noticed UpdraftPlus has kept your site safe for a while."
+msgstr "Hola - Nos hemos dado cuenta de que UpdraftPlus ha mantenido tu sitio seguro durante un tiempo."
+
+#: includes/updraftplus-notices.php:92
+msgid "Includes find-and-replace tool for database references."
+msgstr "Incluye una herramienta para buscar y reemplazar referencias de bases de datos."
+
+#: includes/updraftplus-notices.php:92
+msgid "Copy your site to another domain directly."
+msgstr "Copia directamente tu sitio a otro dominio."
+
+#: includes/updraftplus-notices.php:59
+msgid "Plus many more options."
+msgstr "Y muchas más opciones."
+
+#: includes/updraftplus-notices.php:59
+msgid "Enhanced storage options for Dropbox, Google Drive and S3."
+msgstr "Opciones de almacenamiento mejoradas para Dropbox, Google Drive y S3."
+
+#: includes/updraftclone/temporary-clone-status.php:371
+msgid "So far %s data archives totalling %s have been received"
+msgstr "Hasta ahora se han recibido %s archivos de datos por un total de %s"
+
+#: includes/updraftclone/temporary-clone-status.php:371
+msgid "The sending of the site data has begun."
+msgstr "Ha comenzado el envío de los datos del sitio."
+
+#: includes/updraftclone/temporary-clone-dash-notice.php:47
+msgid "You can shut this clone down at the following link:"
+msgstr "Puedes desactivar este clon en el siguiente enlace:"
+
+#: includes/updraftclone/temporary-clone-dash-notice.php:47
+msgid "Each time your clone renews (weekly) it costs %s."
+msgstr "Cada vez que tu clon se renueva (semanalmente) cuesta %s."
+
+#: includes/updraftcentral.php:21 includes/updraftplus-clone.php:21
+msgid "Please try again later."
+msgstr "Por favor, inténtalo de nuevo más tarde."
+
+#: includes/updraftcentral.php:21 includes/updraftplus-clone.php:21
+msgid "The server might be busy or you have lost your connection to the internet at the time of the request."
+msgstr "Puede que el servidor esté ocupado o que hayas perdido la conexión a Internet en el momento de la solicitud."
+
+#: includes/updraftcentral.php:21 includes/updraftplus-clone.php:21
+msgid "An error has occurred while processing your request."
+msgstr "Se ha producido un error al procesar tu solicitud."
+
+#: includes/S3.php:1927
+msgid "Please ask your webserver support how to upgrade your PHP and cURL library versions to use non-obsolete TLS versions."
+msgstr "Por favor, pregunta al soporte de tu servidor web cómo actualizar las versiones de tus librerías PHP y cURL para que utilicen versiones TLS no obsoletas."
+
+#: includes/S3.php:1927
+msgid "Your PHP installation failed a TLS v1.2 connection test, which is the minimum version required by Amazon."
+msgstr "Tu instalación de PHP falló una prueba de conexión TLS v1.2, que es la versión mínima requerida por Amazon."
 
 #: includes/S3.php:1927
 msgid "Connecting to Amazon S3 failed."
@@ -428,6 +587,66 @@ msgstr "omitido (no en la lista)"
 msgid "Could not get list of tables"
 msgstr "No se ha podido obtener la lista de tablas"
 
+#: includes/migrator-lite.php:765
+msgid "Warning: the database's home URL (%s) is different to what we expected (%s)"
+msgstr "Advertencia: la URL de inicio de la base de datos (%s) es diferente de la que esperábamos (%s)"
+
+#: includes/migrator-lite.php:757
+msgid "Warning: the database's site URL (%s) is different to what we expected (%s)"
+msgstr "Advertencia: la URL del sitio de la base de datos (%s) es diferente de la que esperábamos (%s)"
+
+#: includes/migrator-lite.php:746
+msgid "Nothing to do: the site URL is already: %s"
+msgstr "No hay nada que hacer: la URL del sitio ya es: %s"
+
+#: includes/migrator-lite.php:709 includes/migrator-lite.php:713
+#: includes/migrator-lite.php:717 includes/migrator-lite.php:722
+#: includes/migrator-lite.php:726 includes/migrator-lite.php:731
+msgid "Error: unexpected empty parameter (%s, %s)"
+msgstr "Error: parámetro vacío inesperado (%s, %s)"
+
+#: includes/migrator-lite.php:667
+msgid "Database: search and replace site URL"
+msgstr "Base de datos: busca y sustituye la URL del sitio"
+
+#: includes/migrator-lite.php:556
+msgid "Your .htaccess has an old site reference on line number %s. You should remove it manually."
+msgid_plural "Your .htaccess has an old site references on line numbers %s. You should remove them manually."
+msgstr[0] "Tu .htaccess tiene una referencia a un sitio antiguo en la línea número %s. Deberías eliminarla manualmente."
+msgstr[1] "Tu .htaccess tiene referencias a un sitio antiguo en las líneas %s. Deberías eliminarlas manualmente."
+
+#: includes/migrator-lite.php:260
+msgid "Search and replace site location in the database (migrate)"
+msgstr "Buscar y reemplazar la ubicación del sitio en la base de datos (migrar)"
+
+#: includes/migrator-lite.php:260
+msgid "All references to the site location in the database will be replaced with your current site URL, which is: %s"
+msgstr "Todas las referencias a la ubicación del sitio en la base de datos se sustituirán por la URL actual de tu sitio, que es: %s"
+
+#: includes/migrator-lite.php:259
+msgid "Database restoration options:"
+msgstr "Opciones de restauración de la base de datos:"
+
+#: includes/migrator-lite.php:238
+msgid "Processed plugin:"
+msgstr "Plugin procesado:"
+
+#: includes/migrator-lite.php:233
+msgid "you will want to use below search and replace site location in the database (migrate) to search/replace the site address."
+msgstr "para buscar/reemplazar la dirección del sitio, deberás utilizar a continuación buscar y reemplazar la ubicación del sitio en la base de datos (migrar)."
+
+#: includes/migrator-lite.php:222
+msgid "If that is not yet set up, then you should set it up, or use below search and replace so that the non-https links are automatically replaced."
+msgstr "Si aún no está configurado, deberías configurarlo, o utilizar la función de buscar y reemplazar para que los enlaces no https se reemplacen automáticamente."
+
+#: includes/migrator-lite.php:211
+msgid "Otherwise, you will want to use below search and replace to search/replace the site address so that the site can be visited without https."
+msgstr "De lo contrario, deberás utilizar la función de buscar y reemplazar que aparece a continuación para buscar/reemplazar la dirección del sitio de modo que pueda visitarse sin https."
+
+#: includes/migrator-lite.php:200
+msgid "This looks like a migration (the backup is from a site with a different address/URL, %s)."
+msgstr "Esto parece una migración (la copia de seguridad es de un sitio con una dirección/URL diferente, %s)."
+
 #: includes/migrator-lite.php:183
 msgid "Go"
 msgstr "Ir"
@@ -436,9 +655,429 @@ msgstr "Ir"
 msgid "Enter a comma-separated list; otherwise, leave blank for all tables."
 msgstr "Introduce una lista separada por comas; si no, déjala en blanco para todas las tablas."
 
+#: includes/migrator-lite.php:181
+msgid "These tables only"
+msgstr "Solo estas tablas"
+
 #: includes/migrator-lite.php:180
 msgid "Rows per batch"
 msgstr "Filas por lote"
+
+#: includes/migrator-lite.php:172
+msgid "A search/replace cannot be undone - are you sure you want to do this?"
+msgstr "Una búsqueda/reemplazo no se puede deshacer: ¿estás seguro de que quieres hacerlo?"
+
+#: includes/migrator-lite.php:171
+msgid "This can easily destroy your site; so, use it with care!"
+msgstr "Esto puede destruir fácilmente tu sitio; por tanto, ¡utilízalo con cuidado!"
+
+#: includes/migrator-lite.php:133 includes/migrator-lite.php:149
+msgid "Return to UpdraftPlus Configuration"
+msgstr "Volver a la configuración de UpdraftPlus"
+
+#: includes/migrator-lite.php:130
+msgid "search term"
+msgstr "término de búsqueda"
+
+#: includes/migrator-lite.php:126 includes/migrator-lite.php:179
+msgid "Replace with"
+msgstr "Reemplazar con"
+
+#: includes/migrator-lite.php:125 includes/migrator-lite.php:178
+msgid "Search for"
+msgstr "Buscar por"
+
+#: includes/migrator-lite.php:97
+msgid "Disabled this plugin: %s: re-activate it manually when you are ready."
+msgstr "Desactivado este plugin: %s: reactívalo manualmente cuando estés preparado."
+
+#: includes/Dropbox2/OAuth/Consumer/ConsumerAbstract.php:129
+msgid "Turning off any debugging settings may also help."
+msgstr "Desactivar cualquier ajuste de depuración también puede ayudar."
+
+#: includes/Dropbox2/OAuth/Consumer/ConsumerAbstract.php:129
+#: methods/googledrive.php:433
+msgid "Specifically, you are looking for the component that sends output (most likely PHP warnings/errors) before the page begins."
+msgstr "En concreto, buscas el componente que envía la salida (probablemente advertencias/errores de PHP) antes de que empiece la página."
+
+#: includes/Dropbox2/OAuth/Consumer/ConsumerAbstract.php:129
+#: methods/googledrive.php:433
+msgid "Try disabling your other plugins and switching to a default theme."
+msgstr "Prueba a desactivar tus otros plugins y a cambiar a un tema por defecto."
+
+#: includes/Dropbox2/OAuth/Consumer/ConsumerAbstract.php:129
+#: methods/googledrive.php:433
+msgid "The %s authentication could not go ahead, because something else on your site is breaking it."
+msgstr "La identificación con %s no ha podido llevarse a cabo porque algo en tu sitio la está rompiendo."
+
+#: includes/class-wpadmin-commands.php:584
+msgid "This is normally caused by file permissions."
+msgstr "Normalmente se debe a los permisos de los archivos."
+
+#: includes/class-wpadmin-commands.php:584
+msgid "Failed to open directory: %s."
+msgstr "Error al abrir el directorio: %s."
+
+#: includes/class-wpadmin-commands.php:263
+msgid "If all is well, then now press Restore again to proceed."
+msgstr "Si todo va bien, vuelve a pulsar «Restaurar» para continuar."
+
+#: includes/class-wpadmin-commands.php:261
+msgid "Now press Restore again to proceed."
+msgstr "Ahora, vuelve a pulsar «Restaurar» para continuar."
+
+#: includes/class-wpadmin-commands.php:240
+#: includes/class-wpadmin-commands.php:265
+msgid "You will need to cancel and correct any problems before retrying."
+msgstr "Tendrás que cancelar y corregir cualquier problema antes de volver a intentarlo."
+
+#: includes/class-wpadmin-commands.php:240
+#: includes/class-wpadmin-commands.php:265
+msgid "The backup archive files have been processed, but with some errors."
+msgstr "Se han procesado los archivos de copia de seguridad, pero con algunos errores."
+
+#: includes/class-wpadmin-commands.php:238
+#: includes/class-wpadmin-commands.php:263
+msgid "Otherwise, cancel and correct any problems first."
+msgstr "Si no, cancélalo y corrige primero cualquier problema."
+
+#: includes/class-wpadmin-commands.php:238
+msgid "If all is well, then press Restore to proceed."
+msgstr "Si todo va bien, pulsa «Restaurar» para continuar."
+
+#: includes/class-wpadmin-commands.php:238
+#: includes/class-wpadmin-commands.php:263
+msgid "The backup archive files have been processed, but with some warnings."
+msgstr "Se han procesado los archivos de copia de seguridad, pero con algunas advertencias."
+
+#: includes/class-wpadmin-commands.php:236
+msgid "Now press Restore to proceed."
+msgstr "Ahora pulsa «Restaurar» para continuar."
+
+#: includes/class-wpadmin-commands.php:236
+#: includes/class-wpadmin-commands.php:261
+msgid "The backup archive files have been successfully processed."
+msgstr "Los archivos de copia de seguridad se han procesado correctamente."
+
+#: includes/class-wpadmin-commands.php:130
+msgid "If you have a lot of data to import, and if the restore operation times out, then you will need to ask your web hosting company for ways to raise this limit (or attempt the restoration piece-by-piece)."
+msgstr "Si tienes muchos datos que importar, y si la operación de restauración se agota, tendrás que preguntar a tu empresa de alojamiento web cómo aumentar este límite (o intentar la restauración pieza a pieza)."
+
+#: includes/class-wpadmin-commands.php:130
+msgid "The PHP setup on this webserver allows only %s seconds for PHP to run, and does not allow this limit to be raised."
+msgstr "La configuración de PHP en este servidor web sólo permite %s segundos para que se ejecute PHP, y no permite que se aumente este límite."
+
+#: includes/class-storage-methods-interface.php:392
+msgid "To perform any restoration using UpdraftPlus, you will need to obtain a copy of this file and place it inside UpdraftPlus's working folder"
+msgstr "Para realizar cualquier restauración utilizando UpdraftPlus, necesitarás obtener una copia de este archivo y colocarlo dentro de la carpeta de trabajo de UpdraftPlus"
+
+#: includes/class-storage-methods-interface.php:392
+msgid "The remote storage method in use (%s) does not allow us to retrieve files."
+msgstr "El método de almacenamiento remoto en uso (%s) no nos permite recuperar archivos."
+
+#: includes/class-storage-methods-interface.php:392
+msgid "The backup archive for this file could not be found."
+msgstr "No se ha encontrado el archivo de copia de seguridad de este archivo."
+
+#: includes/class-remote-send.php:671
+msgid "'Cancel' to stop, 'OK' to delete."
+msgstr "«Cancelar» para detener, «Aceptar» para borrar."
+
+#: includes/class-remote-send.php:671
+msgid "This action cannot be undone."
+msgstr "Esta acción no se puede deshacer."
+
+#: includes/class-remote-send.php:671
+msgid "You are about to permanently delete the list of existing sites."
+msgstr "Vas a borrar definitivamente la lista de sitios existentes."
+
+#: includes/class-remote-send.php:565
+msgid "It is deprecated, causes encryption to malfunction, and should be turned off."
+msgstr "Está obsoleto, provoca un mal funcionamiento de la encriptación y debería desactivarse."
+
+#: includes/class-remote-send.php:565
+msgid "The setting %s is turned on in your PHP settings."
+msgstr "La opción %s está activada en tus ajustes de PHP."
+
+#: includes/class-remote-send.php:425
+msgid "If you are sending from an external network, it is likely that a firewall will be blocking this."
+msgstr "Si envías desde una red externa, es probable que un cortafuegos lo esté bloqueando."
+
+#: includes/class-remote-send.php:425
+msgid "The site URL you are sending to (%s) looks like a local development website."
+msgstr "La URL del sitio al que estás enviando (%s) parece una web de desarrollo local."
+
+#: includes/class-http-error-descriptions.php:79
+msgid "Intended for use by intercepting proxies used to control access to the network (e.g., \"captive portals\" used to require agreement to Terms of Service before granting full Internet access via a Wi-Fi hotspot)."
+msgstr "Destinado a ser utilizado por proxies de interceptación utilizados para controlar el acceso a la red (por ejemplo, «portales cautivos» utilizados para exigir la aceptación de las Condiciones del Servicio antes de conceder acceso completo a Internet a través de un punto de acceso Wi-Fi)."
+
+#: includes/class-http-error-descriptions.php:79
+msgid "The client needs to authenticate to gain network access"
+msgstr "El cliente necesita identificarse para acceder a la red"
+
+#: includes/class-http-error-descriptions.php:79
+msgid "Network Authentication Required"
+msgstr "Identificación en la red necesaria"
+
+#: includes/class-http-error-descriptions.php:78
+msgid "Not Extended"
+msgstr "No extendido"
+
+#: includes/class-http-error-descriptions.php:77
+msgid "The server detected an infinite loop while processing the request."
+msgstr "El servidor detectó un bucle infinito al procesar la petición."
+
+#: includes/class-http-error-descriptions.php:77
+msgid "Loop Detected"
+msgstr "Bucle detectado"
+
+#: includes/class-http-error-descriptions.php:76
+msgid "The server is unable to store the representation needed to complete the request."
+msgstr "El servidor no puede almacenar la representación necesaria para completar la solicitud."
+
+#: includes/class-http-error-descriptions.php:76
+msgid "Insufficient Storage"
+msgstr "Almacenamiento insuficiente"
+
+#: includes/class-http-error-descriptions.php:75
+msgid "Transparent content negotiation for the request results in a circular reference."
+msgstr "La negociación transparente del contenido de la solicitud da lugar a una referencia circular."
+
+#: includes/class-http-error-descriptions.php:75
+msgid "Variant Also Negotiates"
+msgstr "La variante también negocia"
+
+#: includes/class-http-error-descriptions.php:74
+msgid "The server does not support the HTTP protocol version used in the request."
+msgstr "El servidor no admite la versión del protocolo HTTP utilizada en la solicitud."
+
+#: includes/class-http-error-descriptions.php:74
+msgid "HTTP Version Not Supported"
+msgstr "Versión HTTP no admitida"
+
+#: includes/class-http-error-descriptions.php:73
+msgid "Gateway Timeout"
+msgstr "Gateway Timeout"
+
+#: includes/class-http-error-descriptions.php:72
+msgid "Generally, this is a temporary state."
+msgstr "Generalmente, se trata de un estado temporal."
+
+#: includes/class-http-error-descriptions.php:72
+msgid "The server cannot handle the request (because it is overloaded or down for maintenance)"
+msgstr "El servidor no puede gestionar la solicitud (porque está sobrecargado o inactivo por mantenimiento)."
+
+#: includes/class-http-error-descriptions.php:72
+msgid "Service Unavailable"
+msgstr "Servicio no disponible"
+
+#: includes/class-http-error-descriptions.php:71
+msgid "Bad Gateway"
+msgstr "Puerta de enlace no válida"
+
+#: includes/class-http-error-descriptions.php:70
+msgid "Usually this implies future availability (e.g., a new feature of a web-service API)."
+msgstr "Suele implicar una disponibilidad futura (por ejemplo, una nueva función de una API de servicio web)."
+
+#: includes/class-http-error-descriptions.php:70
+msgid "The server either does not recognize the request method, or it lacks the ability to fulfil the request"
+msgstr "El servidor no reconoce el método de solicitud, o no tiene capacidad para satisfacer la solicitud"
+
+#: includes/class-http-error-descriptions.php:70
+msgid "Not Implemented"
+msgstr "No implementado"
+
+#: includes/class-http-error-descriptions.php:69
+msgid "Internal Server Error"
+msgstr "Error interno del servidor"
+
+#: includes/class-http-error-descriptions.php:63
+msgid "A server operator has received a legal demand to deny access to a resource or to a set of resources that includes the requested resource."
+msgstr "Un operador de servidores ha recibido una demanda legal para denegar el acceso a un recurso o a un conjunto de recursos que incluye el recurso solicitado."
+
+#: includes/class-http-error-descriptions.php:63
+msgid "Unavailable For Legal Reasons"
+msgstr "No disponible por motivos legales"
+
+#: includes/class-http-error-descriptions.php:62
+msgid "The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large."
+msgstr "El servidor no está dispuesto a procesar la solicitud porque un campo de cabecera individual, o todos los campos de cabecera en conjunto, son demasiado grandes."
+
+#: includes/class-http-error-descriptions.php:62
+msgid "Request Header Fields Too Large"
+msgstr "Los campos de la cabecera de la solicitud son demasiado grandes"
+
+#: includes/class-http-error-descriptions.php:61
+msgid "Intended for use with rate-limiting schemes."
+msgstr "Destinado a ser utilizado con esquemas de limitación de velocidad."
+
+#: includes/class-http-error-descriptions.php:61
+msgid "The user has sent too many requests in a given amount of time"
+msgstr "El usuario ha enviado demasiadas peticiones en un tiempo determinado"
+
+#: includes/class-http-error-descriptions.php:61
+msgid "Too Many Requests"
+msgstr "Demasiadas solicitudes"
+
+#: includes/class-http-error-descriptions.php:60
+msgid "Intended to prevent the 'lost update' problem, where a client GETs a resource's state, modifies it, and PUTs it back to the server, when meanwhile a third party has modified the state on the server, leading to a conflict."
+msgstr "Pretende evitar el problema de la «actualización perdida», en el que un cliente obtiene el estado de un recurso, lo modifica y lo devuelve al servidor, cuando mientras tanto un tercero ha modificado el estado en el servidor, provocando un conflicto."
+
+#: includes/class-http-error-descriptions.php:60
+msgid "The origin server requires the request to be conditional"
+msgstr "El servidor de origen requiere que la petición sea condicional"
+
+#: includes/class-http-error-descriptions.php:60
+msgid "Precondition Required"
+msgstr "Condición previa requerida"
+
+#: includes/class-http-error-descriptions.php:59
+msgid "Upgrade Required"
+msgstr "Actualización necesaria"
+
+#: includes/class-http-error-descriptions.php:58
+msgid "Too Early"
+msgstr "Demasiado pronto"
+
+#: includes/class-http-error-descriptions.php:57
+msgid "Failed Dependency"
+msgstr "Dependencia fallida"
+
+#: includes/class-http-error-descriptions.php:56
+msgid "Locked"
+msgstr "Bloqueado"
+
+#: includes/class-http-error-descriptions.php:55
+msgid "The request was well-formed but was unable to be followed due to semantic errors."
+msgstr "La petición estaba bien formada, pero no se pudo seguir debido a errores semánticos."
+
+#: includes/class-http-error-descriptions.php:55
+msgid "Unprocessable Entity"
+msgstr "Entidad no procesable"
+
+#: includes/class-http-error-descriptions.php:54
+msgid "Misdirected Request"
+msgstr "Petición mal dirigida"
+
+#: includes/class-http-error-descriptions.php:53
+msgid "The server cannot meet the requirements of the Expect request-header field."
+msgstr "El servidor no puede cumplir los requisitos del campo de encabezado de solicitud Expect."
+
+#: includes/class-http-error-descriptions.php:53
+msgid "Expectation Failed"
+msgstr "Expectativa fallida"
+
+#: includes/class-http-error-descriptions.php:52
+msgid "For example, if the client asked for a part of the file that lies beyond the end of the file."
+msgstr "Por ejemplo, si el cliente pidió una parte del archivo que está más allá del final del archivo."
+
+#: includes/class-http-error-descriptions.php:52
+msgid "The client has asked for a portion of the file (byte serving), but the server cannot supply that portion"
+msgstr "El cliente ha pedido una parte del archivo (porción de bytes), pero el servidor no puede suministrar esa parte"
+
+#: includes/class-http-error-descriptions.php:52
+msgid "Range Not Satisfiable"
+msgstr "Alcance no satisfactorio"
+
+#: includes/class-http-error-descriptions.php:51
+msgid "For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format."
+msgstr "Por ejemplo, el cliente sube una imagen como imagen/svg+xml, pero el servidor requiere que las imágenes utilicen un formato diferente."
+
+#: includes/class-http-error-descriptions.php:51
+msgid "The request entity has a media type which the server or resource does not support"
+msgstr "La entidad solicitada tiene un tipo de medio que el servidor o el recurso no admite"
+
+#: includes/class-http-error-descriptions.php:51
+msgid "Unsupported Media Type"
+msgstr "Tipo de medio no compatible"
+
+#: includes/class-http-error-descriptions.php:50
+msgid "Often the result of too much data being encoded as a query-string of a GET request, in which it should be converted to a POST request."
+msgstr "A menudo es el resultado de codificar demasiados datos como una cadena de consulta de una petición GET, en la que debería convertirse en una petición POST."
+
+#: includes/class-http-error-descriptions.php:50
+msgid "The URI provided was too long for the server to process"
+msgstr "La URI proporcionada era demasiado larga para que el servidor la procesara"
+
+#: includes/class-http-error-descriptions.php:50
+msgid "URI Too Long"
+msgstr "URI demasiado larga"
+
+#: includes/class-http-error-descriptions.php:49
+msgid "Previously called \"Request Entity Too Large\"."
+msgstr "Antes se llamaba «Entidad solicitada demasiado grande»."
+
+#: includes/class-http-error-descriptions.php:49
+msgid "The request is larger than the server is willing or able to process"
+msgstr "La petición es mayor de lo que el servidor quiere o puede procesar"
+
+#: includes/class-http-error-descriptions.php:49
+msgid "Payload Too Large"
+msgstr "Carga útil demasiado grande"
+
+#: includes/class-http-error-descriptions.php:48
+msgid "Precondition Failed"
+msgstr "Condición previa fallida"
+
+#: includes/class-http-error-descriptions.php:47
+msgid "Length Required"
+msgstr "Longitud requerida"
+
+#: includes/class-http-error-descriptions.php:46
+msgid "Gone"
+msgstr "Desaparecido"
+
+#: includes/class-http-error-descriptions.php:45
+msgid "Conflict"
+msgstr "Conflict"
+
+#: includes/class-http-error-descriptions.php:44
+msgid "The client MAY repeat the request without modifications at any later time."
+msgstr "El cliente PUEDE repetir la petición sin modificaciones en cualquier momento posterior."
+
+#: includes/class-http-error-descriptions.php:44
+msgid "The server timed out waiting for the request"
+msgstr "El servidor ha agotado el tiempo de espera de la solicitud"
+
+#: includes/class-http-error-descriptions.php:44
+msgid "Request Timeout"
+msgstr "Tiempo de espera de la solicitud agotado"
+
+#: includes/class-http-error-descriptions.php:43
+msgid "The client must first authenticate itself with the proxy."
+msgstr "El cliente debe autenticarse primero con el proxy."
+
+#: includes/class-http-error-descriptions.php:43
+msgid "Proxy Authentication Required"
+msgstr "Identificación en el proxy necesaria"
+
+#: includes/class-http-error-descriptions.php:42
+msgid "Not Acceptable"
+msgstr "No aceptable"
+
+#: includes/class-http-error-descriptions.php:41
+msgid "Method Not Allowed"
+msgstr "Método no permitido"
+
+#: includes/class-http-error-descriptions.php:40
+msgid "Subsequent requests by the client are permissible."
+msgstr "Las solicitudes posteriores del cliente están permitidas."
+
+#: includes/class-http-error-descriptions.php:40
+msgid "The requested resource could not be found but may be available in the future"
+msgstr "No se ha podido encontrar el recurso solicitado, pero es posible que esté disponible en el futuro"
+
+#: includes/class-http-error-descriptions.php:40
+msgid "Not Found."
+msgstr "No encontrado."
+
+#: includes/class-http-error-descriptions.php:39
+msgid "This may be due to the user not having the necessary permissions for a resource or needing an account of some sort, or attempting a prohibited action (e.g. creating a duplicate record where only one is allowed)."
+msgstr "Esto puede deberse a que el usuario no tiene los permisos necesarios para un recurso o necesita una cuenta de algún tipo, o intenta una acción prohibida (por ejemplo, crear un registro duplicado cuando sólo se permite uno)."
+
+#: includes/class-http-error-descriptions.php:39
+msgid "The request contained valid data and was understood by the server, but the server is refusing action."
+msgstr "La petición contenía datos válidos y fue entendida por el servidor, pero éste rechaza la acción."
 
 #: includes/class-http-error-descriptions.php:39
 msgid "Forbidden."
@@ -467,6 +1106,655 @@ msgstr "Usar proxy."
 #: includes/class-http-error-descriptions.php:28
 msgid "Not Modified."
 msgstr "No modificado."
+
+#: includes/class-http-error-descriptions.php:27
+msgid "When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a new GET request to the given URI"
+msgstr "Cuando se recibe en respuesta a un POST (o PUT/DELETE), el cliente debe suponer que el servidor ha recibido los datos y debe emitir una nueva petición GET a la URI dada"
+
+#: includes/class-http-error-descriptions.php:27
+msgid "The response to the request can be found under another URI using the GET method."
+msgstr "La respuesta a la solicitud puede encontrarse en otra URI utilizando el método GET."
+
+#: includes/class-http-error-descriptions.php:27
+msgid "See Other."
+msgstr "Ver Otros."
+
+#: includes/class-http-error-descriptions.php:26
+msgid "Tells the client to look at (browse to) another URL."
+msgstr "Indica al cliente que busque (navegue hacia) otra URL."
+
+#: includes/class-http-error-descriptions.php:26
+msgid "Found (Previously \"Moved temporarily\")."
+msgstr "Encontrado (Anteriormente «Movido temporalmente»)."
+
+#: includes/class-http-error-descriptions.php:25
+#: includes/class-http-error-descriptions.php:31
+msgid "This and all future requests should be directed to the given URI."
+msgstr "Ésta y todas las solicitudes futuras deben dirigirse a la URI indicada."
+
+#: includes/class-http-error-descriptions.php:25
+msgid "Moved Permanently."
+msgstr "Movido permanentemente."
+
+#: includes/class-http-error-descriptions.php:24
+msgid "Multiple Choices."
+msgstr "Varias opciones."
+
+#: includes/class-filesystem-functions.php:676
+msgid "You may have run out of disk space."
+msgstr "Puede que te hayas quedado sin espacio en disco."
+
+#: includes/class-filesystem-functions.php:676
+msgid "Could not copy files."
+msgstr "No ha sido posible copiar los archivos."
+
+#: includes/class-commands.php:1133 includes/class-commands.php:1135
+msgid "If the clone fails to boot, then the token will be released within an hour."
+msgstr "Si el clon no arranca, el token se liberará en una hora."
+
+#: includes/class-commands.php:1133 includes/class-commands.php:1135
+msgid "N.B. You will be charged one token once the clone is ready."
+msgstr "N.B. Se te cobrará un token una vez que el clon esté listo."
+
+#: includes/class-commands.php:1133
+msgid "The creation of your clone should now begin, and your WordPress username and password will be displayed below when ready."
+msgstr "Ahora debería comenzar la creación de tu clon, y tu nombre de usuario y contraseña de WordPress se mostrarán a continuación cuando esté listo."
+
+#: includes/class-commands.php:1133
+msgid "No backup will be started."
+msgstr "No se iniciará ninguna copia de seguridad."
+
+#: class-updraftplus.php:5461
+msgid "The amount of database tables scanned is near or over the php_max_input_vars value so some tables maybe truncated."
+msgstr "La cantidad de tablas de la base de datos escaneadas está cerca o supera el valor php_max_input_vars, por lo que algunas tablas pueden quedar truncadas."
+
+#: class-updraftplus.php:5460 class-updraftplus.php:5461
+msgid "This option will ensure all tables not found will be backed up."
+msgstr "Esta opción garantizará que se haga una copia de seguridad de todas las tablas que no se encuentren."
+
+#: class-updraftplus.php:5460
+msgid "The database scan was taking too long and consequently the list of all tables in the database could not be completed."
+msgstr "El escaneo de la base de datos estaba tardando demasiado y, en consecuencia, no se podía completar la lista de todas las tablas de la base de datos."
+
+#: class-updraftplus.php:5177
+msgid "Only the first site of the network will be accessible."
+msgstr "Sólo se podrá acceder al primer sitio de la red."
+
+#: class-updraftplus.php:5177
+msgid "Your backup is of a WordPress multisite install; but this site is not."
+msgstr "Tu copia de seguridad es de una instalación multisitio de WordPress, pero este sitio no lo es."
+
+#: class-updraftplus.php:5142
+msgid "There are no guarantees that WordPress can handle this."
+msgstr "No hay garantías de que WordPress pueda manejar esto."
+
+#: class-updraftplus.php:5142
+msgid "You are importing from a newer version of WordPress (%s) into an older one (%s)."
+msgstr "Estás importando desde una versión más reciente de WordPress (%s) a una más antigua (%s)."
+
+#: class-updraftplus.php:5114 class-updraftplus.php:5132
+msgid "You need the Migrator add-on in order to make this work."
+msgstr "Necesitas la extensión Migrator para que esto funcione."
+
+#: class-updraftplus.php:5114 class-updraftplus.php:5132
+msgid "This backup set is from a different site (%s) - this is not a restoration, but a migration."
+msgstr "Este conjunto de copias de seguridad es de un sitio diferente (%s) - no se trata de una restauración, sino de una migración."
+
+#: class-updraftplus.php:5104
+msgid "If that is not yet set up, then you should set it up, or use %s so that the non-https links are automatically replaced."
+msgstr "Si aún no está configurado, deberías configurarlo, o utilizar %s para que los enlaces no https se reemplacen automáticamente."
+
+#: class-updraftplus.php:5104 includes/migrator-lite.php:222
+msgid "As long as your web hosting allows http (i.e. non-SSL access) or will forward requests to https (which is almost always the case), this is no problem."
+msgstr "Siempre que tu alojamiento web permita http (es decir, acceso no SSL) o reenvíe las peticiones a https (que es casi siempre el caso), no hay problema."
+
+#: class-updraftplus.php:5102
+msgid "Otherwise, you will want to use %s to search/replace the site address so that the site can be visited without https."
+msgstr "De lo contrario, deberás utilizar %s para buscar/reemplazar la dirección del sitio, de modo que éste pueda visitarse sin https."
+
+#: class-updraftplus.php:5102 includes/migrator-lite.php:211
+msgid "This restoration will work if you still have an SSL certificate (i.e. can use https) to access the site."
+msgstr "Esta restauración funcionará si todavía tienes un certificado SSL (es decir, puedes utilizar https) para acceder al sitio."
+
+#: class-updraftplus.php:5095
+msgid "This is not expected to be a problem for restoring the site, as long as visits to the former address still reach the site."
+msgstr "No se espera que esto sea un problema para restaurar el sitio, siempre que las visitas a la antigua dirección sigan llegando al sitio."
+
+#: class-updraftplus.php:5095
+msgid "The website address in the backup set (%s) is slightly different from that of the site now (%s)."
+msgstr "La dirección del sitio web en el conjunto de copias de seguridad (%s) es ligeramente diferente de la del sitio actual (%s)."
+
+#: class-updraftplus.php:5002 includes/class-updraftplus-encryption.php:354
+#: restorer.php:1179
+msgid "The most likely cause is that you used the wrong key."
+msgstr "La causa más probable es que hayas utilizado una clave incorrecta."
+
+#: class-updraftplus.php:4992
+msgid "The database file is encrypted."
+msgstr "El archivo de la base de datos está cifrado."
+
+#: class-updraftplus.php:4990 includes/class-updraftplus-encryption.php:336
+#: restorer.php:1166
+msgid "The database file is encrypted, but you have no encryption key entered."
+msgstr "El archivo de la base de datos está cifrado, pero no has escrito la clave de cifrado."
+
+#: class-updraftplus.php:4990 class-updraftplus.php:4992
+#: class-updraftplus.php:5002 includes/class-updraftplus-encryption.php:336
+#: includes/class-updraftplus-encryption.php:354 restorer.php:1166
+#: restorer.php:1179
+msgid "Decryption failed."
+msgstr "La desencriptación ha fallado."
+
+#: class-updraftplus.php:4492
+msgid "Backup probably failed."
+msgstr "Probablemente falló la copia de seguridad."
+
+#: class-updraftplus.php:4492
+msgid "Could not save backup history because we have no backup array."
+msgstr "No se ha podido guardar el historial de copias de seguridad porque no tenemos el array de copias de seguridad."
+
+#: class-updraftplus.php:3614
+msgid "The backup succeeded and is now complete"
+msgstr "La copia de seguridad se ha realizado correctamente y se ha completado"
+
+#: class-updraftplus.php:3261
+msgid "Backup aborted - check your UpdraftPlus settings."
+msgstr "Copia de seguridad abortada - comprueba los ajustes de UpdraftPlus."
+
+#: class-updraftplus.php:3261
+msgid "Could not create files in the backup directory."
+msgstr "No se han podido crear archivos en el directorio de copia de seguridad."
+
+#: class-updraftplus.php:688
+msgid "Check back in a minute."
+msgstr "Vuelve dentro de un minuto."
+
+#: class-updraftplus.php:688
+msgid "Briefly unavailable for scheduled maintenance."
+msgstr "Brevemente no disponible por mantenimiento programado."
+
+#: class-updraftplus.php:245
+msgid "So, go to the \"Plugins\" page, de-activate and de-install UpdraftPlus, and then try again."
+msgstr "Por tanto, ve a la página «Plugins», desactiva y desinstala UpdraftPlus, y vuelve a intentarlo."
+
+#: class-updraftplus.php:245
+msgid "That is safe - all your settings and backups will be retained."
+msgstr "Eso es seguro: se conservarán todos tus ajustes y copias de seguridad."
+
+#: class-updraftplus.php:245
+msgid "WordPress will only allow you to install your new version after first de-installing the existing one."
+msgstr "WordPress sólo te permitirá instalar tu nueva versión después de desinstalar primero la existente."
+
+#: class-updraftplus.php:245
+msgid "A version of UpdraftPlus is already installed."
+msgstr "Ya hay instalada una versión de UpdraftPlus."
+
+#: central/translations-central.php:73
+msgid "Make sure you upload the correct file and that the zip file is a valid %s file (not corrupted) and try uploading the file again."
+msgstr "Asegúrate de que subes el archivo correcto y de que el archivo zip es un archivo %s válido (no está dañado) e intenta subir el archivo de nuevo."
+
+#: central/translations-central.php:73
+msgid "Unable to install %s."
+msgstr "No se ha podido instalar %s."
+
+#: central/translations-central.php:72
+msgid "WordPress version currently installed in your remote website is %s."
+msgstr "La versión de WordPress instalada actualmente en tu sitio remoto es %s."
+
+#: central/translations-central.php:72
+msgid "Make sure that this %s is compatible with your remote WordPress version."
+msgstr "Asegúrate de que este %s es compatible con tu versión remota de WordPress."
+
+#: central/translations-central.php:72
+msgid "Unable to activate %s successfully."
+msgstr "No se ha podido activar %s correctamente."
+
+#: central/translations-central.php:26
+msgid "For more information visit %2$s"
+msgstr "Para más información visita %2$s"
+
+#: central/translations-central.php:26
+msgid "You can try again, or try using the alternative connection method if the problem persists."
+msgstr "Puedes volver a intentarlo, o probar a utilizar el método de conexión alternativo si el problema persiste."
+
+#: central/translations-central.php:26
+msgid "A key was created, but the attempt to register it with %1$s was unsuccessful."
+msgstr "Se ha creado una clave, pero el intento de registrarla en %1$s no ha tenido éxito."
+
+#: central/modules/theme.php:175
+msgid "There appears to be a problem disabling the intended theme from your network."
+msgstr "Parece que hay un problema al habilitar el tema previsto de tu red."
+
+#: central/modules/theme.php:137 central/modules/theme.php:175
+msgid "Please kindly check your permission and try again."
+msgstr "Por favor, comprueba tus permisos e inténtalo de nuevo."
+
+#: central/modules/theme.php:137
+msgid "There appears to be a problem enabling the intended theme on your network."
+msgstr "Parece que hay un problema al habilitar el tema deseado en tu red."
+
+#: central/modules/theme.php:101
+msgid "There appears to be a problem activating or switching to the intended theme."
+msgstr "Parece que hay un problema al activar o cambiar al tema deseado."
+
+#: central/modules/plugin.php:210 central/modules/theme.php:256
+msgid "Please confirm your credentials."
+msgstr "Por favor, confirma tus detalles."
+
+#: central/modules/plugin.php:210 central/modules/theme.php:256
+msgid "Unable to connect to the filesystem."
+msgstr "No se ha podido conectar con el sistema de archivos."
+
+#: central/modules/plugin.php:126 central/modules/theme.php:101
+msgid "Please check your permissions and try again."
+msgstr "Por favor, comprueba tus permisos e inténtalo de nuevo."
+
+#: central/modules/plugin.php:126
+msgid "There appears to be a problem deactivating the intended plugin."
+msgstr "Parece que hay un problema al desactivar el plugin previsto."
+
+#: backup.php:3200
+msgid "Possible causes include that the link points to an invalid or inaccessible location."
+msgstr "Las posibles causas incluyen que el enlace apunte a una ubicación no válida o inaccesible."
+
+#: backup.php:3200
+msgid "%s: unfollowable link - could not be followed to back up (readlink=%s)."
+msgstr "%s: enlace no seguible - no se ha podido seguir a la copia de seguridad (readlink=%s)."
+
+#: backup.php:365
+msgid "Consult the log file for more information."
+msgstr "Consulta el archivo de registro para obtener más información."
+
+#: backup.php:365
+msgid "Could not create %s zip."
+msgstr "No se ha podido crear el zip %s."
+
+#: admin.php:6295
+msgid "Thus, we recommend you choose a full backup when performing a manual backup and to use that option when creating a scheduled backup."
+msgstr "Por tanto, te recomendamos que elijas una copia de seguridad completa cuando realices una copia de seguridad manual y que utilices esa opción cuando crees una copia de seguridad programada."
+
+#: admin.php:6295
+msgid "%s permits UpdraftPlus to perform only one backup per month."
+msgstr "%s permite a UpdraftPlus realizar sólo una copia de seguridad al mes."
+
+#: admin.php:5607
+msgid "Please refresh the settings page and try again"
+msgstr "Recarga la página de ajustes e inténtalo de nuevo"
+
+#: admin.php:5607
+msgid "Your settings failed to save."
+msgstr "No se han podido guardar tus ajustes."
+
+#: admin.php:5566
+msgid "Please reload the settings page before trying to save settings."
+msgstr "Recarga la página de ajustes antes de intentar guardar los ajustes."
+
+#: admin.php:5566
+msgid "UpdraftPlus seems to have been updated to version (%s), which is different to the version running when this settings page was loaded."
+msgstr "UpdraftPlus parece haber sido actualizado a la versión (%s), que es diferente de la versión que se estaba ejecutando cuando se cargó esta página de ajustes."
+
+#: admin.php:5184
+msgid "Timestamp:"
+msgstr "Marca de tiempo:"
+
+#: admin.php:5103 templates/wp-admin/settings/delete-and-restore-modals.php:98
+msgid "Restoration"
+msgstr "Restauración"
+
+#: admin.php:5102 templates/wp-admin/settings/delete-and-restore-modals.php:97
+msgid "Verifications"
+msgstr "Verificaciones"
+
+#: admin.php:5075
+msgid "Do not close this page until it reports itself as having finished."
+msgstr "No cierres esta página hasta que te informe de que ha terminado."
+
+#: admin.php:5075
+msgid "The restore operation has begun (%s)."
+msgstr "La operación de restauración ha comenzado (%s)."
+
+#: admin.php:4366
+msgid "If you see any errors to do with encryption, then look in the 'Expert Settings' for more help."
+msgstr "Si ves algún error relacionado con el cifrado, busca más ayuda en «Ajustes para expertos»."
+
+#: admin.php:4366
+msgid "Good news: Your site's communications with %s can be encrypted."
+msgstr "Buenas noticias: las comunicaciones de tu sitio con %s pueden estar cifradas."
+
+#: admin.php:4363 methods/cloudfiles-new.php:281 methods/cloudfiles-new.php:282
+#: methods/cloudfiles.php:455 methods/dreamobjects.php:181
+#: methods/openstack-base.php:577 methods/openstack2.php:242 methods/s3.php:930
+#: methods/s3.php:1081 methods/s3generic.php:190
+msgid "Please do not file any support requests; there is no alternative."
+msgstr "Por favor, no presentes ninguna solicitud de ayuda; no hay alternativa."
+
+#: admin.php:4363
+msgid "%s <strong>requires</strong> Curl+https."
+msgstr "%s <strong>requiere</strong> Curl+https."
+
+#: admin.php:4363 methods/cloudfiles-new.php:281 methods/cloudfiles-new.php:282
+#: methods/cloudfiles.php:455 methods/dreamobjects.php:181
+#: methods/openstack-base.php:577 methods/openstack2.php:242 methods/s3.php:930
+#: methods/s3.php:1081 methods/s3generic.php:190
+msgid "Please contact your web hosting provider's support."
+msgstr "Ponte en contacto con el servicio de asistencia de tu proveedor de alojamiento web."
+
+#: admin.php:4363
+msgid "We cannot access %s without this support."
+msgstr "No podemos acceder a %s sin este soporte."
+
+#: admin.php:4361
+msgid "Ask your web host to install Curl/SSL in order to gain the ability for encryption (via an add-on)."
+msgstr "Pide a tu proveedor de alojamiento web que instale Curl/SSL para obtener la capacidad de encriptación (mediante una extensión)."
+
+#: admin.php:4361
+msgid "Communications with %s will be unencrypted."
+msgstr "Las comunicaciones con %s no estarán cifradas."
+
+#: admin.php:4361 admin.php:4363
+msgid "Your web server's PHP/Curl installation does not support https access."
+msgstr "La instalación PHP/Curl de tu servidor web no admite el acceso https."
+
+#: admin.php:4354 methods/dreamobjects.php:182 methods/s3.php:926
+#: methods/s3.php:1080 methods/s3generic.php:189 methods/updraftvault.php:476
+msgid "Please contact your web hosting provider's support and ask for them to enable it."
+msgstr "Ponte en contacto con el servicio de asistencia de tu proveedor de alojamiento web y pídeles que lo activen."
+
+#: admin.php:4354
+msgid "Your web server's PHP installation does not included a <strong>required</strong> (for %s) module (%s)."
+msgstr "La instalación PHP de tu servidor web no incluye un módulo <strong>requerido</strong> (para %s) (%s)."
+
+#: admin.php:4276
+msgid "For entities at the top level, you can use a * at the start or end of the entry as a wildcard."
+msgstr "Para las entidades del nivel superior, puedes utilizar un * al principio o al final de la entrada como comodín."
+
+#: admin.php:4276
+msgid "If entering multiple files/directories, then separate them with commas."
+msgstr "Si introduces varios archivos/directorios, sepáralos con comas."
+
+#: admin.php:3996
+msgid "You should check with your hosting provider that this will not cause any problems"
+msgstr "Debes consultar con tu proveedor de alojamiento que esto no causará ningún problema"
+
+#: admin.php:3996
+msgid "The folder was created, but we had to change its file permissions to 777 (world-writable) to be able to write to it."
+msgstr "La carpeta se creó, pero tuvimos que cambiar sus permisos de archivo a 777 (world-writable) para poder escribir en ella."
+
+#: admin.php:3859
+msgid "You may want to do this manually."
+msgstr "Puede que quieras hacerlo manualmente."
+
+#: admin.php:3859
+msgid "Old folder removal failed for some reason."
+msgstr "La eliminación de la carpeta antigua falló por alguna razón."
+
+#: admin.php:3844
+msgid "Do not stop the backup simply because it seems to have remained in the same place for a while - that is normal."
+msgstr "No detengas la copia de seguridad simplemente porque parezca que se ha quedado en el mismo sitio durante un rato: es normal."
+
+#: admin.php:3844
+msgid "Note: the progress bar below is based on stages, NOT time."
+msgstr "Nota: la barra de progreso que aparece a continuación se basa en etapas, NO en tiempo."
+
+#: admin.php:3562
+msgid "You should press this button to delete them as soon as you have verified that the restoration worked."
+msgstr "Debes pulsar este botón para eliminarlos en cuanto hayas comprobado que la restauración ha funcionado."
+
+#: admin.php:3562
+msgid "Your WordPress install has old folders from its state before you restored/migrated (technical information: these are suffixed with -old)."
+msgstr "Tu instalación de WordPress tiene carpetas antiguas de su estado anterior a la restauración/migración (información técnica: llevan el sufijo -old)."
+
+#: admin.php:3014
+msgid "This plugin may struggle with a memory limit of less than 64 Mb  - especially if you have very large files uploaded (though on the other hand, many sites will be successful with a 32Mb limit - your experience may vary)."
+msgstr "Este plugin puede tener problemas con un límite de memoria inferior a 64 Mb, especialmente si tienes archivos muy grandes subidos (aunque, por otro lado, muchos sitios tendrán éxito con un límite de 32 Mb; tu experiencia puede variar)."
+
+#: admin.php:3014
+msgid "UpdraftPlus attempted to raise it but was unsuccessful."
+msgstr "UpdraftPlus intentó aumentarlo, pero no lo consiguió."
+
+#: admin.php:3014
+msgid "Your PHP memory limit (set by your web hosting company) is very low."
+msgstr "Tu límite de memoria PHP (establecido por tu empresa de alojamiento web) es muy bajo."
+
+#: admin.php:2957
+msgid "You should rename the directory to wp-content/plugins/updraftplus to fix this problem."
+msgstr "Debes cambiar el nombre del directorio a wp-content/plugins/updraftplus para solucionar este problema."
+
+#: admin.php:2957
+msgid "The UpdraftPlus directory in wp-content/plugins has white-space in it; WordPress does not like this."
+msgstr "El directorio UpdraftPlus en wp-content/plugins tiene espacios en blanco; a WordPress no le gusta esto."
+
+#: admin.php:2855
+msgid "We really appreciate your support!"
+msgstr "¡Agradecemos mucho tu apoyo!"
+
+#: admin.php:2855
+msgid "Enjoyed %s? Please leave us a %s rating."
+msgstr "¿Te gusta %s? Por favor, déjanos una valoración %s."
+
+#: admin.php:2717
+msgid "Perhaps you need to install an add-on?"
+msgstr "¿Quizás necesites instalar una extensión?"
+
+#: admin.php:2717
+msgid "This looks like a file created by UpdraftPlus, but this install does not know about this type of object: %s."
+msgstr "Esto parece un archivo creado por UpdraftPlus, pero esta instalación no conoce este tipo de objeto: %s."
+
+#: admin.php:2431
+msgid "Aborting this backup."
+msgstr "Abortando esta copia de seguridad."
+
+#: admin.php:2424 includes/class-commands.php:983
+msgid "OK."
+msgstr "OK."
+
+#: admin.php:1640
+msgid "Therefore, please download the attachment from the original backup email and upload it using the \"Upload backup files\" facility in the \"Existing Backups\" tab."
+msgstr "Por tanto, descarga el archivo adjunto del correo electrónico de copia de seguridad original y cárgalo utilizando la función «Subir archivos de copia de seguridad» de la pestaña «Copias de seguridad existentes»."
+
+#: admin.php:1640
+msgid "The email protocol does not allow a remote backup to be retrieved from an email that has been sent."
+msgstr "El protocolo de correo electrónico no permite recuperar una copia de seguridad remota de un correo electrónico que se ha enviado."
+
+#: admin.php:1457 admin.php:1464
+msgid "For more information, please see: %s"
+msgstr "Para más información, consulta %s"
+
+#: admin.php:1457 admin.php:1464
+msgid "You will need to migrate to the Global endpoint in your UpdraftPlus settings."
+msgstr "Tendrás que migrar al punto final Global en tus ajustes de UpdraftPlus."
+
+#: admin.php:1457 admin.php:1464
+msgid "Due to the shutdown of the %1$s endpoint, support for %1$s will be ending soon."
+msgstr "Debido al cierre del punto final %1$s, el soporte para %1$s finalizará en breve."
+
+#: admin.php:1450
+msgid "However, we were not able to register this site with %1$s, as there are no available %1$s licences on the account."
+msgstr "Sin embargo, no hemos podido registrar este sitio con %1$s, ya que no hay licencias %1$s disponibles en la cuenta."
+
+#: admin.php:1450
+msgid "Connection to your %s account was successful."
+msgstr "La conexión con tu cuenta %s se ha realizado correctamente."
+
+#: admin.php:1443
+msgid "%sPlease see this article for more information%s"
+msgstr "%sPara más información, consulta este artículo%s"
+
+#: admin.php:1443
+msgid "You will need to switch to a different end-point and migrate your data before that date."
+msgstr "Tendrás que cambiar a otro punto final y migrar tus datos antes de esa fecha."
+
+#: admin.php:1443
+msgid "The %s endpoint is scheduled to shut down on the 1st October 2018."
+msgstr "Está previsto que el punto final %s se cierre el 1 de octubre de 2018."
+
+#: admin.php:1395
+msgid "Unless this is a development site, this means that the scheduler in your WordPress install is not working properly."
+msgstr "A menos que se trate de un sitio en desarrollo, esto significa que el programador de tu instalación de WordPress no funciona correctamente."
+
+#: admin.php:1395
+msgid "WordPress has a number (%d) of scheduled tasks which are overdue."
+msgstr "WordPress tiene un número (%d) de tareas programadas que están atrasadas."
+
+#: admin.php:1368
+msgid "Please try to make sure that the notice you are seeing is from UpdraftPlus before you raise a support request."
+msgstr "Por favor, intenta asegurarte de que el aviso que estás viendo es de UpdraftPlus antes de enviar una solicitud de soporte."
+
+#: admin.php:1368
+msgid "You may see debugging notices on this page not just from UpdraftPlus, but from any other plugin installed."
+msgstr "Puedes ver avisos de depuración en esta página no sólo de UpdraftPlus, sino de cualquier otro plugin instalado."
+
+#: admin.php:1368
+msgid "UpdraftPlus's debug mode is on."
+msgstr "El modo de depuración de UpdraftPlus está activado."
+
+#: admin.php:1364
+msgid "To get faster backups, ask your web hosting provider how to turn on the PHP zip module on your hosting."
+msgstr "Para obtener copias de seguridad más rápidas, pregunta a tu proveedor de alojamiento web cómo activar el módulo zip de PHP en tu alojamiento."
+
+#: admin.php:1364
+msgid "Consequently, UpdraftPlus will use a built-in zip module (PclZip); this is significantly slower."
+msgstr "En consecuencia, UpdraftPlus utilizará un módulo zip incorporado (PclZip); éste es significativamente más lento."
+
+#: admin.php:1364
+msgid "Neither the PHP zip module nor a zip executable are available on your webserver."
+msgstr "Ni el módulo zip de PHP ni un ejecutable zip están disponibles en tu servidor web."
+
+#: admin.php:1356
+msgid "It may work for you, but if it does not, then please be aware that no support is available until you upgrade WordPress."
+msgstr "Puede que te funcione, pero si no es así, ten en cuenta que no dispondrás de asistencia hasta que actualices WordPress."
+
+#: admin.php:1356
+msgid "UpdraftPlus does not officially support versions of WordPress before %s."
+msgstr "UpdraftPlus no admite oficialmente versiones de WordPress anteriores a %s."
+
+#: admin.php:1352
+msgid "Contact your the operator of your server (e.g. your web hosting company) to resolve this issue."
+msgstr "Ponte en contacto con el operador de tu servidor (por ejemplo, tu empresa de alojamiento web) para resolver este problema."
+
+#: admin.php:1352
+msgid "UpdraftPlus could well run out of space."
+msgstr "UpdraftPlus podría quedarse sin espacio."
+
+#: admin.php:1352
+msgid "You have less than %s of free disk space on the disk which UpdraftPlus is configured to use to create backups."
+msgstr "Tienes menos de %s de espacio libre en el disco que UpdraftPlus está configurado para utilizar para crear copias de seguridad."
+
+#: admin.php:1346
+msgid "No backups can run (even &quot;Backup Now&quot;) unless either you have set up a facility to call the scheduler manually, or until it is enabled."
+msgstr "No se puede ejecutar ninguna copia de seguridad (ni siquiera &quot;Copia de seguridad ahora&quot;) a menos que hayas configurado una función para llamar al programador manualmente, o hasta que esté activada."
+
+#: admin.php:1346
+msgid "The scheduler is disabled in your WordPress install, via the DISABLE_WP_CRON setting."
+msgstr "El programador está desactivado en tu instalación de WordPress, mediante el ajuste DISABLE_WP_CRON."
+
+#: admin.php:1120
+msgid "See the browser console log for more information."
+msgstr "Consulta el registro de la consola del navegador para obtener más información."
+
+#: admin.php:1120
+msgid "If you proceed with the restoration then some of the restore options will be lost and you may get unexpected results."
+msgstr "Si continúas con la restauración, algunas de las opciones de restauración se perderán y puedes obtener resultados inesperados."
+
+#: admin.php:1076
+msgid "This could mean that your .htaccess file has incorrect contents, is missing, or that your webserver is missing an equivalent mechanism."
+msgstr "Esto podría significar que tu archivo .htaccess tiene un contenido incorrecto, que falta o que a tu servidor web le falta un mecanismo equivalente."
+
+#: admin.php:1076
+msgid "Attempts by the browser to access some pages have returned a \"not found (404)\" error."
+msgstr "Los intentos del navegador de acceder a algunas páginas han devuelto un error «no encontrado (404)»."
+
+#: admin.php:1061
+msgid "Continuing to connect to account."
+msgstr "Continuar a la conexión con la cuenta."
+
+#: admin.php:1061
+msgid "No UpdraftCentral licences were available."
+msgstr "No había licencias UpdraftCentral disponibles."
+
+#: admin.php:1054
+msgid "You may have a security module on your webserver blocking the restoration operation."
+msgstr "Puede que tengas un módulo de seguridad en tu servidor web bloqueando la operación de restauración."
+
+#: admin.php:1054
+msgid "HTML was detected in the response."
+msgstr "Se ha detectado HTML en la respuesta."
+
+#: admin.php:1039
+msgid "Once the clone has finished deploying it, you will receive an email."
+msgstr "Una vez que el clon haya terminado de desplegarse, recibirás un correo electrónico."
+
+#: admin.php:1039
+msgid "The clone has been provisioned, and its data has been sent to it."
+msgstr "El clon se ha aprovisionado y se te han enviado sus datos."
+
+#: admin.php:1038
+msgid "This may fail if you have components that are incompatible with earlier versions."
+msgstr "Esto puede fallar si tienes componentes incompatibles con versiones anteriores."
+
+#: admin.php:1038
+msgid "Warning: you have selected a lower version than your currently installed version."
+msgstr "Advertencia: has seleccionado una versión inferior a la que tienes instalada."
+
+#: admin.php:1023
+msgid "Adding site to UpdraftCentral Cloud."
+msgstr "Añadiendo sitio a UpdraftCentral Cloud."
+
+#: admin.php:1023
+msgid "Key created."
+msgstr "Clave creada."
+
+#: admin.php:1022
+msgid "Requesting UpdraftCentral Key."
+msgstr "Solicitando clave de UpdraftCentral."
+
+#: admin.php:1022
+msgid "Connected."
+msgstr "Conectado."
+
+#: admin.php:1004
+msgid "It would be best to download the zip to your computer."
+msgstr "Lo mejor es que descargues el zip en tu ordenador."
+
+#: admin.php:1004
+msgid "This could be caused by a timeout."
+msgstr "Esto puede deberse a un exceso de tiempo de espera."
+
+#: admin.php:1004
+msgid "Unable to download file."
+msgstr "No ha sido posible descargar el archivo."
+
+#: admin.php:1000
+msgid "Please check the following:"
+msgstr "Por favor, comprueba lo siguiente:"
+
+#: admin.php:1000
+msgid "The file failed to upload."
+msgstr "No se ha podido subir el archivo."
+
+#: admin.php:987
+msgid "Please choose a valid UpdraftPlus export file."
+msgstr "Elige un archivo de exportación de UpdraftPlus válido."
+
+#: admin.php:987
+msgid "Error: The chosen file is corrupt."
+msgstr "Error: El archivo elegido está dañado."
+
+#: admin.php:934
+msgid "Please select at least one, and then try again."
+msgstr "Por favor, selecciona al menos uno y vuelve a intentarlo."
+
+#: admin.php:934
+msgid "You did not select any components to restore."
+msgstr "No has seleccionado ningún componente para restaurar."
+
+#: admin.php:889
+msgid "Do not close your browser until it reports itself as having finished."
+msgstr "No cierres el navegador hasta que te informe de que ha terminado."
+
+#: admin.php:889
+msgid "The restore operation has begun."
+msgstr "La operación de restauración ha comenzado."
 
 #: templates/wp-admin/advanced/db-size.php:19
 msgid "Reducing your database size with WP-Optimize helps to maintain a fast, efficient, and user-friendly website."
@@ -758,6 +2046,90 @@ msgstr "UpdraftPlus no ha podido encontrar ninguna tabla al explorar la copia de
 msgid "Database maximum packet size:"
 msgstr "Tamaño máximo del paquete de la base de datos:"
 
+#: includes/class-http-error-descriptions.php:78
+msgid "Further extensions to the request are required for the server to fulfil it."
+msgstr "Se necesitan más ampliaciones de la solicitud para que el servidor pueda satisfacerla."
+
+#: includes/class-http-error-descriptions.php:73
+msgid "The server was acting as a gateway or proxy and did not receive a timely response from the upstream server."
+msgstr "El servidor actuaba como pasarela o proxy y no recibía una respuesta oportuna del servidor ascendente."
+
+#: includes/class-http-error-descriptions.php:71
+msgid "The server was acting as a gateway or proxy and received an invalid response from the upstream server."
+msgstr "El servidor actuaba como pasarela o proxy y recibió una respuesta no válida del servidor ascendente."
+
+#: includes/class-http-error-descriptions.php:69
+msgid "A generic error message, given when an unexpected condition was encountered and no more specific message is suitable."
+msgstr "Un mensaje de error genérico, que se da cuando se ha encontrado una condición inesperada y no es adecuado un mensaje más específico."
+
+#: includes/class-http-error-descriptions.php:59
+msgid "The client should switch to a different protocol such as TLS/1.3, given in the Upgrade header field."
+msgstr "El cliente debe cambiar a un protocolo diferente, como TLS/1.3, indicado en el campo de cabecera «Upgrade»."
+
+#: includes/class-http-error-descriptions.php:58
+msgid "Indicates that the server is unwilling to risk processing a request that might be replayed."
+msgstr "Indica que el servidor no está dispuesto a arriesgarse a procesar una petición que podría ser reproducida."
+
+#: includes/class-http-error-descriptions.php:57
+msgid "The request failed because it depended on another request and that request failed (e.g., a PROPPATCH)."
+msgstr "La petición falló porque dependía de otra petición y ésta falló (por ejemplo, una PROPPATCH)."
+
+#: includes/class-http-error-descriptions.php:56
+msgid "The resource that is being accessed is locked."
+msgstr "El recurso al que se está accediendo está bloqueado."
+
+#: includes/class-http-error-descriptions.php:54
+msgid "The request was directed at a server that is not able to produce a response (for example because of connection reuse)."
+msgstr "La petición se dirigió a un servidor que no puede producir una respuesta (por ejemplo, debido a la reutilización de la conexión)."
+
+#: includes/class-http-error-descriptions.php:48
+msgid "The server does not meet one of the preconditions that the requester put on the request header fields."
+msgstr "El servidor no cumple una de las condiciones previas que el solicitante puso en los campos de cabecera de la solicitud."
+
+#: includes/class-http-error-descriptions.php:47
+msgid "The request did not specify the length of its content, which is required by the requested resource."
+msgstr "La petición no especificaba la longitud de su contenido, que es requerida por el recurso solicitado."
+
+#: includes/class-http-error-descriptions.php:46
+msgid "Indicates that the resource requested is no longer available and will not be available again."
+msgstr "Indica que el recurso solicitado ya no está disponible y no volverá a estarlo."
+
+#: includes/class-http-error-descriptions.php:45
+msgid "Indicates that the request could not be processed because of conflict in the current state of the resource, such as an edit conflict between multiple simultaneous updates."
+msgstr "Indica que la solicitud no se ha podido procesar debido a un conflicto en el estado actual del recurso, como un conflicto de edición entre varias actualizaciones simultáneas."
+
+#: includes/class-http-error-descriptions.php:42
+msgid "The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request."
+msgstr "El recurso solicitado sólo es capaz de generar contenido no aceptable según las cabeceras Accept enviadas en la solicitud."
+
+#: includes/class-http-error-descriptions.php:41
+msgid "A request method is not supported for the requested resource; for example, a GET request on a form that requires data to be presented via POST, or a PUT request on a read-only resource."
+msgstr "No se admite un método de solicitud para el recurso solicitado; por ejemplo, una solicitud GET en un formulario que requiere que los datos se presenten mediante POST, o una solicitud PUT en un recurso de sólo lectura."
+
+#: includes/class-http-error-descriptions.php:38
+msgid "Authentication is required and has failed or has not yet been provided."
+msgstr "Se requiere autenticación y ha fallado o aún no se ha proporcionado."
+
+#: includes/class-http-error-descriptions.php:37
+msgid "The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, size too large, invalid request message framing, or deceptive request routing)."
+msgstr "El servidor no puede o no quiere procesar la solicitud debido a un error aparente del cliente (por ejemplo, sintaxis de solicitud malformada, tamaño demasiado grande, encuadre de mensaje de solicitud no válido o enrutamiento de solicitud engañoso)."
+
+#: includes/class-http-error-descriptions.php:30
+msgid "In this case, the request should be repeated with another URI; however, future requests should still use the original URI."
+msgstr "En este caso, la solicitud debe repetirse con otro URI; sin embargo, las solicitudes futuras deben seguir utilizando el URI original."
+
+#: includes/class-http-error-descriptions.php:29
+msgid "The requested resource is available only through a proxy, the address for which is provided in the response."
+msgstr "El recurso solicitado sólo está disponible a través de un proxy, cuya dirección se proporciona en la respuesta."
+
+#: includes/class-http-error-descriptions.php:28
+msgid "Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match."
+msgstr "Indica que el recurso no se ha modificado desde la versión especificada por las cabeceras de solicitud If-Modified-Since o If-None-Match."
+
+#: includes/class-http-error-descriptions.php:24
+msgid "Indicates multiple options for the resource from which the client may choose (via agent-driven content negotiation)."
+msgstr "Indica múltiples opciones para el recurso entre las que el cliente puede elegir (a través de la negociación de contenido dirigida por el agente)."
+
 #: includes/class-commands.php:958
 msgid "You have no local backups to send."
 msgstr "No tienes ninguna copia de seguridad local que enviar."
@@ -960,25 +2332,29 @@ msgstr "Pantalla completa"
 msgid "The number of restore options that will be sent exceeds the configured maximum in your PHP configuration (max_input_vars)."
 msgstr "El número de opciones de restauración que se enviarán supera el máximo configurado en tu configuración de PHP (max_input_vars)."
 
-#: methods/s3generic.php:182
+#: methods/s3generic.php:203
 msgid "Virtual-host style"
 msgstr "Estilo de servidor virtual"
 
-#: methods/s3generic.php:181
+#: methods/s3generic.php:202
 msgid "Path style"
 msgstr "Estilo de ruta"
 
-#: methods/s3generic.php:179
+#: methods/s3generic.php:200 methods/s3generic.php:206
 msgid "(Read more)"
 msgstr "(Leer más)"
 
-#: methods/s3generic.php:179
+#: methods/s3generic.php:200
 msgid "Read more about bucket access style"
 msgstr "Lee más sobre el estilo de acceso a cubos"
 
-#: methods/s3generic.php:178
+#: methods/s3generic.php:199
 msgid "Bucket access style"
 msgstr "Estilo de acceso a cubos"
+
+#: central/translations-central.php:15
+msgid "Security check."
+msgstr "Comprobación de seguridad."
 
 #: backup.php:4079
 msgid "two unsuccessful attempts were made to include it, and it will now be omitted from the backup"
@@ -1536,6 +2912,10 @@ msgstr "ninguna actividad reciente; se ofrecerá la reanudación después de: %d
 msgid "last activity: %d seconds ago"
 msgstr "última actividad: hace %d segundos"
 
+#: admin.php:5101 templates/wp-admin/settings/delete-and-restore-modals.php:96
+msgid "Component selection"
+msgstr "Selección de componentes"
+
 #: templates/wp-admin/settings/delete-and-restore-modals.php:63
 msgid "Choose the components to restore:"
 msgstr "Elige los componentes a restaurar:"
@@ -1768,6 +3148,10 @@ msgstr "Tu instalación de WordPress tiene antiguos directorios de antes de que 
 #: includes/class-filesystem-functions.php:556
 msgid "Unzip progress: %d out of %d files"
 msgstr "Progreso de descompresión: %d de %d archivos"
+
+#: admin.php:2431
+msgid "No suitable backup set (that already contains a full backup of all the requested file component types) was found, to add increments to."
+msgstr "No se ha encontrado un conjunto de copias de seguridad adecuado (que ya contenga una copia de seguridad completa de todos los tipos de componentes de archivo solicitados) al que añadir incrementos."
 
 #: admin.php:1053
 msgid "File backup options"
@@ -3477,7 +4861,7 @@ msgstr "El archivo se exportará según los ajustes que se muestran, no según l
 msgid "your PHP install lacks the openssl module; as a result, this can take minutes; if nothing has happened by then, then you should either try a smaller key size, or ask your web hosting company how to enable this PHP module on your setup."
 msgstr "La instalación de PHP carece del módulo openssl; como resultado, esto puede llevar varios minutos; si para entonces no ha ocurrido nada, deberías probar un tamaño de clave más pequeño o solicitar a tu alojados web que active este módulo de PHP en tu instalación."
 
-#: methods/s3.php:1442
+#: methods/s3.php:1439
 msgid "The AWS access key looks to be wrong (valid %s access keys begin with \"AK\")"
 msgstr "La clave de acceso a AWS parece no ser correcta (las claves de acceso válidas %s comienzan por \"AK\")"
 
@@ -4328,39 +5712,39 @@ msgstr "La UpdraftVault te proporciona un almacenamiento que te garantiza<strong
 msgid "Updraft Vault"
 msgstr "Updraft Vault"
 
-#: methods/s3generic.php:79
+#: methods/s3generic.php:77
 msgid "S3 (Compatible)"
 msgstr "S3 (Compatible)"
 
-#: methods/s3.php:1470
+#: methods/s3.php:1467
 msgid "Delete failed:"
 msgstr "Falló el borrado:"
 
-#: methods/s3.php:1463
+#: methods/s3.php:1460
 msgid "Please check your access credentials."
 msgstr "Por favor, revise sus credenciales de acceso."
 
-#: methods/s3.php:1458
+#: methods/s3.php:1455
 msgid "The communication with %s was not encrypted."
 msgstr "La comunicación con %s no fue cifrada."
 
-#: methods/s3.php:1456
+#: methods/s3.php:1453
 msgid "The communication with %s was encrypted."
 msgstr "La comunicación con %s fue cifrada."
 
-#: methods/s3.php:1453
+#: methods/s3.php:1450
 msgid "We accessed the bucket, and were able to create files within it."
 msgstr "Accedimos correctamente al cubo, y hemos podido crear archivos en él."
 
-#: methods/s3.php:1451 methods/s3.php:1463
+#: methods/s3.php:1448 methods/s3.php:1460
 msgid "We successfully accessed the bucket, but the attempt to create a file in it failed."
 msgstr "Accedimos correctamente al cubo, pero el intento de crear un archivo en él falló."
 
-#: methods/s3.php:1451 methods/s3.php:1463
+#: methods/s3.php:1448 methods/s3.php:1460
 msgid "Failure"
 msgstr "Fallo"
 
-#: methods/s3.php:1440
+#: methods/s3.php:1437
 msgid "The error reported by %s was:"
 msgstr "El error reportado por %s fue:"
 
@@ -4373,17 +5757,17 @@ msgid "API secret"
 msgstr "API secret"
 
 #: methods/dreamobjects.php:191 methods/s3.php:1048 methods/s3.php:1088
-#: methods/s3generic.php:175
+#: methods/s3generic.php:196
 msgid "%s location"
 msgstr "Ubicación de %s"
 
 #: methods/dreamobjects.php:189 methods/s3.php:1044 methods/s3.php:1086
-#: methods/s3generic.php:173
+#: methods/s3generic.php:194
 msgid "%s secret key"
 msgstr "Clave secreta de %s"
 
 #: methods/dreamobjects.php:188 methods/s3.php:1040 methods/s3.php:1085
-#: methods/s3generic.php:172
+#: methods/s3generic.php:193
 msgid "%s access key"
 msgstr "clave de acceso %s"
 
@@ -4391,7 +5775,7 @@ msgstr "clave de acceso %s"
 msgid "To create a new IAM sub-user and access key that has access only to this bucket, upgrade to Premium."
 msgstr "Para crear un nuevo usuario secundario y la clave de acceso de IAM que solo tenga acceso a este cubo, actualiza a Premium."
 
-#: methods/dreamobjects.php:193 methods/s3generic.php:177
+#: methods/dreamobjects.php:193 methods/s3generic.php:198
 msgid "%s end-point"
 msgstr "%s punto final"
 
@@ -4400,15 +5784,15 @@ msgid "Other %s FAQs."
 msgstr "Otras %s preguntas frecuentes (FAQs)."
 
 #: methods/dreamobjects.php:185 methods/s3.php:938 methods/s3.php:1083
-#: methods/s3generic.php:171
+#: methods/s3generic.php:192
 msgid "If you see errors about SSL certificates, then please go here for help."
 msgstr "Si ve errores sobre certificados SSL, vaya aquí para obtener ayuda."
 
-#: methods/s3generic.php:167
+#: methods/s3generic.php:188
 msgid "... and many more!"
 msgstr "... ¡y mucho más!"
 
-#: methods/s3generic.php:167
+#: methods/s3generic.php:188
 msgid "Examples of S3-compatible storage providers:"
 msgstr "Ejemplos de proveedores de almacenamiento compatibles con S3:"
 
@@ -4467,7 +5851,7 @@ msgstr "Contraseña"
 msgid "Leave this blank, and a default will be chosen."
 msgstr "Déjelo en blanco y asumirá la configuración por defecto."
 
-#: methods/openstack2.php:252 methods/s3.php:1432
+#: methods/openstack2.php:252 methods/s3.php:1429
 msgid "Region"
 msgstr "Región"
 
@@ -4808,7 +6192,7 @@ msgstr "Accedimos al contenedor, y pudimos crear archivos en él."
 
 #: methods/addon-base-v2.php:358 methods/cloudfiles.php:590
 #: methods/googledrive.php:616 methods/openstack-base.php:535
-#: methods/s3.php:1453
+#: methods/s3.php:1450
 msgid "Success"
 msgstr "Correcto"
 
@@ -4839,7 +6223,7 @@ msgstr "Resultados del test de los ajustes %s:"
 
 #: admin.php:982 methods/backup-module.php:401 methods/cloudfiles-new.php:299
 #: methods/dreamobjects.php:194 methods/ftp.php:130 methods/openstack2.php:258
-#: methods/s3.php:1090 methods/s3generic.php:184
+#: methods/s3.php:1090 methods/s3generic.php:211
 msgid "Test %s Settings"
 msgstr "Probar ajustes %s"
 
@@ -4959,6 +6343,10 @@ msgstr "Las cuentas creadas en rackspacecloud.com son las cuentas de los Estados
 msgid "Also, you should read this important FAQ."
 msgstr "También, debería leer esta pregunta frecuente (FAQ) importante."
 
+#: methods/cloudfiles.php:461
+msgid "Get your API key <a href=\"https://mycloud.rackspace.com/\" target=\"_blank\">from your Rackspace Cloud console</a> (<a href=\"http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-1-generating-your-api-key\" target=\"_blank\">read instructions here</a>), then pick a container name to use for storage."
+msgstr "Obtén tu clave de la API <a href=\"https://mycloud.rackspace.com/\" target=\"_blank\">desde tu consola de Rackspace Cloud</a> (<a href=\"http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-1-generating-your-api-key\" target=\"_blank\">lee aquí las instrucciones</a>), después, elige un nombre de contenedor para usarlo para el almacenamiento. Este contenedor será creado para ti, si aún no existe."
+
 #: methods/cloudfiles-new.php:37 methods/openstack-base.php:489
 #: methods/openstack-base.php:491 methods/openstack-base.php:512
 #: methods/openstack2.php:33
@@ -5042,6 +6430,10 @@ msgstr "Solo deberías continuar si no puedes actualizar el servidor actual y es
 msgid "This is significantly newer than the server which you are now restoring onto (version %s)."
 msgstr "Esta es significativamente más nueva que la del servidor en el que estás restaurando ahora (versión %s)."
 
+#: class-updraftplus.php:5148 class-updraftplus.php:5150
+msgid "The site in this backup was running on a webserver with version %s of %s."
+msgstr "El sitio de esta copia de seguridad se ejecutaba en un servidor web con la versión %s de %s."
+
 #: class-updraftplus.php:5081
 msgid "(version: %s)"
 msgstr "(versión: %s)"
@@ -5095,6 +6487,10 @@ msgstr "La copia de seguridad no ha terminado; se ha programado una reanudación
 #: class-updraftplus.php:3637
 msgid "The backup attempt has finished, apparently unsuccessfully"
 msgstr "El intento de copia de seguridad ha terminado, al parecer sin éxito"
+
+#: class-updraftplus.php:3620
+msgid "The backup succeeded (with warnings) and is now complete"
+msgstr "La copia de seguridad se ha realizado correctamente (con advertencias) y se ha completado"
 
 #: includes/class-backup-history.php:729
 msgid "One or more backups has been added from scanning remote storage; note that these backups will not be automatically deleted through the \"retain\" settings; if/when you wish to delete them then you must do so manually."
@@ -5349,6 +6745,10 @@ msgstr "Porque veo esto?"
 #: admin.php:5185
 msgid "Backup does not exist in the backup history"
 msgstr "La copia de seguridad no existe en el historial de copias de seguridad"
+
+#: admin.php:5184
+msgid "This backup does not exist in the backup history - restoration aborted."
+msgstr "Esta copia de seguridad no existe en el historial de copias de seguridad - restauración abortada."
 
 #: admin.php:3630 admin.php:4692
 msgid "View Log"
@@ -6268,6 +7668,10 @@ msgstr "No se pudo encontrar este trabajo - ¿quizás  haya finalizado?"
 msgid "Job deleted"
 msgstr "Trabajo eliminado"
 
+#: admin.php:2424 includes/class-commands.php:983
+msgid "You should soon see activity in the \"Last log message\" field below."
+msgstr "Pronto deberías ver actividad en el campo «Último mensaje de registro» de abajo."
+
 #: admin.php:2424 admin.php:2447 includes/class-commands.php:983
 msgid "Start backup"
 msgstr "Iniciar la copia de seguridad"
@@ -6385,7 +7789,7 @@ msgstr "La cantidad de tiempo permitido para ejecuciones de plugins de WordPress
 #: methods/dreamobjects.php:182 methods/ftp.php:116
 #: methods/openstack-base.php:577 methods/openstack2.php:242 methods/s3.php:926
 #: methods/s3.php:930 methods/s3.php:1080 methods/s3.php:1081
-#: methods/s3generic.php:168 methods/s3generic.php:169
+#: methods/s3generic.php:189 methods/s3generic.php:190
 #: methods/updraftvault.php:476
 #: templates/wp-admin/settings/downloading-and-restoring.php:27
 #: templates/wp-admin/settings/tab-backups.php:27

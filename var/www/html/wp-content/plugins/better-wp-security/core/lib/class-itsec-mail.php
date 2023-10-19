@@ -16,7 +16,7 @@ final class ITSEC_Mail {
 		$this->name          = $name;
 	}
 
-	public function add_header( $title, $banner_title, $use_site_logo = false ) {
+	public function add_header( $title, $banner_title, $use_site_logo = false, $tracking_link = '' ) {
 		$header = $this->get_template( 'header.html' );
 
 		if ( $use_site_logo ) {
@@ -28,12 +28,33 @@ final class ITSEC_Mail {
 		}
 
 		$replacements = array(
-			'lang'         => esc_attr( get_bloginfo( 'language' ) ),
-			'charset'      => esc_attr( get_bloginfo( 'charset' ) ),
-			'title_tag'    => $title,
-			'banner_title' => $banner_title,
-			'logo'         => $logo,
-			'title'        => $title,
+			'lang'              => esc_attr( get_bloginfo( 'language' ) ),
+			'charset'           => esc_attr( get_bloginfo( 'charset' ) ),
+			'title_tag'         => $title,
+			'banner_title'      => $banner_title,
+			'logo'              => $logo,
+			'title'             => $title,
+			'icon_url'          => plugin_dir_url( ITSEC_Core::get_core_dir() . 'img/mail/index.php' ) . "rebrand_icon.png",
+			'branding_title'    => esc_html__( 'iThemes Security is becoming Solid Security', 'better-wp-security' ),
+			'text'              => esc_html__( 'We have been working hard for almost a year to bring you incredible new features in the form of our new and improved brand: SolidWP. Discover what’s coming very soon!', 'better-wp-security' ),
+			'link_href'         => $tracking_link,
+			'link_text'         => esc_html__( 'Learn More about Solid Security', 'better-wp-security' ),
+		);
+
+		$this->add_html( $this->replace_all( $header, $replacements ), 'header' );
+	}
+
+	public function add_user_header( $title, $banner_title ) {
+		$header = $this->get_template( 'header-user.html' );
+		$logo = $this->get_site_logo_url();
+
+		$replacements = array(
+			'lang'              => esc_attr( get_bloginfo( 'language' ) ),
+			'charset'           => esc_attr( get_bloginfo( 'charset' ) ),
+			'title_tag'         => $title,
+			'banner_title'      => $banner_title,
+			'logo'              => $logo,
+			'title'             => $title,
 		);
 
 		$this->add_html( $this->replace_all( $header, $replacements ), 'header' );

@@ -2,14 +2,56 @@
 # This file is distributed under the same license as the Plugins - iThemes Security - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-08-04 07:55:29+0000\n"
+"PO-Revision-Date: 2023-09-04 06:43:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.6\n"
+"X-Generator: GlotPress/4.0.0-alpha.7\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - iThemes Security - Stable (latest release)\n"
+
+#: core/modules/core/class-itsec-core-admin.php:126
+msgid "Could not dismiss action."
+msgstr "No se pudo descartar la acción."
+
+#: core/modules/core/class-itsec-core-admin.php:114
+msgid "Invalid request format"
+msgstr "Formato de solicitud no válido"
+
+#: core/modules/core/class-itsec-core-admin.php:104
+msgid "Learn More About Solid Security and SolidWP"
+msgstr "Más información acerca de Solid Security y SolidWP"
+
+#: core/modules/core/class-itsec-core-admin.php:103
+msgid "We have been working hard for almost a year to bring you incredible new features in the form of our new and improved brand: SolidWP."
+msgstr "Hemos estado trabajando duro durante casi un año para traerte nuevas e increíbles características en forma de nuestra nueva y mejorada marca: SolidWP."
+
+#: core/modules/core/class-itsec-core-admin.php:102
+msgid "iThemes Security is Becoming Solid Security: More Security, Better UIs, and Improved Features"
+msgstr "iThemes Security se está convirtiendo en Solid Security: Más seguridad, mejores interfaces de usuario y características mejoradas"
+
+#: core/lib/class-itsec-mail.php:41
+msgid "Learn More about Solid Security"
+msgstr "Más información sobre Solid Security"
+
+#: core/lib/class-itsec-mail.php:39
+#: core/modules/dashboard/entries/dashboard/components/empty-states/card-becoming.js:74
+#: core/modules/promos/entries/dashboard/app.js:154
+#: core/modules/promos/entries/settings/components/becoming-solid/index.js:61
+#: dist/dashboard/dashboard.js:1 dist/promos/dashboard.js:1
+#: dist/promos/settings.js:1
+msgid "We have been working hard for almost a year to bring you incredible new features in the form of our new and improved brand: SolidWP. Discover what’s coming very soon!"
+msgstr "Hemos estado trabajando duro durante casi un año para ofrecerte increíbles nuevas características en forma de nuestra nueva y mejorada marca: SolidWP. ¡Descubre lo que viene muy pronto!"
+
+#: core/lib/class-itsec-mail.php:38
+#: core/modules/dashboard/entries/dashboard/components/empty-states/card-becoming.js:70
+#: core/modules/promos/entries/dashboard/app.js:148
+#: core/modules/promos/entries/settings/components/becoming-solid/index.js:55
+#: dist/dashboard/dashboard.js:1 dist/promos/dashboard.js:1
+#: dist/promos/settings.js:1
+msgid "iThemes Security is becoming Solid Security"
+msgstr "iThemes Security se está convirtiendo en Solid Security"
 
 #: core/modules/core/notices.php:16
 msgid "New Turnstile and hCaptcha Support"
@@ -19,7 +61,7 @@ msgstr "Nueva compatibilidad con Turnstile y hCaptcha"
 msgid "Could not determine an identifier for the user."
 msgstr "No se pudo determinar un identificador para el usuario."
 
-#: core/modules/site-scanner/mail.php:187
+#: core/modules/site-scanner/mail.php:194
 msgid "Either quickly update the vulnerable theme, plugin or WordPress version immediately to the newest version or immediately deactivate and delete the plugin or theme from your WordPress installation until a fix is available."
 msgstr "Actualiza rápidamente el tema vulnerable, el plugin o la versión de WordPress inmediatamente a la versión más reciente o desactiva y borra inmediatamente el plugin o tema de tu instalación de WordPress hasta que haya una solución disponible."
 
@@ -397,31 +439,31 @@ msgstr "No se pudo importar el grupo de usuarios '%1$s': %2$s"
 msgid "List of created User Groups"
 msgstr "Lista de grupos de usuarios creados"
 
-#: core/modules/site-scanner/mail.php:201
+#: core/modules/site-scanner/mail.php:208
 msgid "Log in now to update."
 msgstr "Accede para actualizar."
 
-#: core/modules/site-scanner/mail.php:200
+#: core/modules/site-scanner/mail.php:207
 msgid "If a security fix is available, update the vulnerable plugin or theme as soon as possible from Your WordPress admin dashboard > Updates page."
 msgstr "Si está disponible una corrección de seguridad, actualiza el plugin o tema vulnerable tan pronto como sea posible desde el escritorio de WordPress > página de actualizaciones"
 
-#: core/modules/site-scanner/mail.php:199
+#: core/modules/site-scanner/mail.php:206
 msgid "In the Known Vulnerabilities section of the report, click “Show Details.” If a security fix is available, the report will indicate the latest version number."
 msgstr "En la sección de vulnerabilidades conocidas del informe, haz clic en «Mostrar detalles» Si hay disponible una corrección de seguridad el informe indicará el último número de versión. "
 
-#: core/modules/site-scanner/mail.php:195
+#: core/modules/site-scanner/mail.php:202
 msgid "%1$sView the Site Scan Report%2$s available now from your WordPress admin dashboard."
 msgstr "%1$sVe el informe de exploración del sitio%2$s, ahora disponible desde tu escritorio de administración de WordPress."
 
-#: core/modules/site-scanner/mail.php:192
+#: core/modules/site-scanner/mail.php:199
 msgid "How to View the Report & See Available Updates"
 msgstr "Como ver el Informe y las actualizaciones disponibles"
 
-#: core/modules/site-scanner/mail.php:186
+#: core/modules/site-scanner/mail.php:193
 msgid "Vulnerable WordPress plugins and themes are the #1 reason WordPress sites get hacked."
 msgstr "Los plugins y temas de WordPress vulnerables son la primer razón de que los sitios WordPress sean hackeados."
 
-#: core/modules/site-scanner/mail.php:184
+#: core/modules/site-scanner/mail.php:191
 msgid "What Actions Should I Take?"
 msgstr "¿Qué acciones debería tomar?"
 
@@ -457,55 +499,55 @@ msgstr "Lista de módulos activos."
 msgid "List of settings to display when importing."
 msgstr "Lista de ajustes a mostrar durante la importación"
 
-#: core/lib/class-itsec-mail.php:537
+#: core/lib/class-itsec-mail.php:558
 msgid "Hardens your website if you are running outdated software, including checks for old WordPress sites that could be used to compromise your server."
 msgstr "Protege tu web si estás ejecutando software obsoleto, incluyendo comprobaciones para sitios WordPress antiguos que pudieran ser utilizados para comprometer tu servidor."
 
-#: core/lib/class-itsec-mail.php:536
+#: core/lib/class-itsec-mail.php:557
 msgid "Automatically updates vulnerable plugins, themes, and WordPress core for you if it fixes a vulnerability that was found by the Site Scanner."
 msgstr "Actualiza automáticamente plugins, temas y núcleos de WordPress vulnerables por ti si eso corrige una vulnerabilidad encontrada por el explorador de sitios."
 
-#: core/lib/class-itsec-mail.php:535
+#: core/lib/class-itsec-mail.php:556
 msgid "Free your team from mundane updates by removing the need to manually log in to update plugins and themes."
 msgstr "Libera a tu equipo de monótonas actualizaciones eliminando la necesidad de loguearse manualmente para actualizar plugins y temas."
 
-#: core/lib/class-itsec-mail.php:534
+#: core/lib/class-itsec-mail.php:555
 msgid "Save time when time is of the utmost importance to patch vulnerabilities before hackers and bots can find and exploit them."
 msgstr "Ahorra tiempo cuando la rapidez es lo más importante para arreglar vulnerabilidades antes de que las puedan explotar hackers o robots."
 
-#: core/lib/class-itsec-mail.php:529
+#: core/lib/class-itsec-mail.php:550
 msgid "Get all of this in the %1$sSite Scanner Pro%2$s:"
 msgstr "Consigue todo esto en el %1$sexplorador de sitios Pro%2$s:"
 
-#: core/lib/class-itsec-mail.php:525
+#: core/lib/class-itsec-mail.php:546
 msgid "Get your site patched by iThemes Security Pro before hackers discover vulnerabilities on your site, all without doing a thing."
 msgstr "Parchea tu sitio con iThemes Security Pro antes de que los hackers descubran vulnerabilidades en tu sitio, todo sin hacer nada."
 
-#: core/lib/class-itsec-mail.php:522
+#: core/lib/class-itsec-mail.php:543
 msgid "iThemes Security Pro will <b>automatically update vulnerable plugins and themes for you</b> if a patch is available <b>so you don’t have to manually log in to update</b>."
 msgstr "iThemes Security Pro <b>actualizará automáticamente plugins y temas vulnerables por ti</b> si hay un parche disponible <b>de manera que no tengas que loguearte para actualizar</b>."
 
-#: core/lib/class-itsec-mail.php:519
+#: core/lib/class-itsec-mail.php:540
 msgid "Go Pro Now to Get Automatic Vulnerability Patching"
 msgstr "Conviértete en Pro para conseguir parcheo automático de vulnerabilidades"
 
-#: core/lib/class-itsec-mail.php:118
+#: core/lib/class-itsec-mail.php:139
 msgid "Pro customers have the best support team available as their security team. Contact the <a href=\"%s\">iThemes Help Desk</a> for help when you need answers."
 msgstr "Los cliente Pro tienen el mejor equipo de soporte disponible como equipo de seguridad. Contacta con el <a href=\"%s\">equipo de soporte iThemes</a>para conseguir ayuda cuando necesites respuestas."
 
-#: core/lib/class-itsec-mail.php:105
+#: core/lib/class-itsec-mail.php:126
 msgid "Make sure you’re getting the most out of iThemes Security features to protect your site with our <a href=\"%s\">free iThemes Security tutorials</a>."
 msgstr "Asegúrate de que estás consiguiendo lo mejor de las características de iThemes Security para proteger tu sitio con nuestros <a href=\"%s\">tutoriales gratuitos de iThemes Security</a>."
 
-#: core/lib/class-itsec-mail.php:98
+#: core/lib/class-itsec-mail.php:119
 msgid "Be the first to get the latest WordPress security news, tips, and updates on the <a href=\"%1$s\">iThemes Blog</a>, including the <a href=\"%2$s\">Weekly WordPress Vulnerability Report</a>."
 msgstr "Se el primero en conseguirlos últimas noticias, trucos y actualizaciones de seguridad para WordPress en el <a href=\"%1$s\">blog de iThemes</a>, incluyendo el  <a href=\"%2$s\">informe semanal de vulnerabilidades WordPress</a>."
 
-#: core/lib/class-itsec-mail.php:95
+#: core/lib/class-itsec-mail.php:116
 msgid "WordPress Security News"
 msgstr "Noticias sobre seguridad WordPress"
 
-#: core/lib/class-itsec-mail.php:94
+#: core/lib/class-itsec-mail.php:115
 msgid "More Website Security Resources"
 msgstr "Más recursos sobre seguridad web"
 
@@ -989,9 +1031,9 @@ msgstr "Configurado en la página de indicadores de características."
 msgid "User Groups allow you to enable security features for specific sets of users."
 msgstr "Los grupos de usuarios te permiten activar características de seguridad para conjuntos específicos de usuarios."
 
-#: core/lib/class-itsec-mail.php:539
-#: core/modules/promos/entries/dashboard/app.js:107
-#: core/modules/promos/entries/settings/app.js:111 dist/promos/dashboard.js:1
+#: core/lib/class-itsec-mail.php:560
+#: core/modules/promos/entries/dashboard/app.js:105
+#: core/modules/promos/entries/settings/app.js:117 dist/promos/dashboard.js:1
 #: dist/promos/settings.js:1
 msgid "Go Pro Now"
 msgstr "Hazte Pro ahora"
@@ -2718,55 +2760,55 @@ msgstr "Lo siento, no puedes corregir problemas de exploración del sitio."
 msgid "Sorry, you cannot view site scan issues."
 msgstr "Lo siento, no puedes ver problemas de exploración del sitio."
 
-#: core/modules/site-scanner/mail.php:170
+#: core/modules/site-scanner/mail.php:177
 msgid "Scan Errors"
 msgstr "Errores de exploración"
 
-#: core/modules/site-scanner/mail.php:144
+#: core/modules/site-scanner/mail.php:151
 msgid "The scheduled site scan encountered %1$s error when scanning %2$s."
 msgid_plural "The scheduled site scan encountered %1$s errors when scanning %2$s."
 msgstr[0] "La exploración programada del sitio encontró %1$s error al explorar %2$s."
 msgstr[1] "La exploración programada del sitio encontró %1$s errores al explorar %2$s."
 
-#: core/modules/site-scanner/mail.php:135
+#: core/modules/site-scanner/mail.php:142
 msgid "The scanner encountered %s additional error."
 msgid_plural "The scanner encountered %s additional errors."
 msgstr[0] "El explorador encontró %s error adicional."
 msgstr[1] "El explorador encontró %s errores adicionales."
 
-#: core/modules/site-scanner/mail.php:123
+#: core/modules/site-scanner/mail.php:130
 msgid "The scheduled site scan found %1$s issue when scanning %2$s."
 msgid_plural "The scheduled site scan found %1$s issues when scanning %2$s."
 msgstr[0] "La exploración programada del sitio encontró %1$s problema al explorar %2$s."
 msgstr[1] "La exploración programada del sitio encontró %1$s problemas al explorar %2$s."
 
-#: core/modules/site-scanner/mail.php:110
-#: core/modules/site-scanner/mail.php:177
+#: core/modules/site-scanner/mail.php:117
+#: core/modules/site-scanner/mail.php:184
 msgid "View Report"
 msgstr "Ver informe"
 
 #. translators: 1. Site name.
-#: core/modules/site-scanner/mail.php:104
+#: core/modules/site-scanner/mail.php:111
 msgid "An error occurred while running the scheduled site scan on %s:"
 msgstr "Ocurrió un error al ejecutar la exploración programada del sitio en %s:"
 
-#: core/modules/site-scanner/mail.php:83
+#: core/modules/site-scanner/mail.php:90
 msgid "Scheduled site scan found warnings"
 msgstr "La exploración programada del sitio encontró advertencias"
 
-#: core/modules/site-scanner/mail.php:80
+#: core/modules/site-scanner/mail.php:87
 msgid "Scheduled site scan report: %l"
 msgstr "Informe de la exploración programada del sitio: %l"
 
-#: core/modules/site-scanner/mail.php:75
+#: core/modules/site-scanner/mail.php:82
 msgid "Scheduled site scan found no issues."
 msgstr "La exploración programada del sitio no encontró ningún problema."
 
-#: core/modules/site-scanner/mail.php:73
+#: core/modules/site-scanner/mail.php:80
 msgid "Scheduled site scan resulted in an error"
 msgstr "La exploración programada del sitio resultó en un error"
 
-#: core/modules/site-scanner/mail.php:50
+#: core/modules/site-scanner/mail.php:55
 msgid "Site Scan for %s"
 msgstr "Exploración sitio para %s"
 
@@ -3030,11 +3072,11 @@ msgstr "No se confirmó que «ninguno» sea un algoritmo permitido."
 msgid "Unable to update the %1$s plugin. %2$s"
 msgstr "No ha sido posible actualizar el plugin %1$s. %2$s"
 
-#: core/lockout.php:1469
+#: core/lockout.php:1473
 msgid "Host Triggered Ban Conditions"
 msgstr "El servidor provocó condiciones de bloqueo"
 
-#: core/lockout.php:1467
+#: core/lockout.php:1471
 msgid "Authorized Host Triggered Ban Conditions"
 msgstr "Un servidor autorizado provocó condiciones de bloqueo"
 
@@ -3085,7 +3127,7 @@ msgstr "Los indicadores de características en iThemes Security te permiten prob
 msgid "Scan Now"
 msgstr "Explorar ahora"
 
-#: core/modules/site-scanner/logs.php:18 core/modules/site-scanner/mail.php:48
+#: core/modules/site-scanner/logs.php:18 core/modules/site-scanner/mail.php:53
 msgid "Site Scan"
 msgstr "Explorar el sitio"
 
@@ -3436,7 +3478,7 @@ msgid "Please Verify the Login Request"
 msgstr "Por favor, verifica la solicitud de acceso"
 
 #. translators: 1: Username
-#: core/lib/class-itsec-mail.php:339
+#: core/lib/class-itsec-mail.php:360
 msgid "<b>Username:</b> %1$s"
 msgstr "<b>Nombre de usuario:</b> %1$s"
 
@@ -3499,7 +3541,7 @@ msgid "Known Vulnerabilities"
 msgstr "Vulnerabilidades conocidas"
 
 #. translators: 1. Error code.
-#: core/modules/site-scanner/mail.php:106
+#: core/modules/site-scanner/mail.php:113
 #: core/modules/site-scanner/template.php:109
 #: core/packages/components/src/site-scan-results/wp-error-details.js:33
 #: dist/144.js:1
@@ -4221,6 +4263,7 @@ msgid "The %1$s comparator failed to load hashes for %2$s."
 msgstr "El comparador %1$s falló en cargar los hashes de %2$s."
 
 #: core/modules/core/class-itsec-admin-notices.php:171
+#: core/modules/core/class-itsec-core-admin.php:118
 msgid "Request Expired. Please refresh and try again."
 msgstr "Solicitud caducada. Por favor, recarga e inténtalo de nuevo."
 
@@ -4393,39 +4436,39 @@ msgstr "Archivo creado y correos enviados"
 msgid "File Created but Email Send Failed"
 msgstr "Archivo creado pero fallo en el envío del correo"
 
-#: core/lockout.php:1496
+#: core/lockout.php:1500
 msgid "Username Lockout"
 msgstr "Bloqueo de nombre de usuario"
 
-#: core/lockout.php:1494
+#: core/lockout.php:1498
 msgid "Username Lockout: <code>%s</code>"
 msgstr "Bloqueo de nombre de usuario: <code>%s</code>"
 
-#: core/lockout.php:1491
+#: core/lockout.php:1495
 msgid "Authorized Host Triggered Username Lockout"
 msgstr "Un servidor autorizado provocó un bloqueo de nombre de usuario"
 
-#: core/lockout.php:1488
+#: core/lockout.php:1492
 msgid "User Lockout"
 msgstr "Bloqueo de usuario"
 
-#: core/lockout.php:1486
+#: core/lockout.php:1490
 msgid "User Lockout: <code>%s</code>"
 msgstr "Bloqueo de usuario: <code>%s</code>"
 
-#: core/lockout.php:1479
+#: core/lockout.php:1483
 msgid "Authorized Host Triggered User Lockout"
 msgstr "Un servidor autorizado provocó un bloqueo de usuario"
 
-#: core/lockout.php:1476
+#: core/lockout.php:1480
 msgid "Host Lockout"
 msgstr "Bloqueo de servidor"
 
-#: core/lockout.php:1474
+#: core/lockout.php:1478
 msgid "Host Lockout: <code>%s</code>"
 msgstr "Bloqueo de servidor: <code>%s</code>"
 
-#: core/lockout.php:1471
+#: core/lockout.php:1475
 msgid "Authorized Host Triggered Host Lockout"
 msgstr "Un servidor autorizado provocó un bloqueo de servidor"
 
@@ -4744,7 +4787,7 @@ msgstr "Cuatro veces al día"
 msgid "New notifications available in the %1$sNotification Center%2$s."
 msgstr "Nuevos avisos disponibles en el %1$scentro de avisos%2$s."
 
-#: core/notify.php:204
+#: core/notify.php:208
 msgid "For more details, %1$svisit your security logs%2$s"
 msgstr "Para más detalles %1$svisita nuestros registros de seguridad%2$s"
 
@@ -4855,11 +4898,12 @@ msgstr "No se pudo bloquear."
 msgid "Notification Center"
 msgstr "Centro de avisos"
 
-#: core/modules/hide-backend/settings.php:52
+#: core/modules/hide-backend/settings.php:61
 msgid "Login Now"
 msgstr "Accede ahora"
 
-#: core/modules/hide-backend/settings.php:46
+#: core/modules/hide-backend/settings.php:51
+#: core/modules/hide-backend/settings.php:52
 msgid "New Login URL"
 msgstr "Nueva URL de acceso"
 
@@ -4889,32 +4933,32 @@ msgstr "%1$sOcultar administración%2$s avisará a los destinatarios seleccionad
 msgid "Hide Backend – New Login URL"
 msgstr "Ocultar administración - Nueva URL de acceso"
 
-#: core/modules/file-change/scanner.php:1112
+#: core/modules/file-change/scanner.php:1118
 msgid "Changed Files"
 msgstr "Archivos cambiados"
 
-#: core/modules/file-change/scanner.php:1107
+#: core/modules/file-change/scanner.php:1113
 msgid "Removed Files"
 msgstr "Archivos borrados"
 
-#: core/modules/file-change/scanner.php:1102
+#: core/modules/file-change/scanner.php:1108
 msgid "Added Files"
 msgstr "Archivos añadidos"
 
-#: core/modules/file-change/scanner.php:1094
+#: core/modules/file-change/scanner.php:1100
 msgid "Scan Summary"
 msgstr "Resumen de la exploración"
 
-#: core/modules/file-change/scanner.php:1092
+#: core/modules/file-change/scanner.php:1098
 msgid "A file (or files) on your site have been changed. Please review the report below to verify changes are not the result of a compromise."
 msgstr "Un archivo (o archivos) de tu sitio ha/n cambiado. Por favor, revisa el siguiente informe para revisar que los cambios no sean resultado de una vulnerabilidad."
 
-#: core/modules/file-change/scanner.php:1090
+#: core/modules/file-change/scanner.php:1094
 msgid "File Scan Report for %s"
 msgstr "Informe de exploración de archivos del %s"
 
 #: core/modules/file-change/class-itsec-file-change.php:155
-#: core/modules/file-change/scanner.php:1089
+#: core/modules/file-change/scanner.php:1093
 msgid "File Change Warning"
 msgstr "Advertencia de cambio en archivos"
 
@@ -4928,11 +4972,11 @@ msgstr "El módulo de %1$sdetección de cambio en archivos%2$s enviará por corr
 msgid "File Change"
 msgstr "Cambio en archivos"
 
-#: core/modules/backup/class-itsec-backup.php:338
+#: core/modules/backup/class-itsec-backup.php:347
 msgid "The %1$sDatabase Backup%2$s module will send a copy of any backups to the email addresses listed below."
 msgstr "El módulo de %1$scopia de seguridad de la base de datos%2$s enviará una copia de las copias a las direcciones de correo listadas a continuación."
 
-#: core/modules/backup/class-itsec-backup.php:282
+#: core/modules/backup/class-itsec-backup.php:288
 msgid "Site Database Backup for %s"
 msgstr "Copia de seguridad de la base datos del sitio %s"
 
@@ -4944,30 +4988,30 @@ msgstr "Varios módulos envían correos para avisarte cuando se bloquea en tu si
 msgid "Site Lockouts"
 msgstr "Bloqueos en el sitio"
 
-#: core/lib/class-itsec-mail.php:664
+#: core/lib/class-itsec-mail.php:685
 msgid "New Notification from iThemes Security"
 msgstr "Nuevos avisos de iThemes Security"
 
-#: core/lib/class-itsec-mail.php:284
+#: core/lib/class-itsec-mail.php:305
 msgctxt "Files modified"
 msgid "Modified"
 msgstr "Modificados"
 
-#: core/lib/class-itsec-mail.php:283
+#: core/lib/class-itsec-mail.php:304
 msgctxt "Files removed"
 msgid "Removed"
 msgstr "Borrados"
 
-#: core/lib/class-itsec-mail.php:282
+#: core/lib/class-itsec-mail.php:303
 msgctxt "Files added"
 msgid "Added"
 msgstr "Añadidos"
 
-#: core/lib/class-itsec-mail.php:143
+#: core/lib/class-itsec-mail.php:164
 msgid "To unsubscribe from these notifications, please %1$scontact the site administrator%2$s."
 msgstr "Para dejar de recibir estos avisos, por favor, %1$scontacta con el administrador del sitio%2$s."
 
-#: core/lib/class-itsec-mail.php:141
+#: core/lib/class-itsec-mail.php:162
 msgid "This email was generated by the iThemes Security plugin on behalf of %s."
 msgstr "Este correo lo ha generado el plugin iThemes Security para %s."
 
@@ -5155,46 +5199,46 @@ msgid "The length of time a host or user will be locked out from this site after
 msgstr "El tiempo que tarda un servidor o un usuario en ser bloqueado en este sitio después de alcanzar el límite de accesos fallidos. El ajuste por defecto de 15 minutos es el recomendado, ya que aumentarlo podría impedir bloquear atacantes."
 
 #. translators: 1: site URL, 2: email subject
-#: core/lib/class-itsec-mail.php:660
+#: core/lib/class-itsec-mail.php:681
 #: core/modules/two-factor/providers/class.two-factor-email.php:148
 msgid "[%1$s] %2$s"
 msgstr "[%1$s] %2$s"
 
-#: core/lib/class-itsec-mail.php:353
+#: core/lib/class-itsec-mail.php:374
 msgid "Reason"
 msgstr "Motivo"
 
-#: core/lib/class-itsec-mail.php:352
+#: core/lib/class-itsec-mail.php:373
 msgid "Lockout in Effect Until"
 msgstr "Bloqueo activo hasta"
 
-#: core/lib/class-itsec-mail.php:351
+#: core/lib/class-itsec-mail.php:372
 msgid "Host/User"
 msgstr "Servidor/Usuario"
 
 #. translators: 1: Hostname
-#: core/lib/class-itsec-mail.php:342
+#: core/lib/class-itsec-mail.php:363
 msgid "<b>Host:</b> %1$s"
 msgstr "<b>Servidor:</b> %1$s"
 
 #. translators: 1: Username
-#: core/lib/class-itsec-mail.php:336
+#: core/lib/class-itsec-mail.php:357
 msgid "<b>User:</b> %1$s"
 msgstr "<b>Usuario:</b> %1$s"
 
-#: core/lockout.php:1451
+#: core/lockout.php:1455
 msgid "Visit Banned Users Settings"
 msgstr "Visitar ajustes de usuarios bloqueados"
 
-#: core/lockout.php:1450
+#: core/lockout.php:1454
 msgid "Release the permanent host ban from Ban Hosts list in the Banned Users section of the settings page."
 msgstr "Libera el bloqueo permanente del servidor de la lista de servidores bloquedos en la sección usuarios bloqueados de la página de ajustes."
 
-#: core/lockout.php:1446
+#: core/lockout.php:1450
 msgid "Visit Settings Page"
 msgstr "Visitar la página de ajustes"
 
-#: core/lockout.php:1445
+#: core/lockout.php:1449
 msgid "Release lockouts from the Active Lockouts section of the settings page."
 msgstr "Libera los bloqueados de la sección de Bloqueos activos en la página de ajustes."
 
@@ -5236,92 +5280,92 @@ msgstr "Desactivar PHP en Temas - Seguridad > Ajustes > Mejoras del sistema > PH
 msgid "Disable PHP in Plugins - Security > Settings > System Tweaks > PHP in Plugins"
 msgstr "Desactivar PHP en los Plugins - Seguridad > Ajustes > Mejoras del sistema > PHP en Plugins"
 
-#: core/modules/backup/class-itsec-backup.php:286
+#: core/modules/backup/class-itsec-backup.php:295
 msgid "Website"
 msgstr "Web"
 
-#: core/modules/backup/class-itsec-backup.php:283
+#: core/modules/backup/class-itsec-backup.php:292
 msgid "Attached is the database backup file for your site."
 msgstr "La copia de seguridad de la base de datos de tu sitio está adjunta."
 
-#: core/modules/backup/class-itsec-backup.php:282
-#: core/modules/backup/class-itsec-backup.php:336
-#: core/modules/backup/class-itsec-backup.php:342
+#: core/modules/backup/class-itsec-backup.php:287
+#: core/modules/backup/class-itsec-backup.php:345
+#: core/modules/backup/class-itsec-backup.php:351
 msgid "Database Backup"
 msgstr "Copia de seguridad de la base de datos"
 
-#: core/lib/class-itsec-mail.php:268 core/modules/dashboard/container.php:22
+#: core/lib/class-itsec-mail.php:289 core/modules/dashboard/container.php:22
 msgid "Hosts"
 msgstr "Servidores"
 
-#: core/lib/class-itsec-mail.php:267
+#: core/lib/class-itsec-mail.php:288
 #: core/lib/site-types/Question/Client_Question_Pack.php:68
 #: core/lib/site-types/Question/Client_Question_Pack.php:127
 #: core/modules/dashboard/container.php:26 module-strings.php:399
 msgid "Users"
 msgstr "Usuarios"
 
-#: core/lib/class-itsec-mail.php:125
+#: core/lib/class-itsec-mail.php:146
 msgid "Learn simple WordPress security tips — including 3 kinds of security your site needs and 4 best security practices for keeping your WordPress site safe with our <a href=\"%s\">free guide</a>."
 msgstr "Aprende consejos de seguridad de WordPress - incluyendo 3 tipos de seguridad que tu sitio necesita y 4 buenas prácticas de seguridad para mantener tu sitio WordPress a salvo con nuestra <a href=\"%s\">guía gratuita</a>."
 
-#: core/lib/class-itsec-mail.php:123
+#: core/lib/class-itsec-mail.php:144
 msgid "Free WordPress Security Guide"
 msgstr "Guia gratuita de seguridad WordPress"
 
-#: core/lib/class-itsec-mail.php:122
+#: core/lib/class-itsec-mail.php:143
 msgid "To unsubscribe from these updates, visit the %1$sSettings page%2$s in the iThemes Security plugin menu."
 msgstr "Para darte de baja de estas actualizaciones, visita la %1$spágina de ajustes%2$s en el menú del plugin iThemes Security "
 
-#: core/lib/class-itsec-mail.php:122
+#: core/lib/class-itsec-mail.php:143
 msgid "This email was generated by the iThemes Security plugin."
 msgstr "Este email ha sido generado por el plugin iThemes Security"
 
-#: core/lib/class-itsec-mail.php:111
+#: core/lib/class-itsec-mail.php:132
 msgid "Read iThemes Security documentation and Frequently Asked Questions on the <a href=\"%s\">iThemes Help Center</a>."
 msgstr "Lee la documentación de iThemes Security y la lista de preguntas frecuentas en <a href=\"%s\">Centro de ayuda de iThemes</a>."
 
-#: core/lib/class-itsec-mail.php:109
+#: core/lib/class-itsec-mail.php:130
 msgid "Documentation"
 msgstr "Documentación"
 
-#: core/lib/class-itsec-mail.php:108
+#: core/lib/class-itsec-mail.php:129
 msgid "Help & Support"
 msgstr "Ayuda y soporte"
 
-#: core/lib/class-itsec-mail.php:102
+#: core/lib/class-itsec-mail.php:123
 msgid "Tutorials"
 msgstr "Tutoriales"
 
-#: core/lib/class-itsec-mail.php:83
+#: core/lib/class-itsec-mail.php:104
 msgid "Why go Pro? <a href=\"%s\">Check out the Free/Pro comparison chart.</a>"
 msgstr "¿Por qué pasar a Pro? <a href=\"%s\">Echa un vistazo la comparación entre la versión Pro y la gratuita.</a>"
 
-#: core/lib/class-itsec-mail.php:81
+#: core/lib/class-itsec-mail.php:102
 msgid "Want two-factor authentication, scheduled site scanning, ticketed support and more?"
 msgstr "¿Quieres identificación de dos factores, exploración programada del sitio, tiques de soporte y más?"
 
-#: core/lib/class-itsec-mail.php:603
+#: core/lib/class-itsec-mail.php:624
 msgid "Debug info (source page): %s"
 msgstr "Información de depuración (pagína fuente): %s"
 
-#: core/notify.php:188
+#: core/notify.php:192
 msgid "Messages"
 msgstr "Mensajes"
 
-#: core/notify.php:162
+#: core/notify.php:166
 msgid "File changes detected on the site."
 msgstr "Cambios en archivos detectados en el sitio"
 
-#: core/notify.php:161
+#: core/notify.php:165
 msgid "File Changes"
 msgstr "Cambios en archivos"
 
-#: core/notify.php:157
+#: core/notify.php:161
 msgid "No lockouts since the last email check."
 msgstr "No ha habido bloqueos desde el último chequeo."
 
-#: core/notify.php:130
+#: core/notify.php:134
 msgid "The following is a summary of security related activity on your site: %s"
 msgstr "A continuación tienes un resumen de la actividad relacionada con la seguridad en tu web: %s"
 
@@ -5806,11 +5850,13 @@ msgid "Enable"
 msgstr "Activar"
 
 #: core/modules/core/notices.php:155
+#: core/modules/dashboard/entries/dashboard/components/empty-states/card-becoming.js:82
+#: dist/dashboard/dashboard.js:1
 msgid "Learn More"
 msgstr "Saber más"
 
 #: core/admin-pages/page-debug.php:173 core/admin-pages/page-logs.php:436
-#: core/lib/class-itsec-mail.php:114
+#: core/lib/class-itsec-mail.php:135
 msgid "Support"
 msgstr "Soporte"
 
@@ -6082,7 +6128,7 @@ msgid "blacklist"
 msgstr "lista negra"
 
 #. translators: 1. Error message.
-#: core/modules/site-scanner/mail.php:105
+#: core/modules/site-scanner/mail.php:112
 #: core/modules/site-scanner/template.php:108
 #: core/packages/components/src/site-scan-results/wp-error-details.js:26
 #: dist/144.js:1
@@ -6118,7 +6164,7 @@ msgstr "Limpiar"
 msgid "Warning"
 msgstr "Advertencia"
 
-#: core/modules/file-change/scanner.php:1097
+#: core/modules/file-change/scanner.php:1103
 msgid "Scan Details"
 msgstr "Detalles del escaneo"
 
@@ -6159,11 +6205,11 @@ msgstr "Activa la función ocultar escritorio."
 msgid "Added"
 msgstr "Añadido"
 
-#: core/modules/file-change/scanner.php:1099
+#: core/modules/file-change/scanner.php:1105
 msgid "File Hash"
 msgstr "Hash del archivo"
 
-#: core/modules/file-change/scanner.php:1099
+#: core/modules/file-change/scanner.php:1105
 msgid "Modified"
 msgstr "Modificado"
 
@@ -6171,12 +6217,12 @@ msgstr "Modificado"
 msgid "Memory Used"
 msgstr "Memoria en Uso"
 
-#: core/modules/backup/class-itsec-backup.php:289
+#: core/modules/backup/class-itsec-backup.php:298
 #: core/modules/backup/entries/dashboard/index.js:81 dist/backup/dashboard.js:1
 msgid "Date"
 msgstr "Fecha"
 
-#: core/modules/file-change/scanner.php:1099
+#: core/modules/file-change/scanner.php:1105
 msgid "File"
 msgstr "Archivo"
 
@@ -6232,11 +6278,11 @@ msgstr "Cambiar el prefijo de la base de datos"
 msgid "Email Address"
 msgstr "Dirección de correo electrónico"
 
-#: core/lib/class-itsec-mail.php:82
+#: core/lib/class-itsec-mail.php:103
 msgid "Get iThemes Security Pro"
 msgstr "Consigue iThemes Security Pro"
 
-#: core/modules/core/class-itsec-core-admin.php:65
+#: core/modules/core/class-itsec-core-admin.php:77
 msgid "Get Support"
 msgstr "Obtener soporte"
 
@@ -6673,7 +6719,7 @@ msgstr "Hora"
 msgid "Details"
 msgstr "Detalles"
 
-#: core/lockout.php:1369 core/lockout.php:1441
+#: core/lockout.php:1369 core/lockout.php:1445
 msgid "Site Lockout Notification"
 msgstr "Aviso de bloqueo del sitio"
 
@@ -6691,7 +6737,7 @@ msgstr "Liberar bloqueo"
 msgid "You have been locked out due to too many invalid login attempts."
 msgstr "Has sido bloqueado debido a que has intentado iniciar sesión de forma no válida demasiadas veces."
 
-#: core/lockout.php:1464
+#: core/lockout.php:1468
 msgid "Lockout"
 msgstr "Bloqueo"
 
@@ -6739,7 +6785,7 @@ msgstr "El mensaje que se le mostrará a un usuario cuando su IP haya sido marca
 msgid "Your IP address has been flagged as a threat by the iThemes Security network."
 msgstr "Tu dirección IP ha sido marcada como amenaza en la red de iThemes Security."
 
-#: core/modules/dashboard/container.php:19 core/notify.php:148
+#: core/modules/dashboard/container.php:19 core/notify.php:152
 #: module-strings.php:199 core/admin-pages/entries/settings/utils.js:370
 #: dist/pages/settings.js:1
 msgid "Lockouts"
@@ -6812,15 +6858,15 @@ msgstr "¡Nuevo! Lleva la seguridad de tu sitio al próximo nivel activando la r
 #: core/lib/admin-notices/class-itsec-admin-notice-globally-dismissible.php:48
 #: core/lib/admin-notices/class-itsec-admin-notice-highlighted-log.php:88
 #: core/lib/admin-notices/class-itsec-admin-notice-user-dismissible.php:49
-#: core/modules/promos/entries/dashboard/app.js:112
-#: core/modules/promos/entries/dashboard/app.js:192
-#: core/modules/promos/entries/settings/components/becoming-solid/index.js:72
+#: core/modules/promos/entries/dashboard/app.js:110
+#: core/modules/promos/entries/dashboard/app.js:159
+#: core/modules/promos/entries/settings/components/becoming-solid/index.js:66
 #: dist/promos/dashboard.js:1 dist/promos/settings.js:1
 msgid "Dismiss"
 msgstr "Descartar"
 
 #: core/admin-pages/init.php:30 core/admin-pages/init.php:34
-#: core/modules/core/class-itsec-core-admin.php:44
+#: core/modules/core/class-itsec-core-admin.php:56
 #: core/modules/core/entries/admin-notices/components/toolbar/index.js:40
 #: core/modules/core/entries/admin-notices/components/toolbar/index.js:57
 #: dist/core/admin-notices.js:2
@@ -6834,7 +6880,7 @@ msgstr "Seguridad"
 msgid "Dashboard"
 msgstr "Escritorio"
 
-#: core/lib/class-itsec-mail.php:115
+#: core/lib/class-itsec-mail.php:136
 msgid "Pro"
 msgstr "Pro"
 

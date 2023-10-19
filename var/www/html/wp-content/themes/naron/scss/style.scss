@@ -1,8 +1,8 @@
 /*
 Theme Name: Narón
-Theme URI: 
+Theme URI: http://excelia.com
 Author: Excelia
-Author URI: 
+Author URI:
 Description: Plantilla para el Ayuntamiento de Narón
 Requires at least: 6.0
 Tested up to: 6.2.2
@@ -14,7 +14,15 @@ Text Domain: naron
 Tags: 
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800&display=swap");
+@import "../css/megamenu";
+
 $colorDos: red;
+
+body {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+}
 
 .menu-item-object-language_switcher .trp-flag-image {
   margin: 0;
@@ -48,6 +56,7 @@ $colorDos: red;
 .trp-language-switcher .trp-ls-shortcode-language {
   background-color: white;
   border-radius: 1px;
+  z-index: 99999;
 }
 .trp-language-switcher .trp-ls-shortcode-language > a {
   color: #1e1e1e;
@@ -83,6 +92,104 @@ $colorDos: red;
 //     }
 //   }
 // }
+
+.header {
+  &-link {
+    a {
+      border-radius: 0;
+      background-color: transparent;
+      padding: 0;
+      font-family: "Montserrat", Sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  &-middle {
+    &-home {
+      position: absolute;
+      z-index: 999;
+      width: 100%;
+      -webkit-transition: background-color 500ms ease-in;
+      -ms-transition: background-color 500ms ease-in;
+      transition: background-color 500ms ease-in;
+      &.sticky {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999999;
+        a.mega-menu-link {
+          color: #333 !important;
+        }
+      }
+      &:hover {
+        background-color: white;
+        a.mega-menu-link {
+          color: #333 !important;
+        }
+      }
+    }
+    a.mega-menu-link {
+      color: #333 !important;
+    }
+  }
+}
+
+.section {
+  &-title {
+    font-family: "Montserrat", Sans-serif;
+    &-top {
+      font-size: 31px;
+      font-weight: 400;
+    }
+    &-bottom {
+      font-size: 75px;
+      font-weight: 800;
+      margin-block-start: 10px !important;
+    }
+  }
+  &-external {
+    &-web {
+      margin-top: -95px !important;
+      &-header {
+        background-color: #00009e;
+        background-image: url("./images/naron-vista-dia-excelia.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        &::before {
+          content: "";
+          background-color: #00009e;
+          opacity: 0.92;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+        }
+        & > div {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+.social-buttons {
+  .wp-social-link {
+    a {
+      padding: 0.1rem;
+    }
+  }
+  .wp-social-link-facebook {
+    background-color: white !important;
+    color: #1778f2 !important;
+    border-radius: 5px;
+  }
+}
 
 .header-menu {
   border-top: 1px solid #ccc;
@@ -143,8 +250,147 @@ $colorDos: red;
   position: absolute;
   bottom: -1px;
 }
-.header-link a {
-  border-radius: 0;
-  background-color: transparent;
+
+.uagb-post-grid.is-grid {
+  &.uagb-post__equal-height {
+    .uagb-post__inner-wrap {
+      height: 220px;
+      display: flex;
+      align-items: flex-end;
+      border-bottom: 5px solid #00009e;
+      &:hover {
+        .uagb-post__link-complete-box {
+          background-color: transparent;
+          background-image: linear-gradient(
+            180deg,
+            #00009e47 42%,
+            #00009ebf 68%
+          );
+          opacity: 1;
+        }
+      }
+      .uagb-post__image {
+        width: 100% !important;
+        margin-left: 0 !important;
+      }
+      .uagb-post__link-complete-box {
+        background-color: transparent;
+        background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.1) 42%,
+          rgba(0, 0, 0, 0.2) 68%
+        );
+        opacity: 1;
+      }
+      .uagb-post__title {
+        position: relative;
+        z-index: 999;
+      }
+    }
+  }
+}
+
+.uagb-slick-carousel {
+  .slick-track {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.uagb-post-grid.is-carousel {
+  &.uagb-post__carousel_equal-height {
+    .uagb-post__inner-wrap {
+      border-bottom: 5px solid #00009e;
+      height: 220px;
+      display: flex !important;
+      align-items: flex-end;
+      overflow: hidden;
+      &:hover {
+        .uagb-post__link-complete-box {
+          background-color: transparent;
+          background-image: linear-gradient(
+            180deg,
+            #00009e47 42%,
+            #00009ebf 68%
+          );
+          opacity: 1;
+        }
+      }
+      .uagb-post__image {
+        width: 100% !important;
+        margin-left: 0 !important;
+      }
+      .uagb-post__link-complete-box {
+        background-color: transparent;
+        background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.1) 42%,
+          rgba(0, 0, 0, 0.2) 68%
+        );
+        opacity: 1;
+      }
+      .uagb-post__title {
+        position: relative;
+        z-index: 999;
+      }
+    }
+  }
+}
+
+.icon {
+  &-external {
+    &-web {
+      img {
+        background-color: #02019a;
+        border: 7px solid white;
+      }
+    }
+  }
+}
+
+.footer {
+  &-menu {
+    ul {
+      gap: 0 !important;
+      li {
+        border-right: 1px solid white;
+        &:first-child {
+          a {
+            padding-left: 0 !important;
+          }
+        }
+        &:last-child {
+          border-right: none;
+        }
+        a {
+          color: white !important;
+          padding: 5px 15px !important;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+#external-icons {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
   padding: 0;
+  margin-block-start: 0;
+  -webkit-transition: max-height 500ms ease-in;
+  -ms-transition: max-height 500ms ease-in;
+  transition: max-height 500ms ease-in;
+  &.open {
+    height: auto;
+    max-height: 200px;
+    -webkit-transition: max-height 500ms ease-in;
+    -ms-transition: max-height 500ms ease-in;
+    transition: max-height 500ms ease-in;
+  }
+}
+
+.logo-difference {
+  mix-blend-mode: difference;
 }

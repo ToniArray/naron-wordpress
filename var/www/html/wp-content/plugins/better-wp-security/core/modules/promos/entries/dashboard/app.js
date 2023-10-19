@@ -8,9 +8,8 @@ import { ThemeProvider, useTheme } from '@emotion/react';
  */
 import { __ } from '@wordpress/i18n';
 import { Button } from '@wordpress/components';
-import { useMemo, createInterpolateElement } from '@wordpress/element';
-import { close as dismissIcon } from '@wordpress/icons';
-import { useViewportMatch } from '@wordpress/compose';
+import { useMemo } from '@wordpress/element';
+import { closeSmall as dismissIcon } from '@wordpress/icons';
 
 /**
  * iThemes dependencies
@@ -28,16 +27,16 @@ import {
 	useConfigContext,
 	PromoCard,
 } from '@ithemes/security.dashboard.dashboard';
-import { LogoProWhite } from '@ithemes/security-style-guide';
+import { LogoProWhite, SecurityFreeLogo } from '@ithemes/security-style-guide';
 import { FlexSpacer } from '@ithemes/security-components';
 import { useLocalStorage } from '@ithemes/security-hocs';
 import {
-	StyledStellarSale,
-	StyledStellarSaleButton,
-	StyledStellarSaleContent,
-	StyledStellarSaleLink,
-	StyledStellarSaleGraphic,
-	StyledStellarSaleHeading,
+	StyledBanner,
+	StyledBannerButton,
+	StyledBannerHeading,
+	StyledLogoContainer,
+	StyledTextContainer,
+	StyledSolidLogo,
 	StyledStellarSaleDismiss,
 } from './styles';
 import './style.scss';
@@ -45,18 +44,17 @@ import './style.scss';
 export default function App() {
 	const { installType } = useConfigContext();
 
-	if ( installType === 'pro' ) {
-		return null;
-	}
-
 	return (
 		<>
 			<BelowToolbarFill>
 				{ ( { page, dashboardId } ) =>
 					dashboardId > 0 && page === 'view-dashboard' && (
 						<>
-							<StellarSale />
-							<Footer />
+							<SolidSecurityDashboardBanner installType={ installType } />
+							{ installType === 'free' && (
+								<Footer />
+							) }
+
 						</>
 					)
 				}
@@ -116,16 +114,8 @@ function Footer() {
 	);
 }
 
-const start = Date.UTC( 2023, 6, 24, 8, 0, 0 );
-const end = Date.UTC( 2023, 7, 1, 8, 0, 0 );
-const now = Date.now();
-
-function StellarSale() {
-	const isSmall = useViewportMatch( 'small' );
-	const isHuge = useViewportMatch( 'huge' );
-	const [ isDismissed, setIsDismiss ] = useLocalStorage(
-		'itsecPromoStellarSale23'
-	);
+function SolidSecurityDashboardBanner( { installType } ) {
+	const [ isDismissed, setIsDismissed ] = useLocalStorage( 'itsecBecomingSolid' );
 	const baseTheme = useTheme();
 	const theme = useMemo( () => ( {
 		...baseTheme,
@@ -138,63 +128,48 @@ function StellarSale() {
 		},
 	} ), [ baseTheme ] );
 
-	if ( start > now || end < now ) {
-		return null;
-	}
-
 	if ( isDismissed ) {
 		return null;
 	}
 
 	return (
 		<ThemeProvider theme={ theme }>
-			<StyledStellarSale>
-				<StyledStellarSaleContent isSmall={ isSmall }>
-					<StyledStellarSaleHeading
+			<StyledBanner>
+				<StyledLogoContainer>
+					<SecurityFreeLogo />
+					<StyledSolidLogo />
+				</StyledLogoContainer>
+				<StyledTextContainer>
+					<StyledBannerHeading
 						level={ 2 }
-						variant="white"
-						weight={ 300 }
-						size="extraLarge"
-						isSmall={ isSmall }
-					>
-						<strong>{ __( 'Make it yours.', 'better-wp-security' ) }</strong>
-						<br />
-						{ __( 'Get $50 off the new Solid Foundations bundle.', 'better-wp-security' ) }
-					</StyledStellarSaleHeading>
-					{ isSmall && (
-						<Text
-							variant="white"
-							size="subtitleSmall"
-							weight={ 300 }
-							text={ createInterpolateElement(
-								__( 'Purchase any StellarWP product during the sale and get <b>100%</b> off WP Business Reviews and take <b>40%</b> off all other brands.', 'better-wp-security' ),
-								{
-									b: <strong />,
-								}
-							) }
-						/>
-					) }
-					<StyledStellarSaleButton href="https://go.solidwp.com/security-plugin-sale" weight={ 600 }>
-						{ __( 'Shop Now', 'better-wp-security' ) }
-					</StyledStellarSaleButton>
-					<StyledStellarSaleLink
-						as="a"
-						href="https://go.solidwp.com/security-plugin-sale"
-						variant="white"
 						weight={ 700 }
+						variant="dark"
+						size="extraLarge"
+						text={ __( 'iThemes Security is becoming Solid Security', 'better-wp-security' ) }
+					/>
+					<Text
 						size="subtitleSmall"
-						isSmall={ isSmall }
-					>
-						{ __( 'View all StellarWP Deals', 'better-wp-security' ) }
-					</StyledStellarSaleLink>
-				</StyledStellarSaleContent>
+						weight={ 500 }
+						variant="dark"
+						text={ __( 'We have been working hard for almost a year to bring you incredible new features in the form of our new and improved brand: SolidWP. Discover what’s coming very soon!', 'better-wp-security' ) }
+					/>
+				</StyledTextContainer>
+				<FlexSpacer />
 				<StyledStellarSaleDismiss
 					label={ __( 'Dismiss', 'better-wp-security' ) }
 					icon={ dismissIcon }
-					onClick={ () => setIsDismiss( true ) }
+					onClick={ () => setIsDismissed( true ) }
 				/>
-				<StyledStellarSaleGraphic isHuge={ isHuge } />
-			</StyledStellarSale>
+				<StyledBannerButton
+					href={ installType === 'free'
+						? 'https://go.solidwp.com/security-free-dashboard-ithemes-becoming-solidwp'
+						: 'https://go.solidwp.com/security-dashboard-ithemes-becoming-solidwp'
+					}
+					weight={ 600 }
+				>
+					{ __( 'Learn more', 'better-wp-security' ) }
+				</StyledBannerButton>
+			</StyledBanner>
 		</ThemeProvider>
 	);
 }

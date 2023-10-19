@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Plugins - LiteSpeed Cache - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-08-15 22:30:08+0000\n"
+"PO-Revision-Date: 2023-09-20 20:29:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.7\n"
+"X-Generator: GlotPress/4.0.0-alpha.8\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - LiteSpeed Cache - Stable (latest release)\n"
 
@@ -177,7 +177,7 @@ msgstr "Aplicar el preajuste"
 
 #: tpl/presets/standard.tpl.php:126
 msgid "This will back up your current settings and replace them with the %1$s preset settings. Do you want to continue?"
-msgstr "Se ha a a hacer una copia de seguridad de tus ajustes actuales y reemplazarlos con los de los preajustes %1$s. ¿Quieres continuar?"
+msgstr "Se va a hacer una copia de seguridad de tus ajustes actuales y reemplazarlos con los de los preajustes %1$s. ¿Quieres continuar?"
 
 #: tpl/presets/standard.tpl.php:116
 msgid "Who should use this preset?"
@@ -1395,7 +1395,7 @@ msgstr "En el caso de las URL con comodines, puede haber un retraso en el inicio
 
 #: tpl/cache/settings-purge.tpl.php:91
 msgid "By design, this option may serve stale content. Do not enable this option, if that is not OK with you."
-msgstr "Por su diseño, esta opción puede servir contenido rancio. No actives esta opción si no le parece bien."
+msgstr "Por diseño, esta opción puede servir contenido obsoleto. No actives esta opción si no estás de acuerdo."
 
 #: src/lang.cls.php:126
 msgid "Serve Stale"
@@ -4760,7 +4760,7 @@ msgstr "Básico"
 
 #: tpl/crawler/settings-general.tpl.php:139
 msgid "The maximum average server load allowed while crawling. The number of crawler threads in use will be actively reduced until average server load falls under this limit. If this cannot be achieved with a single thread, the current crawler run will be terminated."
-msgstr "La carga media permitida como máximo en el servidor durante la indexación. El número de hilos en uso del crawler será reducido activamente hasta que la carga media del servidor baje de este límite. Si esto no es posible con un solo hilo, el proceso de indexación actual será terminado."
+msgstr "La carga media permitida como máximo en el servidor durante la indexación. El número de hilos en uso del rastreador será reducido activamente hasta que la carga media del servidor baje de este límite. Si esto no es posible con un solo hilo, el proceso de indexación actual será terminado."
 
 #: src/lang.cls.php:103
 msgid "Cache Login Page"
@@ -4907,7 +4907,7 @@ msgstr "Activar ESI"
 
 #: tpl/crawler/summary.tpl.php:50
 msgid "See <a %s>Introduction for Enabling the Crawler</a> for detailed information."
-msgstr "Ver <a %s>Introducción para activar el Crawler</a> para información detallada."
+msgstr "Ver <a %s>Introducción para activar el rastreador</a> para información detallada."
 
 #: src/lang.cls.php:253
 msgid "Custom Sitemap"
@@ -4919,7 +4919,7 @@ msgstr "Purgar páginas por URL completa o relativa."
 
 #: tpl/crawler/summary.tpl.php:49
 msgid "The crawler feature is not enabled on the LiteSpeed server. Please consult your server admin or hosting provider."
-msgstr "La característica de crawler no está activada en el servidor LiteSpeed. Por favor, consulta al administrador del servidor."
+msgstr "La característica de rastreador no está activada en el servidor LiteSpeed. Por favor, consulta al administrador del servidor."
 
 #: tpl/cache/settings-esi.tpl.php:35 tpl/cdn/manage.tpl.php:23
 #: tpl/crawler/summary.tpl.php:48 tpl/inc/check_cache_disabled.php:31
@@ -4975,7 +4975,7 @@ msgstr "Especifica el número de hilos a utilizar durante la indexación."
 
 #: tpl/crawler/settings-general.tpl.php:95
 msgid "Specify how long in seconds before the crawler should initiate crawling the entire sitemap again."
-msgstr "Especifica tras cuanto tiempo el Crawler debe indexar el sitemap entero de nuevo."
+msgstr "Especifica tras cuanto tiempo debe el rastreador indexar el sitemap entero de nuevo."
 
 #: src/lang.cls.php:247
 msgid "Crawl Interval"
@@ -5015,15 +5015,15 @@ msgstr "CDN de la caché de LiteSpeed"
 
 #: tpl/crawler/summary.tpl.php:227
 msgid "No crawler meta file generated yet"
-msgstr "Archivo meta del crawler aún no generado"
+msgstr "Archivo meta del rastreador aún no generado"
 
 #: tpl/crawler/summary.tpl.php:209
 msgid "Show crawler status"
-msgstr "Mostrar estado del Crawler"
+msgstr "Mostrar estado del rastreador"
 
 #: tpl/crawler/summary.tpl.php:202
 msgid "Watch Crawler Status"
-msgstr "Ver estado del Crawler"
+msgstr "Ver estado del rastreador"
 
 #: tpl/crawler/summary.tpl.php:197
 msgid "Please see <a %s>Hooking WP-Cron Into the System Task Scheduler</a> to learn how to create the system cron task."
@@ -5051,7 +5051,7 @@ msgstr "Nombre del Cron"
 
 #: tpl/crawler/summary.tpl.php:42
 msgid "Crawler Cron"
-msgstr "Cron del Crawler"
+msgstr "Cron del rastreador"
 
 #: tpl/crawler/summary.tpl.php:36
 msgid "%d minute"
@@ -5075,7 +5075,7 @@ msgstr "Generado en %s"
 
 #: tpl/crawler/entry.tpl.php:18
 msgid "LiteSpeed Cache Crawler"
-msgstr "Crawler de LiteSpeed Cache"
+msgstr "Rastreador de LiteSpeed Cache"
 
 #: src/lang.cls.php:248
 msgid "Threads"
@@ -5095,7 +5095,7 @@ msgstr "Si tienes alguna pregunta, el equipo estará siempre feliz de responder 
 
 #: src/admin-display.cls.php:135 src/lang.cls.php:243
 msgid "Crawler"
-msgstr "Crawler"
+msgstr "Rastreador"
 
 #. Plugin URI of the plugin
 msgid "https://www.litespeedtech.com/products/cache-plugins/wordpress-acceleration"
@@ -5650,7 +5650,7 @@ msgstr "Las URLs serán comparadas con la variable REQUEST_URI del servidor."
 
 #: tpl/cache/settings-purge.tpl.php:54
 msgid "Select only the archive types that are currently used, the others can be left unchecked."
-msgstr "Seleccione solo los tipos de archivos que se utilicen actualmente, los otros se pueden dejar desmarcados."
+msgstr "Selecciona solo los tipos de archivos que se utilicen actualmente, los otros se pueden dejar desmarcados."
 
 #: tpl/cdn/auto_setup.tpl.php:89 tpl/toolbox/report.tpl.php:81
 msgid "Notes"
@@ -5732,15 +5732,15 @@ msgstr "Archivo de tipo de contenido"
 
 #: tpl/cache/settings-purge.tpl.php:20
 msgid "Author archive"
-msgstr "Archivo del Autor"
+msgstr "Archivo del autor"
 
 #: tpl/cache/settings-purge.tpl.php:15
 msgid "Home page"
-msgstr "Página de Inicio"
+msgstr "Página de inicio"
 
 #: tpl/cache/settings-purge.tpl.php:14
 msgid "Front page"
-msgstr "Página de inicio"
+msgstr "Portada"
 
 #: tpl/cache/settings-purge.tpl.php:13
 msgid "All pages"

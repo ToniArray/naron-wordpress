@@ -44,12 +44,19 @@ class ITSEC_Site_Scanner_Mail {
 		$mail->set_subject( static::get_scan_subject( $code ) );
 		$mail->set_recipients( $nc->get_recipients( 'malware-scheduling' ) );
 
+
+		$tracking_link = ITSEC_Core::is_pro()
+			? 'https://go.solidwp.com/security-site-scan-email-ithemes-becoming-solidwp'
+			: 'https://go.solidwp.com/security-free-site-scan-email-ithemes-becoming-solidwp';
+
 		$mail->add_header(
 			esc_html__( 'Site Scan', 'better-wp-security' ),
 			sprintf(
 				esc_html__( 'Site Scan for %s', 'better-wp-security' ),
 				'<b>' . ITSEC_Lib::date_format_i18n_and_local_timezone( $scan->get_time()->getTimestamp(), get_option( 'date_format' ) ) . '</b>'
-			)
+			),
+			false,
+			$tracking_link
 		);
 		static::format_scan_body( $mail, $scan );
 		$mail->add_footer( false );

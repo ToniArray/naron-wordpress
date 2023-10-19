@@ -23,38 +23,40 @@ export default function PageHeader( {
 	const location = useLocation();
 
 	return (
-		<header
-			className={ classnames(
-				'itsec-page-header',
-				`itsec-page-header--align-${ align }`,
-				{
-					'itsec-page-header--has-actions': !! children,
-					'itsec-page-header--has-help': !! help,
-				}
-			) }
-		>
-			{ breadcrumbs === true && <Breadcrumbs title={ title } /> }
-			{ breadcrumbs }
-
-			<div className="itsec-page-header__text">
-				<h1 id="itsec-page-header">
-					{ title }
-					{ help && (
-						<HelpPopover
-							help={ help }
-							to={ { ...location, hash: '#help' } }
-						/>
-					) }
-				</h1>
-				{ subtitle && <h2>{ subtitle }</h2> }
-				{ description && (
-					<Markup content={ description } tagName="p" />
+		<>
+			<header
+				className={ classnames(
+					'itsec-page-header',
+					`itsec-page-header--align-${ align }`,
+					{
+						'itsec-page-header--has-actions': !! children,
+						'itsec-page-header--has-help': !! help,
+					}
 				) }
-			</div>
+			>
+				{ breadcrumbs === true && <Breadcrumbs title={ title } /> }
+				{ breadcrumbs }
 
-			{ children && (
-				<div className="itsec-page-header__actions">{ children }</div>
-			) }
-		</header>
+				<div className="itsec-page-header__text">
+					<h1 id="itsec-page-header">
+						{ title }
+						{ help && (
+							<HelpPopover
+								help={ help }
+								to={ { ...location, hash: '#help' } }
+							/>
+						) }
+					</h1>
+					{ subtitle && <h2>{ subtitle }</h2> }
+					{ description && (
+						<Markup content={ description } tagName="p" />
+					) }
+				</div>
+
+				{ children && (
+					<div className="itsec-page-header__actions">{ children }</div>
+				) }
+			</header>
+		</>
 	);
 }

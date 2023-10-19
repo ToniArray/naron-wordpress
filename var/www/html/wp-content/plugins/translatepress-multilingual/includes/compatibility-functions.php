@@ -1900,3 +1900,105 @@ add_action( 'before_woocommerce_init', function() {
         \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', TRP_PLUGIN_DIR . 'index.php', true );
     }
 } );
+
+
+/**
+ * Compatibility with RankMath
+ */
+add_filter( 'rank_math/analytics/get_translated_objects', 'trp_rank_math_get_translated_items', 10, 1 );
+function trp_rank_math_get_translated_items( $post_id ) {
+    if ( ! class_exists( 'TRP_Translate_Press' ) || !function_exists('trp_translate')) {
+        return $post_id;
+    }
+
+    $trp                = TRP_Translate_Press::get_trp_instance();
+    $url_converter      = $trp->get_component( 'url_converter' );
+    $settings_component = $trp->get_component( 'settings' );
+    $trp_settings       = $settings_component->get_settings();
+
+    // Needed because adding language slug in urls is not performed by default in admin area.
+    add_filter( 'trp_add_language_to_home_url_check_for_admin', '__return_false' );
+
+    $permalink = get_permalink( $post_id );
+
+    $translated_items = [];
+
+    $languages = $trp_settings['publish-languages'];
+    foreach ( $languages as $language ) {
+
+        $url = esc_url( $url_converter->get_url_for_language( $language, $permalink, '' ) );
+
+        /**
+         * Google API and get_permalink sends URL Encoded strings so we need
+         * to urldecode in order to get them to match with whats saved in DB.
+         */
+        $parse_url = wp_parse_url( urldecode( $url ) );
+        if ( ! $parse_url ) {
+            continue;
+        }
+
+        if ( empty( $parse_url['path'] ) ) {
+            continue;
+        }
+
+        $title = get_the_title( $post_id );
+
+        // Get translated title, if possible.
+        if( $language != $trp_settings['default-language'] ){
+            $title = trp_translate( $title, $language, false );
+        }
+
+        // Push translated URL into array.
+        array_push(
+            $translated_items,
+            [
+                'url'   => $parse_url['path'],
+                'title' => $title,
+            ]
+        );
+    }
+
+    // Revert to default functionality.
+    remove_filter( 'trp_add_language_to_home_url_check_for_admin', '__return_false' );
+
+    return $translated_items;
+}
+
+/**
+ *The manually translated slug being overwritten by automatic translation was caused by a conflict with the events calendar. In the function
+ * include_slug_for_machine_translation(add-ons-advanced/seo-pack/includes/class-slug-manager.php, line 431), line 499 we have the line
+ * $translated_base_slug = $this->get_translated_rewrite_base_slug( $post_type_string, $language_code, false );.Because the events calendar
+ * adds a slug called ‘tribe_events’ this was registered as $post_type_string, and this slug does not exist amongst the existing post-type base
+ * slugs saved in DB, so it was returning false and the slug was added to the translatable_information array so it was sent to automatic translation.
+ * The client translated the slug for Portuguese in English so in line 502, $original_base_slug = $this->get_rewrite_base_slug( $post_type_object,
+ * $post_type_string );, the translated slug was returned and passed through automatic translation which returned the slug in portugese and
+ * overwrriten the human translated slug by the client.
+ *
+ * As a solution, if the events calendar is active, we use a filter of post type base slugs that should not be passed through automatic translation.
+ */
+if (class_exists("Tribe__Events__Adjacent_Events")) {
+    add_filter('trp_filter_post_type_base_slugs_from_automatic_translation', 'trp_stop_automatic_translation_for_certain_post_type_base_slugs', 10, 2);
+}
+
+function trp_stop_automatic_translation_for_certain_post_type_base_slugs( $bool, $post_type_base_slug_to_avoid ) {
+
+    $array_of_post_type_base_slugs_that_should_not_be_passed_through_automatic_translation = array("tribe_events");
+
+    if (in_array($post_type_base_slug_to_avoid, $array_of_post_type_base_slugs_that_should_not_be_passed_through_automatic_translation)){
+        $bool = false;
+    }
+    
+    return $bool;
+}
+
+/**
+ * Exclude Query Monitor gettext strings from being processed
+ */
+if ( class_exists( 'QueryMonitor' ) ) {
+    add_filter( 'trp_skip_gettext_processing', 'trp_exclude_query_monitor_strings', 10, 4 );
+}
+function trp_exclude_query_monitor_strings( $bool, $translation, $text, $domain ){
+    if ( trim( $domain ) === 'query-monitor' ) return true;
+
+    return $bool;
+}

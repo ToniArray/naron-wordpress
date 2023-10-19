@@ -8,38 +8,32 @@ import { ThemeProvider } from '@emotion/react';
  */
 import { __ } from '@wordpress/i18n';
 import { close as dismissIcon } from '@wordpress/icons';
-import { useViewportMatch } from '@wordpress/compose';
 
 /**
  * iThemes dependencies
  */
-import { Heading, solidTheme } from '@ithemes/ui';
+import { solidTheme, Text } from '@ithemes/ui';
 
 /**
  * Internal dependencies
  */
 import { useLocalStorage } from '@ithemes/security-hocs';
+import { useConfigContext } from '@ithemes/security.pages.settings';
+import { SecurityFreeLogo } from '@ithemes/security-style-guide';
+import { FlexSpacer } from '@ithemes/security-components';
 import {
-	StyledBecomingSolid,
-	StyledBecomingSolidAction,
-	StyledBecomingSolidBody,
-	StyledBecomingSolidDismiss,
-	StyledBecomingSolidGraphic,
+	StyledBanner,
+	StyledBannerButton,
+	StyledBannerHeading,
+	StyledLogoContainer,
+	StyledSolidLogo,
+	StyledStellarSaleDismiss,
+	StyledTextContainer,
 } from './styles';
 
-const start = Date.UTC( 2023, 7, 1, 0, 0, 0 );
-const end = Date.UTC( 2023, 10, 3, 23, 59, 59 );
-const now = Date.now();
-
 export default function BecomingSolid() {
-	const isSmall = useViewportMatch( 'small' );
-	const [ isDismissed, setIsDismiss ] = useLocalStorage(
-		'itsecPromoBecomingSolid'
-	);
-
-	if ( start > now || end < now ) {
-		return null;
-	}
+	const [ isDismissed, setIsDismissed ] = useLocalStorage( 'itsecBecomingSolid' );
+	const { installType } = useConfigContext();
 
 	if ( isDismissed ) {
 		return null;
@@ -47,34 +41,42 @@ export default function BecomingSolid() {
 
 	return (
 		<ThemeProvider theme={ solidTheme }>
-			<StyledBecomingSolid isSmall={ isSmall }>
-				<Heading
-					level={ 2 }
-					variant="white"
-					text={ __( 'iThemes is becoming SolidWP!', 'better-wp-security' ) }
-					size="normal"
-					weight={ 600 }
-				/>
-				<StyledBecomingSolidBody
-					as="p"
-					variant="white"
-					size="small"
-					isSmall={ isSmall }
-					text={ __( 'Build a solid foundation for your website with Solid Security, Solid Backups, and Solid Central.', 'better-wp-security' ) }
-				/>
-				<StyledBecomingSolidAction
-					variant="primary"
-					text={ __( 'Learn more', 'better-wp-security' ) }
-					href="https://go.solidwp.com/security-plugin-rebrand"
-				/>
-				<StyledBecomingSolidDismiss
-					variant=""
+			<StyledBanner>
+				<StyledLogoContainer>
+					<SecurityFreeLogo />
+					<StyledSolidLogo />
+				</StyledLogoContainer>
+				<StyledTextContainer>
+					<StyledBannerHeading
+						level={ 2 }
+						weight={ 700 }
+						variant="dark"
+						size="extraLarge"
+						text={ __( 'iThemes Security is becoming Solid Security', 'better-wp-security' ) }
+					/>
+					<Text
+						size="subtitleSmall"
+						weight={ 500 }
+						variant="dark"
+						text={ __( 'We have been working hard for almost a year to bring you incredible new features in the form of our new and improved brand: SolidWP. Discover what’s coming very soon!', 'better-wp-security' ) }
+					/>
+				</StyledTextContainer>
+				<FlexSpacer />
+				<StyledStellarSaleDismiss
 					label={ __( 'Dismiss', 'better-wp-security' ) }
 					icon={ dismissIcon }
-					onClick={ () => setIsDismiss( true ) }
+					onClick={ () => setIsDismissed( true ) }
 				/>
-				<StyledBecomingSolidGraphic />
-			</StyledBecomingSolid>
+				<StyledBannerButton
+					href={ installType === 'pro'
+						? 'https://go.solidwp.com/settings-notification-ithemes-becoming-solidwp'
+						: 'https://go.solidwp.com/settings-notification-free-ithemes-becoming-solidwp'
+					}
+					weight={ 600 }
+				>
+					{ __( 'Learn more', 'better-wp-security' ) }
+				</StyledBannerButton>
+			</StyledBanner>
 		</ThemeProvider>
 	);
 }
