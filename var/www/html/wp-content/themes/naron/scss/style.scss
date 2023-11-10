@@ -106,7 +106,8 @@ body {
     }
   }
   &-middle {
-    &-home {
+    &-home,
+    &-page {
       position: absolute;
       z-index: 999;
       width: 100%;
@@ -132,6 +133,17 @@ body {
     }
     a.mega-menu-link {
       color: #333 !important;
+    }
+  }
+  &-fetured {
+    &-image {
+      height: 40vh;
+      overflow: hidden;
+      img {
+        height: 40vh;
+        width: 100vw;
+        object-fit: cover;
+      }
     }
   }
 }
