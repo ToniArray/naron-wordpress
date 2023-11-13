@@ -53,3 +53,34 @@ function external_webs() {
 }
 add_action('init', 'external_webs');
 
+/**
+ * Add custom taxonomies
+ *
+ * Additional custom taxonomies can be defined here
+ * https://codex.wordpress.org/Function_Reference/register_taxonomy
+ */
+function add_custom_taxonomies() {
+    register_taxonomy('categorías', 'page', array(
+      'hierarchical' => true,
+      'labels' => array(
+        'name' => _x( 'Categorías', 'taxonomy general name' ),
+        'singular_name' => _x( 'Categoría', 'taxonomy singular name' ),
+        'search_items' =>  __( 'Buscar Categorías' ),
+        'all_items' => __( 'Todas las Categorías' ),
+        'parent_item' => __( 'Parent Categoría' ),
+        'parent_item_colon' => __( 'Parent Categoría:' ),
+        'edit_item' => __( 'Editar Categoría' ),
+        'update_item' => __( 'Actualizar Categoría' ),
+        'add_new_item' => __( 'Añadir nueva Categoría' ),
+        'new_item_name' => __( 'Nueva Categoría' ),
+        'menu_name' => __( 'Categorías' ),
+      ),
+      'rewrite' => array(
+        'slug' => 'Categorias',
+        'with_front' => false,
+        'hierarchical' => true
+      ),
+    ));
+}
+add_action( 'init', 'add_custom_taxonomies', 0 );
+

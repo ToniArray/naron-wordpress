@@ -17,7 +17,7 @@ Tags:
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800&display=swap");
 @import "../css/megamenu";
 
-$colorDos: red;
+$primaryColor: #00009e;
 
 body {
   font-family: "Montserrat", Sans-serif;
@@ -138,11 +138,46 @@ body {
   &-fetured {
     &-image {
       height: 40vh;
-      overflow: hidden;
-      img {
+      position: relative;
+      figure {
+        &::before {
+          content: "";
+          background-color: black;
+          opacity: 0.2;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+        }
+        img {
+          height: 40vh;
+          width: 100vw;
+          object-fit: cover;
+        }
+      }
+      & > div {
+        position: absolute;
+        top: 0;
+        width: 100%;
         height: 40vh;
-        width: 100vw;
-        object-fit: cover;
+        display: flex;
+        align-items: center;
+        h2 {
+          color: white;
+          text-align: center;
+          font-size: 40px;
+          font-weight: 600;
+          &::after {
+            content: "";
+            width: 200px;
+            background-color: #00009e;
+            margin: 0 auto;
+            display: block;
+            height: 5px;
+            margin-top: 10px;
+          }
+        }
       }
     }
   }
@@ -165,7 +200,7 @@ body {
     &-web {
       margin-top: -95px !important;
       &-header {
-        background-color: #00009e;
+        background-color: $primaryColor;
         background-image: url("./images/naron-vista-dia-excelia.jpg");
         background-position: center center;
         background-repeat: no-repeat;
@@ -174,7 +209,7 @@ body {
         position: relative;
         &::before {
           content: "";
-          background-color: #00009e;
+          background-color: $primaryColor;
           opacity: 0.92;
           height: 100%;
           width: 100%;
@@ -269,7 +304,7 @@ body {
       height: 220px;
       display: flex;
       align-items: flex-end;
-      border-bottom: 5px solid #00009e;
+      border-bottom: 5px solid $primaryColor;
       &:hover {
         .uagb-post__link-complete-box {
           background-color: transparent;
@@ -312,7 +347,7 @@ body {
 .uagb-post-grid.is-carousel {
   &.uagb-post__carousel_equal-height {
     .uagb-post__inner-wrap {
-      border-bottom: 5px solid #00009e;
+      border-bottom: 5px solid $primaryColor;
       height: 220px;
       display: flex !important;
       align-items: flex-end;
